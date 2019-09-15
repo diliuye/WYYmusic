@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="gedancss/base.css">
+    <link rel="stylesheet" href="gedancss/music-list.css">
+    <script src="gedanjs/jquery-1.12.4.min.js"></script>
+    <script src="gedanjs/music-list.js"></script>
+    <link class="ico" rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/footercss.css">
+  </head>
+  <body>
+    <div class="top">
+      <div class="w">
+        <div class="logo"></div>
+        <div class="neirong" id="nr">
+          <ul>
+            <li><a href="../index">发现音乐</a></li>
+            <li class="line"></li>
+            <li><a href="../myMusic">我的音乐</a></li>
+            <li class="line"></li>
+            <li><a href="../friends">朋友</a></li>
+            <li class="line"></li>
+            <li><a href="../demo">商城</a></li>
+            <li class="line"></li>
+            <li><a href="#">音乐人</a></li>
+            <li class="line"></li>
+            <li><a href="../下载客户端页面">下载客户端</a></li>
+          </ul>
+        </div>
+        <div class="login-block" id="loginBlock">
+          <ul>
+            <li><a href="#"><i class="icon-phone"></i><em>手机号登陆</em></a></li>
+            <li><a href="#"><i class="icon-wechart"></i><em>微信登陆</em></a></li>
+            <li><a href="#"><i class="icon-qq"></i><em>QQ登陆</em></a></li>
+            <li><a href="#"><i class="icon-weibo"></i><em>微博登陆</em></a></li>
+            <li><a href="#"><i class="icon-nest"></i><em>网易邮箱账号登陆</em></a></li>
+          </ul>
+          <div class="sanjiaojian"></div>
+        </div>
+      </div>
+      <div class="seek">
+        <input id="text" type="text" value="单曲/歌手/专辑/歌单/MV/用户">
+      </div>
+      <div class="hot"></div>
+      <div class="deng" id="deng"><a href="#">登录</a></div>
+      <div class="daosan" id="daosan"></div>
+    </div>
+    <!-- //红色栏部分-->
+    <div class="nav">
+      <div class="w">
+        <div class="xunze">
+          <ul>
+            <li><a href="#">推荐</a></li>
+            <li><a href="../rankinglist.index">排行榜</a></li>
+            <li><a href="javascript:location.reload()">歌单</a><span></span></li>
+            <li><a href="../discover">主播电台</a></li>
+            <li><a href="../歌手">歌手</a></li>
+            <li><a href="#">新碟上架</a></li>
+          </ul>
+        </div>
+        <div class="sanjiao"></div>
+      </div>
+    </div>
+    <script src="../gedanjs/01.js"></script>
+    <div class="music-bd w">
+      <div class="music-wrap">
+        <div class="music-title">
+          <h3><span class="music-all">全部</span><a class="music-choese" href="#"><i>选择分类<em class="music-icon1"></em></i></a></h3>
+          <div class="music-fr"><a class="music-hot" href="#">热门</a><a class="music-new" href="#">最新</a></div>
+          <div class="n-sltlyr-show">
+            <div class="sltlyr-show-hd"><i class="show-icn"></i></div>
+            <div class="sltlyr-show-bd">
+              <h3><a class="show-all" href="#"><em>全部风格</em></a></h3>
+              <dl class="show-cb">
+                <dt class="yuzhong"><i class="show-icon71"></i>语种</dt>
+                <dd><a href="#">华语</a><span class="line">|</span><a href="#">欧美</a><span class="line">|</span><a href="#">日语</a><span class="line">|</span><a href="#">韩语</a><span class="line">|</span><a href="#">粤语</a><span class="line">|</span><a href="#">小语种</a><span class="line">|</span></dd>
+              </dl>
+              <dl class="show-cb1">
+                <dt class="yuzhong"><i class="show-icon72"></i>风格</dt>
+                <dd><a href="#">流行</a><span class="line">|</span><a href="#">摇滚</a><span class="line">|</span><a href="#">民谣</a><span class="line">|</span><a href="#">电子</a><span class="line">|</span><a href="#">舞曲</a><span class="line">|</span><a href="#">说唱</a><span class="line">|</span><a href="#">轻音乐</a><span class="line">|</span><a href="#">爵士</a><span class="line">|</span><a href="#">乡村</a><span class="line">|</span><a href="#">R&B/Soul</a><span class="line">|</span><a href="#">古典</a><span class="line">|</span><a href="#">民族</a><span class="line">|</span><a href="#">英伦</a><span class="line">|</span><a href="#">金属</a><span class="line">|</span><a href="#">朋克</a><span class="line">|</span><a href="#">蓝调</a><span class="line">|</span><a href="#">雷鬼</a><span class="line">|</span><a href="#">世界音乐</a><span class="line">|</span><a href="#">拉丁</a><span class="line">|</span><a href="#">另类/独立</a><span class="line">|</span><a href="#">New Age</a><span class="line">|</span><a href="#">古风</a><span class="line">|</span><a href="#">后摇</a><span class="line">|</span><a href="#">Bossa Nova</a><span class="line">|</span></dd>
+              </dl>
+              <dl class="show-cb2">
+                <dt class="yuzhong"><i class="show-icon73"></i>场景</dt>
+                <dd><a href="#">清晨</a><span class="line">|</span><a href="#">夜晚</a><span class="line">|</span><a href="#">学习</a><span class="line">|</span><a href="#">工作</a><span class="line">|</span><a href="#">午休</a><span class="line">|</span><a href="#">下午茶</a><span class="line">|</span><a href="#">地铁</a><span class="line">|</span><a href="#">驾车</a><span class="line">|</span><a href="#">运动</a><span class="line">|</span><a href="#">旅行</a><span class="line">|</span><a href="#">散步</a><span class="line">|</span><a href="#">酒吧</a><span class="line">|</span></dd>
+              </dl>
+              <dl class="show-cb2">
+                <dt class="yuzhong"><i class="show-icon74"></i>情感</dt>
+                <dd><a href="#">怀旧</a><span class="line">|</span><a href="#">清新</a><span class="line">|</span><a href="#">浪漫</a><span class="line">|</span><a href="#">性感</a><span class="line">|</span><a href="#">伤感</a><span class="line">|</span><a href="#">治愈</a><span class="line">|</span><a href="#">放松</a><span class="line">|</span><a href="#">孤独</a><span class="line">|</span><a href="#">感动</a><span class="line">|</span><a href="#">兴奋</a><span class="line">|</span><a href="#">快乐</a><span class="line">|</span><a href="#">安静</a><span class="line">|</span><a href="#">思念</a><span class="line">|</span></dd>
+              </dl>
+              <dl class="show-cb2">
+                <dt class="yuzhong"><i class="show-icon75"></i>主题</dt>
+                <dd><a href="#">影视原声</a><span class="line">|</span><a href="#">ACG</a><span class="line">|</span><a href="#">校园</a><span class="line">|</span><a href="#">游戏</a><span class="line">|</span><a href="#">70后</a><span class="line">|</span><a href="#">80后</a><span class="line">|</span><a href="#">90后</a><span class="line">|</span><a href="#">网络歌曲</a><span class="line">|</span><a href="#">KTV</a><span class="line">|</span><a href="#">经典</a><span class="line">|</span><a href="#">翻唱</a><span class="line">|</span><a href="#">吉他</a><span class="line">|</span><a href="#">钢琴</a><span class="line">|</span><a href="#">器乐</a><span class="line">|</span><a href="#">儿童</a><span class="line">|</span><a href="#">榜单</a><span class="line">|</span><a href="#">00后</a><span class="line">|</span></dd>
+              </dl>
+            </div>
+            <div class="show-ft"></div>
+          </div>
+        </div>
+        <ul class="music-cvrlst">
+          <li>
+            <div class="u-cover"><img src="gedanimg/qingjie.jpg" alt=""><a class="msk" href="#" title="把歌名分解后会有怎样的效果？"></a>
+              <div class="music-bottom"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">12万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">把歌名分解后会有怎样的效果？</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">清结</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/shabai.jpg" alt=""><a class="msk" href="#" title="有个玩黑怕的中国男孩儿有话对你说"></a>
+              <div class="music-bottom"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">13万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">有个玩黑怕的中国男孩儿有话对你说</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">紫拉的沙白</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/gushi.jpg" alt=""><a class="msk" href="#" title="很多故事再不讲就没人记得了 | 华语精选"></a>
+              <div class="music-bottom"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">28万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">很多故事再不讲就没人记得了 | 华语精选</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">华纳音乐</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/gaoneng.jpg" alt=""><a class="msk" href="#" title="高能慎点! 30首夏日恋曲MV合集"></a>
+              <div class="music-bottom"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">25219</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">高能慎点! 30首夏日恋曲MV合集</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">Kaibottcher</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/jinanzhu.jpg" alt=""><a class="msk" href="#" title="韩丨论Rapper们无处安放的Vocal魂"></a>
+              <div class="music-bottom"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">25307</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">韩丨论Rapper们无处安放的Vocal魂</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">金暗洙</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/xiari.jpg" alt=""><a class="msk" href="#" title="夏日微风｜听星星闪烁的声音"></a>
+              <div class="music-bottom2"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">9814</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">夏日微风｜听星星闪烁的声音</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">阿卡琳</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/dianyin.jpg" alt=""><a class="msk" href="#" title="《纯电音》享受极致抖腿"></a>
+              <div class="music-bottom2"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">40万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">《纯电音》享受极致抖腿</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">我是爱音乐的徐梦..</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/yangguang.jpg" alt=""><a class="msk" href="#" title="「阳光派对」迎着热浪在沙滩上奔跑"></a>
+              <div class="music-bottom2"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">20万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">「阳光派对」迎着热浪在沙滩上奔跑</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">Nanoha</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/linglei.jpg" alt=""><a class="msk" href="#" title="另类情歌 | 我越过谎言去拥抱你"></a>
+              <div class="music-bottom2"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">141万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">另类情歌 | 我越过谎言去拥抱你</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">傲娇少女-界大人</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/xiangde.jpg" alt=""><a class="msk" href="#" title="「华语情歌」想得却不可得，你奈人生何"></a>
+              <div class="music-bottom2"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">384万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">「华语情歌」想得却不可得，你奈人生何</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">鮭魚先森</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/xiangxiang.jpg" alt=""><a class="msk" href="#" title="让我想想，该怎么形容你呢？"></a>
+              <div class="music-bottom3"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">122万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">让我想想，该怎么形容你呢？</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">情思天鹅</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/huoyan.jpg" alt=""><a class="msk" href="#" title="粤语味道|一如火焰，一如倒影"></a>
+              <div class="music-bottom3"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">138万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">粤语味道|一如火焰，一如倒影</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">咚咚锵梆梆梆</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/biaobai.jpg" alt=""><a class="msk" href="#" title="听歌学表白，原来这些歌词可以当情书"></a>
+              <div class="music-bottom3"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">217万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">听歌学表白，原来这些歌词可以当情书</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">肩扛底音炮</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/moke.jpg" alt=""><a class="msk" href="#" title="忆文人墨客｜笔墨半张 满纸尽风华"></a>
+              <div class="music-bottom3"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">98万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">忆文人墨客｜笔墨半张 满纸尽风华</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">迩ran</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/rebo.jpg" alt=""><a class="msk" href="#" title="【2017】热播影视剧原声歌曲盘点"></a>
+              <div class="music-bottom3"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">340万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">【2017】热播影视剧原声歌曲盘点</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">可尼宴</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/fugu.jpg" alt=""><a class="msk" href="#" title="复古舞曲｜跟随旧时光中的节奏摇摆起来"></a>
+              <div class="music-bottom4"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">89万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">复古舞曲｜跟随旧时光中的节奏摇摆起来</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">SuperMan-LEE</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/jiejie.jpg" alt=""><a class="msk" href="#" title="【姐姐饭的狂欢】想和底迪谈恋爱喔:-O"></a>
+              <div class="music-bottom4"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">79038</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">【姐姐饭的狂欢】想和底迪谈恋爱喔:-O</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">尹斗俊圈外对象</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/hanxi.jpg" alt=""><a class="msk" href="#" title="韩系男声♪温柔慢歌，舒缓你夏日的浮躁❤"></a>
+              <div class="music-bottom4"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">26万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">韩系男声♪温柔慢歌，舒缓你夏日的浮躁❤</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">轻歌_洛可可</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/changpian.jpg" alt=""><a class="msk" href="#" title="用50张说唱唱片去品味诗意Flow"></a>
+              <div class="music-bottom4"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">55万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">用50张说唱唱片去品味诗意Flow</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">goorye</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/quanneng.jpg" alt=""><a class="msk" href="#" title="Sample|中文说唱的那些采样原曲"></a>
+              <div class="music-bottom4"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">100万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">Sample|中文说唱的那些采样原曲</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">全能的BK大大</a><i class="u-icn-85"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/qingchun.jpg" alt=""><a class="msk" href="#" title="青春随我 | 十载快男"></a>
+              <div class="music-bottom5"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">134万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">青春随我 | 十载快男</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">子瞻大魔王</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/suiyue.jpg" alt=""><a class="msk" href="#" title="粤语丨 岁月流情，回味旧日的浪漫故事"></a>
+              <div class="music-bottom5"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">280万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">粤语丨 岁月流情，回味旧日的浪漫故事</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">___________刂巾...</a><i class="u-icn-85"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/youmei.jpg" alt=""><a class="msk" href="#" title="【古典】优美旋律撩拨温柔的灵魂"></a>
+              <div class="music-bottom5"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">23367</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">【古典】优美旋律撩拨温柔的灵魂</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">狂飙瓦格纳</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/xueli.jpg" alt=""><a class="msk" href="#" title="☀️Tröpical House| 百位艺人 百首良曲"></a>
+              <div class="music-bottom5"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">96万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">☀️Tröpical House| 百位艺人 百首良曲</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">雪莉酒Sherry</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/niandai.jpg" alt=""><a class="msk" href="#" title="［年代感］欧美原声吉他弹唱精选100首"></a>
+              <div class="music-bottom5"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">260万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">［年代感］欧美原声吉他弹唱精选100首</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">坚果____</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/liaomei.jpg" alt=""><a class="msk" href="#" title="┃撩妹时需要的浪漫┃ 钢琴&amp;爵士的完美结合"></a>
+              <div class="music-bottom6"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">69万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">┃撩妹时需要的浪漫┃ 钢琴&爵士的完美结合</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">___Allen______</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/yida.jpg" alt=""><a class="msk" href="#" title="一 沓 说 唱"></a>
+              <div class="music-bottom6"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">29062</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">一 沓 说 唱</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">juicy_fruity_</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/jianshi.jpg" alt=""><a class="msk" href="#" title="简史‖民谣少女与摇滚有个约会"></a>
+              <div class="music-bottom6"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">497万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">简史‖民谣少女与摇滚有个约会</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">菊老板</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/chenjin.jpg" alt=""><a class="msk" href="#" title="沉浸于字里行间°读书专用背景音乐"></a>
+              <div class="music-bottom6"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">268万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">沉浸于字里行间°读书专用背景音乐</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">玛丽锁链是耶稣</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/xiaoli.jpg" alt=""><a class="msk" href="#" title="孝利的民宿BGM"></a>
+              <div class="music-bottom6"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">20581</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">孝利的民宿BGM</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">AlisonSweg</a></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/qianzou.jpg" alt=""><a class="msk" href="#" title="「前奏控」被前奏秒杀的古风歌"></a>
+              <div class="music-bottom7"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">228万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">「前奏控」被前奏秒杀的古风歌</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">傻狗家的猫大仙</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/jingyan.jpg" alt=""><a class="msk" href="#" title="「电子•女声」惊艳耳际，一秒倾心"></a>
+              <div class="music-bottom7"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">173万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">「电子•女声」惊艳耳际，一秒倾心</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">炮女_</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/kaikou.jpg" alt=""><a class="msk" href="#" title="电子女声系❤开口便沉醉其中"></a>
+              <div class="music-bottom7"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">45万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">电子女声系❤开口便沉醉其中</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">一只野生的呆头狸</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/liange.jpg" alt=""><a class="msk" href="#" title="日系の恋歌| 你是我未曾说出口的爱恋ღ"></a>
+              <div class="music-bottom7"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">82万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">日系の恋歌| 你是我未曾说出口的爱恋ღ</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">百夜丶米迦儿</a><i class="u-icn-84"></i></p>
+          </li>
+          <li>
+            <div class="u-cover"><img src="gedanimg/zhedan.jpg" alt=""><a class="msk" href="#" title="想撩妹？用这单就够了"></a>
+              <div class="music-bottom7"><a class="icon-play" href="#"></a><span class="icon-headset"></span><span class="nb">201万</span></div>
+            </div>
+            <p class="music-dec"><a class="f-thide" href="#">想撩妹？用这单就够了</a></p>
+            <p><span class="music-fc4">by</span><a class="music-nm" href="#">一只野生的呆头狸</a><i class="u-icn-84"></i></p>
+          </li>
+        </ul>
+        <div class="music-pager">
+          <div class="music-u-pager"><a class="music-selected" href="javascript:void(0)">上一页</a><a class="music-number2 showCurrent" href="javascript:void(0)">1</a><a class="music-number2" href="javascript:void(0)">2</a><a class="music-number2" href="javascript:void(0)">3</a><a class="music-number2" href="javascript:void(0)">4</a><a class="music-number2" href="javascript:void(0)">5</a><a class="music-number2" href="javascript:void(0)">6</a><a class="music-number2" href="javascript:void(0)">7</a><a class="music-number2" href="javascript:void(0)">8</a><span>...</span><a class="music-number2" href="javascript:void(0)">39</a><a class="music-selected2" href="javascript:void(0)">下一页</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部开始-->
+    <div class="g-ft">
+      <div class="m-ft">
+        <div class="wrap f-cb">
+          <div class="copy">
+            <p><a class="s-fc4" href="#">关于网易</a><span class="line"></span><a class="s-fc4" href="#">客户服务</a><span class="line"></span><a class="s-fc4" href="#">服务条款</a><span class="line"></span><a class="s-fc4" href="#">网站导航</a><span class="line"></span><a class="s-fc4" href="#">意见反馈</a></p>
+            <p class="s-fc3"><span class="sep">网易公司版权所有©1997-2017</span>                    杭州乐读科技有限公司运营 :<a class="s-fc3" href="#">浙网文[2015] 0415-135号</a></p>
+          </div>
+          <ul class="enter f-fr">
+            <li><a class="logo logo-musician f-tid" href="#"></a></li>
+            <li><a class="logo logo-topic f-tid" href="#"></a></li>
+            <li><a class="logo logo-midea f-tid" href="#"></a></li>
+            <li><a class="logo logo-reward f-tid" href="#"></a></li>
+          </ul>
+          <div class="class">wrap.cfb::after</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>-->
+<div class="g-btmbar" id="g-btmbar">
+  <div class="g-btmbar-p" id=".g-btmbar-p">
+    <div class="m-playbar m-playbar-lock" id="auto-id-fpboJHu88h3Feay2" style="top:-53px; visibility: visible;">
+      <div class="updn">
+        <div class="left f-f1"><a class="btn1" id="fixBtn1" href="javascript:void(0);"></a><a class="btn2" id="fixBtn2" href="javascript:void(0);"></a></div>
+        <div class="right f-f1"></div>
+      </div>
+      <div class="bg"></div>
+      <div class="wrap" id="g_player">
+        <div class="btns"><a class="prv" href="#"></a><a class="ply j-fkag" id="ply01" href="#"></a><a class="plys j-fkag" id="ply02" href="#"></a><a class="nxt" href="#"></a></div>
+        <div class="head j-flag"><a class="mask" href="#"><img src="gedaimages/default_album.jpg" alt=""></a></div>
+        <div class="play">
+          <div class="j-flag words"></div>
+          <div class="m-pbar">
+            <div class="barbg j-flag" id="auto-id-ODscgwD3lbnJdK0A">
+              <div class="rdy" style="width: 0%;"></div>
+              <div class="cur" style="width: 0%;"><span class="btn f-tdn f-alpha" id="auto-id-bxCC3M0eRZD76VpR"><i></i></span></div>
+            </div><span class="j-flag time"><em>00:00</em> / 00:00</span>
+          </div>
+        </div>
+        <div class="oper f-fl"><a class="icn icn-add j-flag" href="#" title="收藏"></a><a class="icn icn-share" href="#" title="分享"></a></div>
+        <div class="ctrl f-fl f-pr j-flag">
+          <div class="m-vol" id="auto-id-epndKXTBrRZxUtTX" style="visibility:hidden;">
+            <div class="barbg"></div>
+            <div class="vbg j-t" id="auto-id-Ps01blhP4eMKXBgn">
+              <div class="curr j-t" style="height: 74.4px;"></div><span class="btn f-alpha j-t" style="top: 16.2px;"></span>
+            </div>
+          </div><a class="icn icn-vol" href="#"></a><a class="icn icn-loop" href="#"></a><span class="add f-pr"><span class="tip" style="display: none;"></span><a class="icn icn-list s-fc3" href="#" title="播放列表">0</a></span>
+          <div class="tip tip-1" style="display: none;">循环</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 底部结束-->
+<script src="gedanranking%20list-js/jquery-1.12.4.min.js"></script>
+<script src="gedanranking%20list-js/common.js"></script>
+<script src="gedanranking%20list-js/footer-js.js"></script>

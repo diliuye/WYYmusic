@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title 注册
+        script(src='js/register.js')
+    body
+        form(action='index.html', method='get', onsubmit='return toValid()')
+            span 用户名：
+            input#user(type='text', placeholder='请输入用户名', required='')
+            span#user_err
+            br
+            span 密码：
+            input#pass(type='password', placeholder='请输入密码', required='')
+            span#pass_err
+            br
+            span 再次输入密码：
+            input#pass_two(type='password', placeholder='请再次输入密码', required='')
+            span#pass_two_err
+            br
+            input(type='submit', value='注册')

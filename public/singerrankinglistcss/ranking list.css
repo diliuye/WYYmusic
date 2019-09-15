@@ -1,0 +1,1954 @@
+/* 初始化开始 */
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+    margin: 0;
+    padding: 0;  /*清除元素的内外边距*/
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;  /*外面环绕线*/
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*去掉原样式中的小黑点*/
+
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+
+
+table {
+    border-collapse: collapse; /*合并外连线*/
+}
+
+
+body {
+    font: 12px/150% "microsoft yahei";
+    color: #ccc;
+    background: #F5F5F5;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+
+a {
+    color: #000;   /*a 标签是不继承颜色 的*/
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+s,
+i,
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.w {
+    /*版心 提取 */
+    width: 980px;
+    margin: 0 auto;
+}
+/* 初始化结束 */
+
+/* 顶部导航的开始 */
+
+
+
+/* 上部分导航开始 */
+.m-top {
+    width: 100%;
+    height: 105px;
+}
+.m-top-pass {
+    width: 100%;
+    height: 70px;
+    background: url("../images/topbar.png") 0 -80px;
+}
+.m-top-nav {
+    position: relative;
+    width: 1120px;
+    height: 70px;
+    margin: 0 auto;
+}
+.m-top-nav  .m-top-nav-logo {
+    position: absolute;
+    width: 178px;
+    height: 70px;
+}
+.m-top .m-top-nav .m-top-nav-logo a {
+    position: absolute;
+    top: 14px;
+    width: 162px;
+    height: 42px;
+    background: url("../images/topbar.png") no-repeat;
+}
+/*.m-top .m-top-nav .m-top-nav-find {*/
+    /*position: absolute;*/
+    /*left: 178px;*/
+    /*width: 96px;*/
+    /*height: 70px;*/
+    /*line-height: 70px;*/
+    /*text-align: center;*/
+    /*font-size: 12px;*/
+    /*color: #ccc;*/
+/*}*/
+.m-top .m-top-nav .m-top-nav-list {
+    position: absolute;
+    left: 178px;
+    width: 596px;
+    height: 70px;
+    line-height: 75px;
+}
+.m-top .m-top-nav .m-top-nav-list li {
+    float: left;
+    font-size: 14px;
+    color: #ccc;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(even) {
+    margin-top: 33px;
+    float: left;
+    width: 1px;
+    height: 10px;
+    background-color: #000;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(1) {
+    width: 96px;
+    height: 70px;
+    text-align: center;
+    background: url("../images/topbar.png") no-repeat 0 -155px;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(3) {
+    width: 96px;
+    height: 70px;
+    text-align: center;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(3):hover {
+    background: url("../images/topbar.png") no-repeat 0 -470px;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(5) {
+    width: 68px;
+    height: 70px;
+    text-align: center;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(5):hover {
+    background: url("../images/topbar.png") no-repeat 0 -470px;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(7) {
+    width: 68px;
+    height: 70px;
+    text-align: center;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(7):hover {
+    background: url("../images/topbar.png") no-repeat 0 -470px;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(9) {
+    width: 82px;
+    height: 70px;
+    text-align: center;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(9):hover {
+    background: url("../images/topbar.png") no-repeat 0 -470px;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(11) {
+    width: 130px;
+    height: 70px;
+    text-align: center;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(11):hover {
+    background: url("../images/topbar.png") no-repeat 0 -470px;
+}
+.m-top .m-top-nav .m-top-nav-list li:nth-child(11) .hot {
+    position: absolute;
+    top: 20px;
+    right: 55px;
+    width: 26px;
+    height: 18px;
+    background: url("../images/topbar.png") no-repeat -190px 0px;
+}
+
+.m-top .m-top-nav .m-top-nav-input {
+    position: absolute;
+    right: 70px;
+    width: 210px;
+    height: 30px;
+}
+.m-top .m-top-nav .m-top-nav-input .inp {
+    position: absolute;
+    top: 20px;
+    width: 180px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 12px;
+    color: #AF9B9B;
+    background-color: #f5f5f5;
+    padding-left: 30px;
+}
+.m-top .m-top-nav .m-top-nav-input .search {
+    position: absolute;
+    top: 29px;
+    left: 13px;
+    width: 12px;
+    height: 12px;
+    background: url("../images/topbar.png") no-repeat -12px -558px;
+}
+.m-top .m-top-nav .m-top-nav-login {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 70px;
+    height: 50px;
+}
+.m-top .m-top-nav .m-top-nav-login .login-out {
+    position: absolute;
+    top: 8px;
+    width: 70px;
+    height: 12px;
+}
+.m-top .m-top-nav .m-top-nav-login .login-out a {
+    position: absolute;
+    left: 18px;
+    font-size: 12px;
+    color: #787878;
+}
+.m-top .m-top-nav .m-top-nav-login .login-out .trigon1 {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background: url("../images/topbar.png") no-repeat -228px -380px;
+}
+.m-top .m-top-nav .m-top-nav-login .login-over {
+    position: absolute;
+    top: 8px;
+    width: 70px;
+    height: 12px;
+    display: none;
+}
+.m-top .m-top-nav .m-top-nav-login .login-over a {
+    position: absolute;
+    left: 18px;
+    font-size: 12px;
+    color: #AAA;
+}
+.m-top .m-top-nav .m-top-nav-login .login-over .trigon2 {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    background: url("../images/topbar.png") no-repeat -228px -418px;
+}
+
+/* 上部分导航结束*/
+
+
+/* 下部分导航开始 */
+
+.m-top .m-bottom-nav {
+    width: 100%;
+    height: 35px;
+    background: url("../images/topbar.png") 0px -230px;
+}
+.m-top .m-bottom-nav .m-bottom-nav-list {
+    width: 980px;
+    height: 35px;
+    margin: 0 auto;
+}
+.m-top .m-bottom-nav .m-bottom-nav-list ul {
+    position: relative;
+    top: 7px;
+    left: 150px;
+}
+.m-top .m-bottom-nav .m-bottom-nav-list ul li {
+     float: left;
+     margin-right: 55px;
+ }
+.m-top .m-bottom-nav .m-bottom-nav-list ul li a {
+    font-size: 12px;
+    color: #f0f0f0;
+}
+.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(1) i {
+    position: absolute;
+    top: -14px;
+    left: 5px;
+    width: 14px;
+    height: 9px;
+    background: url("../images/topbar.png") -226px 0px;
+}
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(1) {*/
+    /*float: left;*/
+    /*padding-left: 10px;*/
+    /*background: url("../images/topbar.png") 0px -275px;*/
+    /*height: 20px;*/
+    /*line-height: 20px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(1) a {*/
+    /*float: left;*/
+    /*font-size: 12px;*/
+    /*color: #f0f0f0;*/
+    /*background: url("../images/topbar.png") -20px -275px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(1) span {*/
+    /*float: right;*/
+    /*height: 20px;*/
+    /*padding-right: 10px;*/
+    /*background: url("../images/topbar.png") -230px -275px;*/
+/*}*/
+.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(2) {
+    float: left;
+    padding-left: 10px;
+    background: url("../images/topbar.png") 0px -275px;
+    height: 20px;
+    line-height: 20px;
+}
+.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(2) a {
+    float: left;
+    font-size: 12px;
+    color: #f0f0f0;
+    background: url("../images/topbar.png") -20px -275px;
+}
+.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(2) span {
+    float: right;
+    height: 20px;
+    padding-right: 10px;
+    background: url("../images/topbar.png") -230px -275px;
+}
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(3) {*/
+    /*float: left;*/
+    /*padding-left: 10px;*/
+    /*background: url("../images/topbar.png") 0px -275px;*/
+    /*height: 20px;*/
+    /*line-height: 20px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(3) a {*/
+    /*float: left;*/
+    /*font-size: 12px;*/
+    /*color: #f0f0f0;*/
+    /*background: url("../images/topbar.png") -20px -275px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(3) span {*/
+    /*float: right;*/
+    /*height: 20px;*/
+    /*padding-right: 10px;*/
+    /*background: url("../images/topbar.png") -230px -275px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(4) {*/
+    /*float: left;*/
+    /*padding-left: 10px;*/
+    /*background: url("../images/topbar.png") 0px -275px;*/
+    /*height: 20px;*/
+    /*line-height: 20px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(4) a {*/
+    /*float: left;*/
+    /*font-size: 12px;*/
+    /*color: #f0f0f0;*/
+    /*background: url("../images/topbar.png") -20px -275px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(4) span {*/
+    /*float: right;*/
+    /*height: 20px;*/
+    /*padding-right: 10px;*/
+    /*background: url("../images/topbar.png") -230px -275px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(5) {*/
+    /*float: left;*/
+    /*padding-left: 10px;*/
+    /*background: url("../images/topbar.png") 0px -275px;*/
+    /*height: 20px;*/
+    /*line-height: 20px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(5) a {*/
+    /*float: left;*/
+    /*font-size: 12px;*/
+    /*color: #f0f0f0;*/
+    /*background: url("../images/topbar.png") -20px -275px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(5) span {*/
+    /*float: right;*/
+    /*height: 20px;*/
+    /*padding-right: 10px;*/
+    /*background: url("../images/topbar.png") -230px -275px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(6) {*/
+    /*float: left;*/
+    /*padding-left: 10px;*/
+    /*background: url("../images/topbar.png") 0px -275px;*/
+    /*height: 20px;*/
+    /*line-height: 20px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(6) a {*/
+    /*float: left;*/
+    /*font-size: 12px;*/
+    /*color: #f0f0f0;*/
+    /*background: url("../images/topbar.png") -20px -275px;*/
+/*}*/
+/*.m-top .m-bottom-nav .m-bottom-nav-list ul li:nth-child(6) span {*/
+    /*float: right;*/
+    /*height: 20px;*/
+    /*padding-right: 10px;*/
+    /*background: url("../images/topbar.png") -230px -275px;*/
+/*}*/
+
+
+
+/* 下部分导航结束 */
+
+
+/*滑动门原理代码*/
+/*li {*/
+    /*float: left;*/
+    /*padding-left: 5px;*/
+    /*background: url("images/left.jpg") no-repeat;*/
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    /*margin-right: 6px;*/
+/*}*/
+/*li a {*/
+    /*float: left;*/
+    /*color: #222;*/
+    /*background: url("images/center.jpg");*/
+/*}*/
+/*li a:hover {*/
+    /*color: #fff;*/
+/*}*/
+/*li span {*/
+    /*float: right;*/
+    /*height: 40px;*/
+    /*padding-right: 5px;*/
+    /*background: url("images/right.jpg");*/
+/*}*/
+
+
+
+
+
+
+/* 顶部部导航的结束 -----------------------------------------------------------------------------*/
+
+
+
+/* 主体部分的开始 ---------------------------------------------*/
+
+
+
+/* 左边部分的开始 -------------------------------------*/
+
+.m-main {
+    width: 980px;
+    height: 3000px;
+    margin: 0 auto;
+}
+.m-main .m-main-side {
+    float: left;
+    width: 239px;
+    height: 3000px;
+    border-left: 1px solid #D3D3D3;
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+
+
+.m-main .m-main-side .m-main-side-top .txt-head1 {
+    position: relative;
+    top: 40px;
+    font-size: 16px;
+    color: #000;
+    margin-left: 16px;
+}
+.m-main .m-main-side .m-main-side-top ul {
+    position: relative;
+    top: 50px;
+    color: #000;
+}
+.m-main .m-main-side .m-main-side-top ul li {
+    position: relative;
+}
+.m-main .m-main-side .m-main-side-top ul li a {
+    display: block;
+    padding-left: 19px;
+    width: 220px;
+    height: 60px;
+}
+.m-main .m-main-side .m-main-side-top ul .top-bgc {
+    background-color: #ccc;
+}
+
+.m-main .m-main-side .m-main-side-top ul li:nth-child(1) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_01.jpg");
+}
+.m-main .m-main-side .m-main-side-top ul li:nth-child(1) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-top ul li:nth-child(1) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-top ul li:nth-child(2) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_02.jpg");
+}
+.m-main .m-main-side .m-main-side-top ul li:nth-child(2) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-top ul li:nth-child(2) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-top ul li:nth-child(3) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_03.jpg");
+}
+.m-main .m-main-side .m-main-side-top ul li:nth-child(3) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-top ul li:nth-child(3) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-top ul li:nth-child(4) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_04.jpg");
+}
+.m-main .m-main-side .m-main-side-top ul li:nth-child(4) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-top ul li:nth-child(4) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+.m-main .m-main-side .m-main-side-bottom .txt-head2 {
+    position: relative;
+    top: 70px;
+    font-size: 16px;
+    color: #000;
+    margin-left: 16px;
+}
+.m-main .m-main-side .m-main-side-bottom ul {
+    position: relative;
+    top: 85px;
+    color: #000;
+}
+.m-main .m-main-side .m-main-side-bottom ul li {
+    position: relative;
+}
+.m-main .m-main-side .m-main-side-bottom ul li a {
+    display: block;
+    padding-left: 19px;
+    width: 220px;
+    height: 60px;
+}
+/*.m-main .m-main-side .m-main-side-bottom ul .top-bgc {*/
+    /*background-color: #ccc;*/
+/*}*/
+
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(1) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_05.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(1) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(1) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(2) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_06.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(2) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(2) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(3) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_07.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(3) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(3) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(4) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_08.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(4) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(4) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(5) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_09.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(5) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(5) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(6) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_10.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(6) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(6) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(7) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_11.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(7) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(7) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(8) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_12.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(8) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(8) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(9) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_13.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(9) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(9) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(10) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_14.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(10) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(10) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(11) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_15.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(11) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(11) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(12) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_16.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(12) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(12) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(13) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_17.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(13) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(13) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(14) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_18.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(14) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(14) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(15) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_19.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(15) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(15) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(16) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_20.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(16) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(16) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(17) .bg-img {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/side_21.jpg");
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(17) .txt-top {
+    position: absolute;
+    left: 70px;
+    top: 8px;
+}
+.m-main .m-main-side .m-main-side-bottom ul li:nth-child(17) .txt-bottom {
+    position: absolute;
+    left: 70px;
+    top: 32px;
+    color: #999;
+}
+
+
+/*------------------------------------------------------------------------------------*/
+
+
+
+
+/* 左边部分的结束 ------------------------------*/
+
+
+/*中间内容部分开始  -------------------------------------------------------------------------------*/
+
+.m-main .m-main-content {
+    float: right;
+    position: relative;
+    width: 738px;
+    height: 3000px;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+    background-color: #fff;
+}
+.m-main .m-main-content .content-bsb {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    right: 30px;
+    width: 668px;
+    height: 1784px;
+    /*background-color: pink;*/
+}
+.m-main .m-main-content .content-xgb {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    right: 30px;
+    width: 668px;
+    height: 1960px;
+    background-color: skyblue;
+    display: none;
+}
+.m-main .m-main-content .content-ycb {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    right: 30px;
+    width: 668px;
+    height: 1960px;
+    background-color: yellow;
+    display: none;
+}
+.m-main .m-main-content .content-rgb {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    right: 30px;
+    width: 668px;
+    height: 1960px;
+    background-color: green;
+    display: none;
+}
+
+
+/* 飙升榜的头部描述  开始 -----------------------------------*/
+
+
+.m-main-content .content-bsb .content-bsb-top {
+    position: absolute;
+    width: 670px;
+    height: 158px;
+}
+.m-main-content .content-bsb .bsb-t-logo {
+    position: absolute;
+    padding: 4px;
+    width: 148px;
+    height: 148px;
+    border: 1px solid #ccc;
+}
+.m-main-content .content-bsb .bsb-t-logo img{
+    width: 100%;
+    height: 100%;
+}
+.m-main-content .content-bsb .bsb-t-content {
+    position: absolute;
+    left: 182px;
+    width: 402px;
+    height: 158px;
+}
+.m-main-content .content-bsb .bsb-t-content p {
+    position: absolute;
+    top: 20px;
+    font-size: 22px;
+    color: #000;
+}
+.m-main-content .content-bsb .bsb-t-content span {
+    position: absolute;
+    width: 230px;
+    font-size: 12px;
+    top: 52px;
+    color: #666;
+}
+.m-main-content .content-bsb .bsb-t-content .txt {
+    position: absolute;
+    top: 0;
+    /*left: 100px;*/
+    font-size: 12px;
+    color: #ccc;
+}
+.m-main-content .content-bsb .bsb-t-btns {
+    position: absolute;
+    bottom: 28px;
+    width: 402px;
+    height: 30px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns1 {
+    position: absolute;
+    top: 0;
+    width: 63px;
+    height: 28px;
+    text-indent: 35px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    border: 1px solid #2E6AA4;
+    border-radius: 3px 0 0 3px;
+    background: url("../images/button2.png") 0 -806px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns1:hover {
+    background: url("../images/button2.png") 0px -720px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns2 {
+    position: absolute;
+    top: 0;
+    left: 65px;
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #2E6AA4;
+    border-radius: 0 3px 3px 0;
+    line-height: 30px;
+    background: url("../images/button2.png") -80px -806px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns2:hover {
+    background: url("../images/button2.png") -80px -719px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns3 {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 82px;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 27px;
+    color: #000;
+    border: 1px solid #C3C3C3;
+    border-radius: 5px;
+    background-color: #FDFDFD;
+    background: url("../images/button2.png") -1px -978px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns3:hover {
+    background: url("../images/button2.png") -1px -1063px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns4 {
+    position: absolute;
+    top: 0;
+    left: 190px;
+    width: 68px;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 27px;
+    color: #000;
+    border: 1px solid #C3C3C3;
+    border-radius: 5px;
+    background-color: #FDFDFD;
+    background: url("../images/button2.png") -1px -1226px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns4:hover {
+    background: url("../images/button2.png") -1px -1268px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns5 {
+    position: absolute;
+    top: 0;
+    left: 266px;
+    width: 58px;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 27px;
+    color: #000;
+    border: 1px solid #C3C3C3;
+    border-radius: 5px;
+    background-color: #FDFDFD;
+    background: url("../images/button2.png") -1px -2762px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns5:hover {
+    background: url("../images/button2.png") -1px -2805px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns6 {
+    position: absolute;
+    top: 0;
+    left: 330px;
+    width: 76px;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 27px;
+    color: #000;
+    border: 1px solid #C3C3C3;
+    border-radius: 5px;
+    background-color: #FDFDFD;
+    background: url("../images/button2.png") -1px -1466px;
+}
+.m-main-content .content-bsb .bsb-t-btns .btns6:hover {
+    background: url("../images/button2.png") -1px -1508px;
+}
+.m-main-content .content-bsb .content-bsb-bottom {
+    position: absolute;
+    top: 203px;
+    width: 670px;
+    height: 1758px;
+}
+.m-main-content .content-bsb .content-bsb-bottom .bottom-txt {
+    position: absolute;
+    width: 670px;
+    height: 28px;
+    border-bottom: 2px solid #C20C0C;
+}
+.m-main-content .content-bsb .content-bsb-bottom .bottom-txt .txt1 {
+    position: absolute;
+    font-size: 20px;
+    color: #000;
+}
+.m-main-content .content-bsb .content-bsb-bottom .bottom-txt .txt2 {
+    position: absolute;
+    top: 3px;
+    left: 100px;
+    font-size: 12px;
+    color: #666666;
+}
+.m-main-content .content-bsb .content-bsb-bottom .bottom-txt .txt3 {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    font-size: 12px;
+    color: #666666;
+}
+.m-main-content .content-bsb .content-bsb-bottom .bottom-txt .txt4 {
+    font-size: 12px;
+    font-weight: bold;
+    color: #C20C0C;
+}
+/* 飙升榜的头部描述  ---------------------------------------------结束 */
+
+
+
+/* 内容中的歌曲条目前三名 开始 ----------------------------------------------*/
+
+.m-main-content .content-bsb .content-bsb-center {
+    position: absolute;
+    top: 233px;
+    width: 668px;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+.m-main-content .content-bsb .content-bsb-center .center-head {
+    position: absolute;
+    width: 668px;
+    height: 36px;
+    /*background: url("../images/button2.png") -2px -1810px;*/
+}
+.m-main-content .content-bsb .content-bsb-center .center-head .head1 {
+    position: absolute;
+    width: 76px;
+    height: 34px;
+    border: 1px solid #ccc;
+    background-color: #F0F0F0;
+}
+.m-main-content .content-bsb .content-bsb-center .center-head .head2 {
+    position: absolute;
+    left: 78px;
+    width: 404px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #ccc;
+    text-indent: 10px;
+    font-size: 12px;
+    color: #666666;
+    background-color: #F0F0F0;
+}
+.m-main-content .content-bsb .content-bsb-center .center-head .head3 {
+    position: absolute;
+    right: 92px;
+    width: 90px;
+    height: 34px;
+    line-height: 34px;
+    text-indent: 10px;
+    font-size: 12px;
+    color: #666666;
+    border: 1px solid #ccc;
+    background-color: #F0F0F0;
+}
+.m-main-content .content-bsb .content-bsb-center .center-head .head4 {
+    position: absolute;
+    right: 0px;
+    width: 90px;
+    height: 34px;
+    text-indent: 10px;
+    font-size: 12px;
+    line-height: 34px;
+    color: #666666;
+    border: 1px solid #ccc;
+    background-color: #F0F0F0;
+}
+
+.m-main-content .content-bsb .content-bsb-center .content-list {
+    position: relative;
+    top: 34px;
+    list-style: none;
+    width: 668px;
+    color: #000;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song1 {
+    float: left;
+    width: 668px;
+    height: 73px;
+}
+
+
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song1 li {
+    float: left;
+    position: relative;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .tr01 li:nth-child(1) {
+    width: 78px;
+    height: 73px;
+    line-height: 73px;
+    font-size: 14px;
+    text-indent: 20px;
+    color: #A999B8;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song1 .tr01  li:nth-child(1) span {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 10px;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song1 .tr01 li:nth-child(2) {
+    width: 406px;
+    height: 73px;
+    line-height: 73px;
+    text-indent: 85px;
+}
+.content-bsb-center .content-list .list-song1 .tr01 li:nth-child(2) i {
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background: url("../images/content_01.jpg");
+}
+.content-bsb-center .content-list .list-song1 .tr01 li:nth-child(2) b {
+    position: absolute;
+    top: 28px;
+    left: 62px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background: url("../images/button2.png") -14px -897px;
+}
+.content-bsb-center .content-list .tr01 li:nth-child(2) b:hover {
+    background: url("../images/button2.png") -11px -2686px;
+}
+.content-bsb-center .content-list .list-song1 li:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 91px;
+    height: 73px;
+    text-indent: 5px;
+    line-height: 73px;
+}
+.content-bsb-center .content-list .list-song1 li:nth-child(4) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 91px;
+    height: 73px;
+    text-indent: 5px;
+    line-height: 73px;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song2 {
+    float: left;
+    width: 668px;
+    height: 73px;
+    background-color: #fff;
+}
+
+
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song2 li {
+    float: left;
+    position: relative;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song2 .tr01 li:nth-child(1) {
+    width: 78px;
+    height: 73px;
+    line-height: 73px;
+    font-size: 14px;
+    text-indent: 20px;
+    color: #A999B8;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song2 .tr01  li:nth-child(1) span {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 10px;
+    color: red;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song2 .tr01 li:nth-child(2) {
+    width: 406px;
+    height: 73px;
+    line-height: 73px;
+    text-indent: 85px;
+}
+.content-bsb-center .content-list .list-song2 .tr01 li:nth-child(2) i {
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background: url("../images/content_02.jpg");
+}
+.content-bsb-center .content-list .list-song2 .tr01 li:nth-child(2) b {
+    position: absolute;
+    top: 28px;
+    left: 62px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background: url("../images/button2.png") -14px -897px;
+}
+.content-bsb-center .content-list .list-song2 .tr01 li:nth-child(2) b:hover {
+    background: url("../images/button2.png") -11px -2686px;
+}
+.content-bsb-center .content-list .list-song2 li:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 91px;
+    height: 73px;
+    text-indent: 5px;
+    line-height: 73px;
+}
+.content-bsb-center .content-list .list-song2 li:nth-child(4) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 91px;
+    height: 73px;
+    text-indent: 5px;
+    line-height: 73px;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song3 {
+    float: left;
+    width: 668px;
+    height: 73px;
+}
+
+
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song3 li {
+    float: left;
+    position: relative;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song3 .tr01 li:nth-child(1) {
+    width: 78px;
+    height: 73px;
+    line-height: 73px;
+    font-size: 14px;
+    text-indent: 20px;
+    color: #A999B8;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song3 .tr01  li:nth-child(1) span {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 10px;
+    color: red;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song3 .tr01 li:nth-child(2) {
+    width: 406px;
+    height: 73px;
+    line-height: 73px;
+    text-indent: 85px;
+}
+.content-bsb-center .content-list .list-song3 .tr01 li:nth-child(2) i {
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    background: url("../images/content_03.jpg");
+}
+.content-bsb-center .content-list .list-song3 .tr01 li:nth-child(2) b {
+    position: absolute;
+    top: 28px;
+    left: 62px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background: url("../images/button2.png") -14px -897px;
+}
+.content-bsb-center .content-list .list-song3 .tr01 li:nth-child(2) b:hover {
+    background: url("../images/button2.png") -11px -2686px;
+}
+.content-bsb-center .content-list .list-song3 li:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 91px;
+    height: 73px;
+    text-indent: 5px;
+    line-height: 73px;
+}
+.content-bsb-center .content-list .list-song3 li:nth-child(4) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 91px;
+    height: 73px;
+    text-indent: 5px;
+    line-height: 73px;
+}
+
+/* 内容中的歌曲条目前三名 结束 -----------------------------------*/
+
+
+
+/* 内容中的其他歌曲条目 开始--------------------------------------*/
+
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song01 {
+    float: left;
+    width: 668px;
+    height: 30px;
+}
+
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song01 .tr02 li {
+    float: left;
+    position: relative;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song01 .tr02 li:nth-child(1) {
+    width: 78px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-indent: 20px;
+    color: #A999B8;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song01 .tr02 li:nth-child(1) span {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 10px;
+    color: green;
+}
+.m-main-content .content-bsb .content-bsb-center .content-list .list-song01 .tr02 li:nth-child(2) {
+    width: 406px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 25px;
+}
+.content-bsb-center .content-list .list-song01 .tr02 li:nth-child(2) b {
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background: url("../images/button2.png") -14px -897px;
+}
+.content-bsb-center .content-list .list-song01 .tr02 li:nth-child(2) b:hover {
+    background: url("../images/button2.png") -11px -2686px;
+}
+.content-bsb-center .content-list .list-song01 .tr02 li:nth-child(3) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 91px;
+    height: 30px;
+    text-indent: 5px;
+    line-height: 30px;
+}
+.content-bsb-center .content-list .list-song01 .tr02 li:nth-child(4) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 91px;
+    height: 30px;
+    text-indent: 5px;
+    line-height: 30px;
+}
+
+
+/* 内容中的其他歌曲条目 开始--------------------------------------*/
+
+
+/*-----------------  评论区的开始  --------------------------------*/
+
+.content-bsb .content-bsb-center .center-comment {
+    position: absolute;
+    top: 1785px;
+    width: 670px;
+    height: 941px;
+}
+.content-bsb .content-bsb-center .center-comment .comment-top {
+    position: absolute;
+    width: 670px;
+    height: 75px;
+    border-bottom: 2px solid #C20C0C;
+}
+.content-bsb .content-bsb-center .center-comment .comment-top .txt1 {
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .center-comment .comment-top .txt2 {
+    position: absolute;
+    left: 60px;
+    bottom: 8px;
+    font-size: 12px;
+    color: #666666;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center {
+    position: absolute;
+    top: 95px;
+    width: 670px;
+    height: 63px;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .login {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .login img {
+    width: 100%;
+    height: 100%;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .text {
+    position: absolute;
+    right: 0px;
+    width: 620px;
+    height: 63px;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .text .sanjiao {
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    width: 9px;
+    height: 12px;
+    line-height: 12px;
+    font-size: 30px;
+    color: #aaa;
+    background-color: #fff;
+    z-index: 9999;
+    overflow: hidden;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .text .textarea {
+    position: absolute;
+    left: 10px;
+    width: 608px;
+    height: 63px;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .center-login {
+    position: absolute;
+    top: 83px;
+    width: 670px;
+    height: 77px;
+    border-bottom: 1px solid #CFCFCF;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .center-login .txt1 {
+    position: absolute;
+    left: 62px;
+    font-size: 20px;
+    color: #999;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .center-login .txt2 {
+    position: absolute;
+    left: 90px;
+    font-size: 20px;
+    color: #999;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .center-login .txt2 {
+    position: absolute;
+    left: 90px;
+    font-size: 20px;
+    color: #999;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .center-login .txt3 {
+    position: absolute;
+    right: 0px;
+    font-size: 12px;
+    color: #fff;
+    width: 46px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 5px;
+    background: url("../images/button2.png") -5px -3460px;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .center-login .txt4 {
+    position: absolute;
+    top: 4px;
+    right: 56px;
+    font-size: 12px;
+    color: #999;
+}
+.content-bsb .content-bsb-center .center-comment .comment-center .center-login .txt5 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* ------------------------------开始评论-------------------------------- */
+
+.content-bsb .content-bsb-center .comment-bottom {
+    position: absolute;
+    top: 256px;
+    width: 670px;
+    height: 500px;
+}
+
+
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li {
+    float: left;
+    position: relative;
+    padding-top: 15px;
+    width: 670px;
+    height: 68px;
+    border-bottom: 1px dashed #ccc;
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li:last-child {
+    border: none;
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list11 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../images/content_06.jpg");
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list12 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../images/content_07.jpg");
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list13 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../images/content_08.jpg");
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list14 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../images/content_09.jpg");
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list15 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../images/content_13.jpg");
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list16 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url("../images/content_12.jpg");
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list2 {
+    position: absolute;
+    left: 60px;
+    font-size: 12px;
+    color: #3E73D5;
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list2:hover {
+    text-decoration: underline;
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list3 {
+    position: absolute;
+    left: 135px;
+    font-size: 12px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list4 {
+    position: absolute;
+    top: 36px;
+    left: 60px;
+    font-size: 12px;
+    color: #999;
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list5 {
+    position: absolute;
+    bottom: 21px;
+    width: 43px;
+    height: 14px;
+    border-right: 1px solid #DCCCDC;
+    line-height: 14px;
+    right: 60px;
+    font-size: 12px;
+    text-indent: 16px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list15 span {
+    position: absolute;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: url("../images/icon2.png") -150px 0px;
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list5 span:hover {
+    background: url("../images/icon2.png") -150px -20px;
+}
+.content-bsb .content-bsb-center .comment-bottom .bottom-list li .list6 {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    color: #666;
+}
+
+
+
+/* ------------------------------结束评论-------------------------------- */
+
+.content-bsb .content-bsb-center .comment-foot {
+    position: absolute;
+    left: 85px;
+    bottom: 100px;
+    margin: 20px 0;
+    width: 670px;
+    height: 26px;
+    text-align: center;
+}
+.content-bsb .content-bsb-center .comment-foot li {
+    float: left;
+    position: relative;
+    text-align: center;
+    margin-left: 3px;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(1) a{
+    display: inline-block;
+    width: 70px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #ccc;
+    background-color: #F2F2F2;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(2) a{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    line-height: 25px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #CC0B11;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(3) a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(3) a:hover {
+    border: 1px solid #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(4) a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(4) a:hover {
+    border: 1px solid #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(5) a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(5) a:hover {
+    border: 1px solid #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(6) a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(6) a:hover {
+    border: 1px solid #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(7) a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(7) a:hover {
+    border: 1px solid #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(8) a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(8) a:hover {
+    border: 1px solid #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(9) a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(9) a:hover {
+    border: 1px solid #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(10) a{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 35px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(11) a{
+    display: inline-block;
+    width: 46px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(11) a:hover {
+    border: 1px solid #000;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(12) a{
+    display: inline-block;
+    width: 71px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+    background-color: #eee;
+}
+.content-bsb .content-bsb-center .comment-foot li:nth-child(12) a:hover {
+    background-color: #f4f4f4;
+}
+
+
+
+/*-----------------  评论区的结束  --------------------------------*/
+
+
+/*中间内容部分结束*/
+
+
+/* 主体部分的结束 */
+
+
+
+/* ----------------------------云音乐新歌榜--------------------------------------- */
+
+/* ----------------------------云音乐新歌榜--------------------------------------- */
+/* ----------------------------云音乐新歌榜--------------------------------------- */
+
+/* ----------------------------云音乐新歌榜--------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

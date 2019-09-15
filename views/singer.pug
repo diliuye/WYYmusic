@@ -1,0 +1,586 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title 网易云音乐
+        link(rel='stylesheet', href='歌手.css')
+        link(rel='stylesheet', href='初始化.css')
+        link(rel='stylesheet', href='singerrankinglistcss/footer-css.css')
+        link.ico(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
+        link(rel='stylesheet', href='../singercss/login-block.css')
+    body
+        // 头部开始
+        // 顶部导航开始
+        .m-top
+            .m-top-pass
+                .m-top-nav
+                    .m-top-nav-logo
+                        a(href='#')
+                    .m-top-nav-list
+                        ul
+                            li
+                                a(href='../index', style='color:#fff') 发现音乐
+                            li
+                            li
+                                a(href='myMusic', style='color:#fff') 我的音乐
+                            li
+                            li
+                                a(href='friends', style='color:#fff') 朋友
+                            li
+                            li
+                                a(href='demo', style='color:#fff') 商城
+                            li
+                            li 音乐人
+                            li
+                            li
+                                a(href='下载客户端页面', style='color:#fff') 下载客户端
+                                span.hot
+                    .m-top-nav-input
+                        input.inp(type='txt', value='单曲/歌手/专辑/歌单/MV/用户')
+                        span.search
+                    #deng.m-top-nav-login
+                        .login-out
+                            a(href='#') 登录
+                            span.trigon1
+                        #loginBlock.login-block
+                            ul
+                                li
+                                    a(href='#')
+                                        i.icon-phone
+                                        em 手机号登陆
+                                li
+                                    a(href='#')
+                                        i.icon-wechart
+                                        em 微信登陆
+                                li
+                                    a(href='#')
+                                        i.icon-qq
+                                        em QQ登陆
+                                li
+                                    a(href='#')
+                                        i.icon-weibo
+                                        em 微博登陆
+                                li
+                                    a(href='#')
+                                        i.icon-nest
+                                        em 网易邮箱账号登陆
+                            .sanjiaojian
+                        // <div class="login-over">
+                        // <a href="#">登录</a>
+                        // <span class="trigon2"></span>
+                        // </div>
+                        // 登录框
+                        // <div class="m-top-nav-login-case">
+                        // <ul>
+                        // <li>
+                        // <a href="#">
+                        // <i></i>
+                        // <span>手机登录</span>
+                        // </a>
+                        // </li>
+                        // <li>
+                        // <a href="#">
+                        // <i></i>
+                        // <span>微信登录</span>
+                        // </a>
+                        // </li>
+                        // <li>
+                        // <a href="#">
+                        // <i></i>
+                        // <span>QQ登录</span>
+                        // </a>
+                        // </li>
+                        // <li>
+                        // <a href="#">
+                        // <i></i>
+                        // <span>新浪微博登录</span>
+                        // </a>
+                        // </li>
+                        // <li>
+                        // <a href="#">
+                        // <i></i>
+                        // <span>网易邮箱账号登录</span>
+                        // </a>
+                        // </li>
+                        // </ul>
+                        // </div>
+            .m-bottom-nav
+                .m-bottom-nav-list
+                    ul
+                        li
+                            a(href='#') 推荐
+                            span
+                            i
+                        li
+                            a(href='ranking list.index') 排行榜
+                            span
+                        li
+                            a(href='musiclist') 歌单
+                            span
+                        li
+                            a(href='discover') 主播电台
+                            span
+                        li
+                            a(href='javascript:location.reload()') 歌手
+                            span
+                        li
+                            a(href='#') 新碟上架
+                            span
+        // 顶部导航结束
+        // 头部结束
+        .singer-box
+            // 左边歌手类目制作
+            .singer-left
+                ul.singer-catalog-one
+                    li.singer-tj
+                        span.singer-zi 推荐
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 推荐歌手
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 入驻歌手
+                ul.singer-catalog
+                    li.singer-title
+                        span.singer-zi 华语
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 华语男歌手
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 华语女歌手
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 语组合/乐队
+                ul.singer-catalog
+                    li.singer-title
+                        span.singer-zi 欧美
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 欧美男歌手
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 欧美女歌手
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 欧美组合/乐队
+                ul.singer-catalog
+                    li.singer-title
+                        span.singer-zi 日本
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 日本男歌手
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 日本女歌手
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 日本组合/乐队
+                ul.singer-catalog
+                    li.singer-title
+                        span.singer-zi 韩国
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 韩国男歌手
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 韩国女歌手
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 韩国组合/乐队
+                ul.singer-catalog
+                    li.singer-title
+                        span.singer-zi 其他
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 其他男歌手
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 其他女歌手
+                    li.move
+                        span.singer-dot
+                        a(href='javascript:void(0)') 其他组合/乐队
+            // 右边
+            // 入驻歌手制作
+            .singer-right
+                .rz-singer
+                    .rz-singer-title
+                        h3 入驻歌手
+                        a.singer-right-more(href='#') 更多
+                    ul
+                        li
+                            a(href='#')
+                                img(src='singerimg/张惠妹.jpg', alt='')
+                            span.singerName
+                                a(href='#') 张惠妹
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/尚雯婕.jpg', alt='')
+                            span.singerName
+                                a(href='#') 尚雯婕
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/羽泉.jpg', alt='')
+                            span.singerName
+                                a(href='#') 羽·泉
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/李.jpg', alt='')
+                            span.singerName
+                                a(href='#') 李志
+                                i
+                        li.singer-five
+                            a(href='#')
+                                img(src='singerimg/马.jpg', alt='')
+                            span.singerName
+                                a(href='#') 马頔
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/沈.jpg', alt='')
+                            span.singerName
+                                a(href='#') 沈庆
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/吴莫愁.jpg', alt='')
+                            span.singerName
+                                a(href='#') 吴莫愁
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/洪.jpg', alt='')
+                            span.singerName
+                                a(href='#') 洪启
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/李霄云.jpg', alt='')
+                            span.singerName
+                                a(href='#') 李霄云
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/孙楠.jpg', alt='')
+                            span.singerName
+                                a(href='#') 孙楠
+                                i
+                // 热门歌手
+                .rm-singer
+                    .rm-singer-title
+                        h3 热门歌手
+                        a.singer-right-more(href='#') 更多
+                    ul
+                        li
+                            a(href='#')
+                                img(src='singerimg/周杰伦.jpg', alt='')
+                            span.singerName
+                                a(href='#') 周杰伦
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/陈奕迅.jpg', alt='')
+                            span.singerName
+                                a(href='#') 陈奕迅
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/薛之谦.jpg', alt='')
+                            span.singerName
+                                a(href='#') 薛之谦
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/BIGBANG.jpg', alt='')
+                            span.singerName
+                                a(href='#') BIGBANG
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/林俊杰.jpg', alt='')
+                            span.singerName
+                                a(href='#') 林俊杰
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/Maroon 5.jpg', alt='')
+                            span.singerName
+                                a(href='#') Maroon 5
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/王菲.jpg', alt='')
+                            span.singerName
+                                a(href='#') 王菲
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/李荣浩.jpg', alt='')
+                            span.singerName
+                                a(href='#') 李荣浩
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/邓紫棋.jpg', alt='')
+                            span.singerName
+                                a(href='#') G.E.M.邓紫棋
+                                i
+                        li
+                            a(href='#')
+                                img(src='singerimg/张学友.jpg', alt='')
+                            span.singerName
+                                a(href='#') 张学友
+                                i
+                // 右边下面的歌曲列表
+                .singer-song
+                    ul(id='#singer-song')
+                        li
+                            a(href='#') 杨宗纬
+                            i
+                        li
+                            a(href='#') 许巍
+                        li
+                            a(href='#') 蔡健雅
+                        li
+                            a(href='#') Adele
+                        li
+                            a(href='#') Bruno Mars
+                        li
+                            a(href='#') Coldplay
+                        li
+                            a(href='#') Justin Bieber
+                        li
+                            a(href='#') 陈粒
+                        li
+                            a(href='#') 孙燕姿
+                        li
+                            a(href='#') 赵雷
+                            i
+                        li
+                            a(href='#') 李志
+                        li
+                            a(href='#') 王力宏
+                        li
+                            a(href='#') 好妹妹乐队
+                        li
+                            a(href='#') EXO
+                        li
+                            a(href='#') Beyond
+                        li
+                            a(href='#') Alan Walker
+                            i
+                        li
+                            a(href='#') Fall Out Boy
+                        li
+                            a(href='#') 金玟岐
+                        li
+                            a(href='#') 宋冬野
+                        li
+                            a(href='#') 朴树
+                        li
+                            a(href='#') Eminem
+                            i
+                        li
+                            a(href='#') 李健
+                        li
+                            a(href='#') OneRepublic
+                        li
+                            a(href='#') Tobu
+                        li
+                            a(href='#') Two Steps From
+                        li
+                            a(href='#') 陈小春
+                        li
+                            a(href='#') 那英
+                        li
+                            a(href='#') 莫文蔚
+                        li
+                            a(href='#') 许嵩
+                        li
+                            a(href='#') 苏打绿
+                        li
+                            a(href='#') Ed Sheeran
+                        li
+                            a(href='#') 谢安琪
+                            i
+                        li
+                            a(href='#') 杨千嬅
+                            i
+                        li
+                            a(href='#') 马頔
+                        li
+                            a(href='#') 张国荣
+                        li
+                            a(href='#') Charlie Puth
+                        li
+                            a(href='#') 萧敬腾
+                        li
+                            a(href='#') 张敬轩
+                        li
+                            a(href='#') Wiz Khalifa
+                        li
+                            a(href='#') Rihanna
+                            i
+                        li
+                            a(href='#') 张靓颖
+                        li
+                            a(href='#') Ellie Goulding
+                        li
+                            a(href='#') 张惠妹
+                        li
+                            a(href='#') IU
+                            i
+                        li
+                            a(href='#') 防弹少年团
+                        li
+                            a(href='#') 澤野弘之
+                        li
+                            a(href='#') Carly Rae Jepsen
+                        li
+                            a(href='#') G-Dragon
+                        li
+                            a(href='#') 古巨基
+                            i
+                        li
+                            a(href='#') 五月天
+                        li
+                            a(href='#') Taylor Swift
+                        li
+                            a(href='#') SwiftOne Direction
+                        li
+                            a(href='#') 张杰
+                        li
+                            a(href='#') 容祖儿
+                        li
+                            a(href='#') 蔡依林
+                        li
+                            a(href='#') 刘瑞琦
+                            i
+                        li
+                            a(href='#') Imagine Dragons
+                        li
+                            a(href='#') 刘思涵
+                        li
+                            a(href='#') A-Lin
+                        li
+                            a(href='#') Ariana Grande
+                        li
+                            a(href='#') Katy Perry
+                        li
+                            a(href='#') Aimer
+                            i
+                        li
+                            a(href='#') Avicii
+                        li
+                            a(href='#') 周传雄
+                        li
+                            a(href='#') 梁静茹
+                        li
+                            a(href='#') 久石譲
+                        li
+                            a(href='#') 李克勤
+                            i
+                        li
+                            a(href='#') 逃跑计划
+                        li
+                            a(href='#') Justin Timberlake
+                        li
+                            a(href='#') Westlife
+                        li
+                            a(href='#') Sunshine
+                            i
+                        li
+                            a(href='#') Hans Zimmer
+                        li
+                            a(href='#') Sam Smith
+                            i
+                        li
+                            a(href='#') Avril Lavigne
+                        li
+                            a(href='#') T-ara
+        // 底部开始
+        .g-ft
+            .m-ft
+                .wrap.f-cb
+                    .copy
+                        p
+                            a.s-fc4(href='#') 关于网易
+                            span.line
+                            a.s-fc4(href='#') 客户服务
+                            span.line
+                            a.s-fc4(href='#') 服务条款
+                            span.line
+                            a.s-fc4(href='#') 网站导航
+                            span.line
+                            a.s-fc4(href='#') 意见反馈
+                        p.s-fc3
+                            span.sep 网易公司版权所有©1997-2017
+                            |                     杭州乐读科技有限公司运营 :
+                            a.s-fc3(href='#') 浙网文[2015] 0415-135号
+                    ul.enter.f-fr
+                        li
+                            a.logo.logo-musician.f-tid(href='#')
+                        li
+                            a.logo.logo-topic.f-tid(href='#')
+                        li
+                            a.logo.logo-midea.f-tid(href='#')
+                        li
+                            a.logo.logo-reward.f-tid(href='#')
+                    .class='wrap.cfb::after'
+// <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>
+#g-btmbar.g-btmbar
+    .g-btmbar-p(id='.g-btmbar-p')
+        #auto-id-fpboJHu88h3Feay2.m-playbar.m-playbar-lock(style='top:-53px; visibility: visible;')
+            .updn
+                .left.f-f1
+                    a#fixBtn1.btn1(href='javascript:void(0);')
+                    a#fixBtn2.btn2(href='javascript:void(0);')
+                .right.f-f1
+            .bg
+            #g_player.wrap
+                .btns
+                    a.prv(href='#')
+                    a#ply01.ply.j-fkag(href='#')
+                    a#ply02.plys.j-fkag(href='#')
+                    a.nxt(href='#')
+                .head.j-flag
+                    a.mask(href='#')
+                        img(src='singerimages/default_album.jpg', alt='')
+                .play
+                    .j-flag.words
+                    .m-pbar
+                        #auto-id-ODscgwD3lbnJdK0A.barbg.j-flag
+                            .rdy(style='width: 0%;')
+                            .cur(style='width: 0%;')
+                                span#auto-id-bxCC3M0eRZD76VpR.btn.f-tdn.f-alpha
+                                    i
+                        span.j-flag.time
+                            em 00:00
+                            |  / 00:00
+                .oper.f-fl
+                    a.icn.icn-add.j-flag(href='#', title='收藏')
+                    a.icn.icn-share(href='#', title='分享')
+                .ctrl.f-fl.f-pr.j-flag
+                    #auto-id-epndKXTBrRZxUtTX.m-vol(style='visibility:hidden;')
+                        .barbg
+                        #auto-id-Ps01blhP4eMKXBgn.vbg.j-t
+                            .curr.j-t(style='height: 74.4px;')
+                            span.btn.f-alpha.j-t(style='top: 16.2px;')
+                    a.icn.icn-vol(href='#')
+                    a.icn.icn-loop(href='#')
+                    span.add.f-pr
+                        span.tip(style='display: none;')
+                        a.icn.icn-list.s-fc3(href='#', title='播放列表') 0
+                    .tip.tip-1(style='display: none;') 循环
+script(src='singerrankinglistjs/jquery-1.12.4.min.js')
+script(src='singerrankinglistjs/ranking%20list.js')
+script(src='singerrankinglistjs/common.js')
+script(src='singerrankinglistjs/footer-js.js')
+script(src='singerlib/jquery-1.12.4.min.js')
+script(src='歌手.js')
+script(src='../singerjs/login-block.js')

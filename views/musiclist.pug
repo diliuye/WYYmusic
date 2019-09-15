@@ -1,0 +1,839 @@
+doctype html
+html
+    head(lang='en')
+        meta(charset='UTF-8')
+        title 网易云音乐
+        link(rel='stylesheet', href='gedancss/base.css')
+        link(rel='stylesheet', href='gedancss/music-list.css')
+        script(src='gedanjs/jquery-1.12.4.min.js')
+        script(src='gedanjs/music-list.js')
+        link.ico(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
+        link(rel='stylesheet', href='css/footercss.css')
+    body
+        .top
+            .w
+                .logo
+                #nr.neirong
+                    ul
+                        li
+                            a(href='../index') 发现音乐
+                        li.line
+                        li
+                            a(href='../myMusic') 我的音乐
+                        li.line
+                        li
+                            a(href='../friends') 朋友
+                        li.line
+                        li
+                            a(href='../demo') 商城
+                        li.line
+                        li
+                            a(href='#') 音乐人
+                        li.line
+                        li
+                            a(href='../下载客户端页面') 下载客户端
+                #loginBlock.login-block
+                    ul
+                        li
+                            a(href='#')
+                                i.icon-phone
+                                em 手机号登陆
+                        li
+                            a(href='#')
+                                i.icon-wechart
+                                em 微信登陆
+                        li
+                            a(href='#')
+                                i.icon-qq
+                                em QQ登陆
+                        li
+                            a(href='#')
+                                i.icon-weibo
+                                em 微博登陆
+                        li
+                            a(href='#')
+                                i.icon-nest
+                                em 网易邮箱账号登陆
+                    .sanjiaojian
+            .seek
+                input#text(type='text', value='单曲/歌手/专辑/歌单/MV/用户')
+            .hot
+            #deng.deng
+                a(href='#') 登录
+            #daosan.daosan
+        // //红色栏部分
+        .nav
+            .w
+                .xunze
+                    ul
+                        li
+                            a(href='#') 推荐
+                        li
+                            a(href='../rankinglist.index') 排行榜
+                        li
+                            a(href='javascript:location.reload()') 歌单
+                            span
+                        li
+                            a(href='../discover') 主播电台
+                        li
+                            a(href='../歌手') 歌手
+                        li
+                            a(href='#') 新碟上架
+                .sanjiao
+        script(src='../gedanjs/01.js')
+        .music-bd.w
+            .music-wrap
+                .music-title
+                    h3
+                        span.music-all 全部
+                        a.music-choese(href='#')
+                            i
+                                | 选择分类
+                                em.music-icon1
+                    .music-fr
+                        a.music-hot(href='#') 热门
+                        a.music-new(href='#') 最新
+                    .n-sltlyr-show
+                        .sltlyr-show-hd
+                            i.show-icn
+                        .sltlyr-show-bd
+                            h3
+                                a.show-all(href='#')
+                                    em 全部风格
+                            dl.show-cb
+                                dt.yuzhong
+                                    i.show-icon71
+                                    | 语种
+                                dd
+                                    a(href='#') 华语
+                                    span.line |
+                                    a(href='#') 欧美
+                                    span.line |
+                                    a(href='#') 日语
+                                    span.line |
+                                    a(href='#') 韩语
+                                    span.line |
+                                    a(href='#') 粤语
+                                    span.line |
+                                    a(href='#') 小语种
+                                    span.line |
+                            dl.show-cb1
+                                dt.yuzhong
+                                    i.show-icon72
+                                    | 风格
+                                dd
+                                    a(href='#') 流行
+                                    span.line |
+                                    a(href='#') 摇滚
+                                    span.line |
+                                    a(href='#') 民谣
+                                    span.line |
+                                    a(href='#') 电子
+                                    span.line |
+                                    a(href='#') 舞曲
+                                    span.line |
+                                    a(href='#') 说唱
+                                    span.line |
+                                    a(href='#') 轻音乐
+                                    span.line |
+                                    a(href='#') 爵士
+                                    span.line |
+                                    a(href='#') 乡村
+                                    span.line |
+                                    a(href='#') R&B/Soul
+                                    span.line |
+                                    a(href='#') 古典
+                                    span.line |
+                                    a(href='#') 民族
+                                    span.line |
+                                    a(href='#') 英伦
+                                    span.line |
+                                    a(href='#') 金属
+                                    span.line |
+                                    a(href='#') 朋克
+                                    span.line |
+                                    a(href='#') 蓝调
+                                    span.line |
+                                    a(href='#') 雷鬼
+                                    span.line |
+                                    a(href='#') 世界音乐
+                                    span.line |
+                                    a(href='#') 拉丁
+                                    span.line |
+                                    a(href='#') 另类/独立
+                                    span.line |
+                                    a(href='#') New Age
+                                    span.line |
+                                    a(href='#') 古风
+                                    span.line |
+                                    a(href='#') 后摇
+                                    span.line |
+                                    a(href='#') Bossa Nova
+                                    span.line |
+                            dl.show-cb2
+                                dt.yuzhong
+                                    i.show-icon73
+                                    | 场景
+                                dd
+                                    a(href='#') 清晨
+                                    span.line |
+                                    a(href='#') 夜晚
+                                    span.line |
+                                    a(href='#') 学习
+                                    span.line |
+                                    a(href='#') 工作
+                                    span.line |
+                                    a(href='#') 午休
+                                    span.line |
+                                    a(href='#') 下午茶
+                                    span.line |
+                                    a(href='#') 地铁
+                                    span.line |
+                                    a(href='#') 驾车
+                                    span.line |
+                                    a(href='#') 运动
+                                    span.line |
+                                    a(href='#') 旅行
+                                    span.line |
+                                    a(href='#') 散步
+                                    span.line |
+                                    a(href='#') 酒吧
+                                    span.line |
+                            dl.show-cb2
+                                dt.yuzhong
+                                    i.show-icon74
+                                    | 情感
+                                dd
+                                    a(href='#') 怀旧
+                                    span.line |
+                                    a(href='#') 清新
+                                    span.line |
+                                    a(href='#') 浪漫
+                                    span.line |
+                                    a(href='#') 性感
+                                    span.line |
+                                    a(href='#') 伤感
+                                    span.line |
+                                    a(href='#') 治愈
+                                    span.line |
+                                    a(href='#') 放松
+                                    span.line |
+                                    a(href='#') 孤独
+                                    span.line |
+                                    a(href='#') 感动
+                                    span.line |
+                                    a(href='#') 兴奋
+                                    span.line |
+                                    a(href='#') 快乐
+                                    span.line |
+                                    a(href='#') 安静
+                                    span.line |
+                                    a(href='#') 思念
+                                    span.line |
+                            dl.show-cb2
+                                dt.yuzhong
+                                    i.show-icon75
+                                    | 主题
+                                dd
+                                    a(href='#') 影视原声
+                                    span.line |
+                                    a(href='#') ACG
+                                    span.line |
+                                    a(href='#') 校园
+                                    span.line |
+                                    a(href='#') 游戏
+                                    span.line |
+                                    a(href='#') 70后
+                                    span.line |
+                                    a(href='#') 80后
+                                    span.line |
+                                    a(href='#') 90后
+                                    span.line |
+                                    a(href='#') 网络歌曲
+                                    span.line |
+                                    a(href='#') KTV
+                                    span.line |
+                                    a(href='#') 经典
+                                    span.line |
+                                    a(href='#') 翻唱
+                                    span.line |
+                                    a(href='#') 吉他
+                                    span.line |
+                                    a(href='#') 钢琴
+                                    span.line |
+                                    a(href='#') 器乐
+                                    span.line |
+                                    a(href='#') 儿童
+                                    span.line |
+                                    a(href='#') 榜单
+                                    span.line |
+                                    a(href='#') 00后
+                                    span.line |
+                        .show-ft
+                ul.music-cvrlst
+                    li
+                        .u-cover
+                            img(src='gedanimg/qingjie.jpg', alt='')
+                            a.msk(href='#', title='把歌名分解后会有怎样的效果？')
+                            .music-bottom
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 12万
+                        p.music-dec
+                            a.f-thide(href='#') 把歌名分解后会有怎样的效果？
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 清结
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/shabai.jpg', alt='')
+                            a.msk(href='#', title='有个玩黑怕的中国男孩儿有话对你说')
+                            .music-bottom
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 13万
+                        p.music-dec
+                            a.f-thide(href='#') 有个玩黑怕的中国男孩儿有话对你说
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 紫拉的沙白
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/gushi.jpg', alt='')
+                            a.msk(href='#', title='很多故事再不讲就没人记得了 | 华语精选')
+                            .music-bottom
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 28万
+                        p.music-dec
+                            a.f-thide(href='#') 很多故事再不讲就没人记得了 | 华语精选
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 华纳音乐
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/gaoneng.jpg', alt='')
+                            a.msk(href='#', title='高能慎点! 30首夏日恋曲MV合集')
+                            .music-bottom
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 25219
+                        p.music-dec
+                            a.f-thide(href='#') 高能慎点! 30首夏日恋曲MV合集
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') Kaibottcher
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/jinanzhu.jpg', alt='')
+                            a.msk(href='#', title='韩丨论Rapper们无处安放的Vocal魂')
+                            .music-bottom
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 25307
+                        p.music-dec
+                            a.f-thide(href='#') 韩丨论Rapper们无处安放的Vocal魂
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 金暗洙
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/xiari.jpg', alt='')
+                            a.msk(href='#', title='夏日微风｜听星星闪烁的声音')
+                            .music-bottom2
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 9814
+                        p.music-dec
+                            a.f-thide(href='#') 夏日微风｜听星星闪烁的声音
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 阿卡琳
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/dianyin.jpg', alt='')
+                            a.msk(href='#', title='《纯电音》享受极致抖腿')
+                            .music-bottom2
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 40万
+                        p.music-dec
+                            a.f-thide(href='#') 《纯电音》享受极致抖腿
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 我是爱音乐的徐梦..
+                    li
+                        .u-cover
+                            img(src='gedanimg/yangguang.jpg', alt='')
+                            a.msk(href='#', title='「阳光派对」迎着热浪在沙滩上奔跑')
+                            .music-bottom2
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 20万
+                        p.music-dec
+                            a.f-thide(href='#') 「阳光派对」迎着热浪在沙滩上奔跑
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') Nanoha
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/linglei.jpg', alt='')
+                            a.msk(href='#', title='另类情歌 | 我越过谎言去拥抱你')
+                            .music-bottom2
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 141万
+                        p.music-dec
+                            a.f-thide(href='#') 另类情歌 | 我越过谎言去拥抱你
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 傲娇少女-界大人
+                    li
+                        .u-cover
+                            img(src='gedanimg/xiangde.jpg', alt='')
+                            a.msk(href='#', title='「华语情歌」想得却不可得，你奈人生何')
+                            .music-bottom2
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 384万
+                        p.music-dec
+                            a.f-thide(href='#') 「华语情歌」想得却不可得，你奈人生何
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 鮭魚先森
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/xiangxiang.jpg', alt='')
+                            a.msk(href='#', title='让我想想，该怎么形容你呢？')
+                            .music-bottom3
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 122万
+                        p.music-dec
+                            a.f-thide(href='#') 让我想想，该怎么形容你呢？
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 情思天鹅
+                    li
+                        .u-cover
+                            img(src='gedanimg/huoyan.jpg', alt='')
+                            a.msk(href='#', title='粤语味道|一如火焰，一如倒影')
+                            .music-bottom3
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 138万
+                        p.music-dec
+                            a.f-thide(href='#') 粤语味道|一如火焰，一如倒影
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 咚咚锵梆梆梆
+                    li
+                        .u-cover
+                            img(src='gedanimg/biaobai.jpg', alt='')
+                            a.msk(href='#', title='听歌学表白，原来这些歌词可以当情书')
+                            .music-bottom3
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 217万
+                        p.music-dec
+                            a.f-thide(href='#') 听歌学表白，原来这些歌词可以当情书
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 肩扛底音炮
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/moke.jpg', alt='')
+                            a.msk(href='#', title='忆文人墨客｜笔墨半张 满纸尽风华')
+                            .music-bottom3
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 98万
+                        p.music-dec
+                            a.f-thide(href='#') 忆文人墨客｜笔墨半张 满纸尽风华
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 迩ran
+                    li
+                        .u-cover
+                            img(src='gedanimg/rebo.jpg', alt='')
+                            a.msk(href='#', title='【2017】热播影视剧原声歌曲盘点')
+                            .music-bottom3
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 340万
+                        p.music-dec
+                            a.f-thide(href='#') 【2017】热播影视剧原声歌曲盘点
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 可尼宴
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/fugu.jpg', alt='')
+                            a.msk(href='#', title='复古舞曲｜跟随旧时光中的节奏摇摆起来')
+                            .music-bottom4
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 89万
+                        p.music-dec
+                            a.f-thide(href='#') 复古舞曲｜跟随旧时光中的节奏摇摆起来
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') SuperMan-LEE
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/jiejie.jpg', alt='')
+                            a.msk(href='#', title='【姐姐饭的狂欢】想和底迪谈恋爱喔:-O')
+                            .music-bottom4
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 79038
+                        p.music-dec
+                            a.f-thide(href='#') 【姐姐饭的狂欢】想和底迪谈恋爱喔:-O
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 尹斗俊圈外对象
+                    li
+                        .u-cover
+                            img(src='gedanimg/hanxi.jpg', alt='')
+                            a.msk(href='#', title='韩系男声♪温柔慢歌，舒缓你夏日的浮躁❤')
+                            .music-bottom4
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 26万
+                        p.music-dec
+                            a.f-thide(href='#') 韩系男声♪温柔慢歌，舒缓你夏日的浮躁❤
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 轻歌_洛可可
+                    li
+                        .u-cover
+                            img(src='gedanimg/changpian.jpg', alt='')
+                            a.msk(href='#', title='用50张说唱唱片去品味诗意Flow')
+                            .music-bottom4
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 55万
+                        p.music-dec
+                            a.f-thide(href='#') 用50张说唱唱片去品味诗意Flow
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') goorye
+                    li
+                        .u-cover
+                            img(src='gedanimg/quanneng.jpg', alt='')
+                            a.msk(href='#', title='Sample|中文说唱的那些采样原曲')
+                            .music-bottom4
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 100万
+                        p.music-dec
+                            a.f-thide(href='#') Sample|中文说唱的那些采样原曲
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 全能的BK大大
+                            i.u-icn-85
+                    li
+                        .u-cover
+                            img(src='gedanimg/qingchun.jpg', alt='')
+                            a.msk(href='#', title='青春随我 | 十载快男')
+                            .music-bottom5
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 134万
+                        p.music-dec
+                            a.f-thide(href='#') 青春随我 | 十载快男
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 子瞻大魔王
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/suiyue.jpg', alt='')
+                            a.msk(href='#', title='粤语丨 岁月流情，回味旧日的浪漫故事')
+                            .music-bottom5
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 280万
+                        p.music-dec
+                            a.f-thide(href='#') 粤语丨 岁月流情，回味旧日的浪漫故事
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') ___________刂巾...
+                            i.u-icn-85
+                    li
+                        .u-cover
+                            img(src='gedanimg/youmei.jpg', alt='')
+                            a.msk(href='#', title='【古典】优美旋律撩拨温柔的灵魂')
+                            .music-bottom5
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 23367
+                        p.music-dec
+                            a.f-thide(href='#') 【古典】优美旋律撩拨温柔的灵魂
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 狂飙瓦格纳
+                    li
+                        .u-cover
+                            img(src='gedanimg/xueli.jpg', alt='')
+                            a.msk(href='#', title='☀️Tröpical House| 百位艺人 百首良曲')
+                            .music-bottom5
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 96万
+                        p.music-dec
+                            a.f-thide(href='#') ☀️Tröpical House| 百位艺人 百首良曲
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 雪莉酒Sherry
+                    li
+                        .u-cover
+                            img(src='gedanimg/niandai.jpg', alt='')
+                            a.msk(href='#', title='［年代感］欧美原声吉他弹唱精选100首')
+                            .music-bottom5
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 260万
+                        p.music-dec
+                            a.f-thide(href='#') ［年代感］欧美原声吉他弹唱精选100首
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 坚果____
+                    li
+                        .u-cover
+                            img(src='gedanimg/liaomei.jpg', alt='')
+                            a.msk(href='#', title='┃撩妹时需要的浪漫┃ 钢琴&爵士的完美结合')
+                            .music-bottom6
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 69万
+                        p.music-dec
+                            a.f-thide(href='#') ┃撩妹时需要的浪漫┃ 钢琴&爵士的完美结合
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') ___Allen______
+                    li
+                        .u-cover
+                            img(src='gedanimg/yida.jpg', alt='')
+                            a.msk(href='#', title='一 沓 说 唱')
+                            .music-bottom6
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 29062
+                        p.music-dec
+                            a.f-thide(href='#') 一 沓 说 唱
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') juicy_fruity_
+                    li
+                        .u-cover
+                            img(src='gedanimg/jianshi.jpg', alt='')
+                            a.msk(href='#', title='简史‖民谣少女与摇滚有个约会')
+                            .music-bottom6
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 497万
+                        p.music-dec
+                            a.f-thide(href='#') 简史‖民谣少女与摇滚有个约会
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 菊老板
+                    li
+                        .u-cover
+                            img(src='gedanimg/chenjin.jpg', alt='')
+                            a.msk(href='#', title='沉浸于字里行间°读书专用背景音乐')
+                            .music-bottom6
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 268万
+                        p.music-dec
+                            a.f-thide(href='#') 沉浸于字里行间°读书专用背景音乐
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 玛丽锁链是耶稣
+                    li
+                        .u-cover
+                            img(src='gedanimg/xiaoli.jpg', alt='')
+                            a.msk(href='#', title='孝利的民宿BGM')
+                            .music-bottom6
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 20581
+                        p.music-dec
+                            a.f-thide(href='#') 孝利的民宿BGM
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') AlisonSweg
+                    li
+                        .u-cover
+                            img(src='gedanimg/qianzou.jpg', alt='')
+                            a.msk(href='#', title='「前奏控」被前奏秒杀的古风歌')
+                            .music-bottom7
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 228万
+                        p.music-dec
+                            a.f-thide(href='#') 「前奏控」被前奏秒杀的古风歌
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 傻狗家的猫大仙
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/jingyan.jpg', alt='')
+                            a.msk(href='#', title='「电子•女声」惊艳耳际，一秒倾心')
+                            .music-bottom7
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 173万
+                        p.music-dec
+                            a.f-thide(href='#') 「电子•女声」惊艳耳际，一秒倾心
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 炮女_
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/kaikou.jpg', alt='')
+                            a.msk(href='#', title='电子女声系❤开口便沉醉其中')
+                            .music-bottom7
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 45万
+                        p.music-dec
+                            a.f-thide(href='#') 电子女声系❤开口便沉醉其中
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 一只野生的呆头狸
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/liange.jpg', alt='')
+                            a.msk(href='#', title='日系の恋歌| 你是我未曾说出口的爱恋ღ')
+                            .music-bottom7
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 82万
+                        p.music-dec
+                            a.f-thide(href='#') 日系の恋歌| 你是我未曾说出口的爱恋ღ
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 百夜丶米迦儿
+                            i.u-icn-84
+                    li
+                        .u-cover
+                            img(src='gedanimg/zhedan.jpg', alt='')
+                            a.msk(href='#', title='想撩妹？用这单就够了')
+                            .music-bottom7
+                                a.icon-play(href='#')
+                                span.icon-headset
+                                span.nb 201万
+                        p.music-dec
+                            a.f-thide(href='#') 想撩妹？用这单就够了
+                        p
+                            span.music-fc4 by
+                            a.music-nm(href='#') 一只野生的呆头狸
+                            i.u-icn-84
+                .music-pager
+                    .music-u-pager
+                        a.music-selected(href='javascript:void(0)') 上一页
+                        a.music-number2.showCurrent(href='javascript:void(0)') 1
+                        a.music-number2(href='javascript:void(0)') 2
+                        a.music-number2(href='javascript:void(0)') 3
+                        a.music-number2(href='javascript:void(0)') 4
+                        a.music-number2(href='javascript:void(0)') 5
+                        a.music-number2(href='javascript:void(0)') 6
+                        a.music-number2(href='javascript:void(0)') 7
+                        a.music-number2(href='javascript:void(0)') 8
+                        span ...
+                        a.music-number2(href='javascript:void(0)') 39
+                        a.music-selected2(href='javascript:void(0)') 下一页
+        // 底部开始
+        .g-ft
+            .m-ft
+                .wrap.f-cb
+                    .copy
+                        p
+                            a.s-fc4(href='#') 关于网易
+                            span.line
+                            a.s-fc4(href='#') 客户服务
+                            span.line
+                            a.s-fc4(href='#') 服务条款
+                            span.line
+                            a.s-fc4(href='#') 网站导航
+                            span.line
+                            a.s-fc4(href='#') 意见反馈
+                        p.s-fc3
+                            span.sep 网易公司版权所有©1997-2017
+                            |                     杭州乐读科技有限公司运营 :
+                            a.s-fc3(href='#') 浙网文[2015] 0415-135号
+                    ul.enter.f-fr
+                        li
+                            a.logo.logo-musician.f-tid(href='#')
+                        li
+                            a.logo.logo-topic.f-tid(href='#')
+                        li
+                            a.logo.logo-midea.f-tid(href='#')
+                        li
+                            a.logo.logo-reward.f-tid(href='#')
+                    .class='wrap.cfb::after'
+// <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>
+#g-btmbar.g-btmbar
+    .g-btmbar-p(id='.g-btmbar-p')
+        #auto-id-fpboJHu88h3Feay2.m-playbar.m-playbar-lock(style='top:-53px; visibility: visible;')
+            .updn
+                .left.f-f1
+                    a#fixBtn1.btn1(href='javascript:void(0);')
+                    a#fixBtn2.btn2(href='javascript:void(0);')
+                .right.f-f1
+            .bg
+            #g_player.wrap
+                .btns
+                    a.prv(href='#')
+                    a#ply01.ply.j-fkag(href='#')
+                    a#ply02.plys.j-fkag(href='#')
+                    a.nxt(href='#')
+                .head.j-flag
+                    a.mask(href='#')
+                        img(src='gedaimages/default_album.jpg', alt='')
+                .play
+                    .j-flag.words
+                    .m-pbar
+                        #auto-id-ODscgwD3lbnJdK0A.barbg.j-flag
+                            .rdy(style='width: 0%;')
+                            .cur(style='width: 0%;')
+                                span#auto-id-bxCC3M0eRZD76VpR.btn.f-tdn.f-alpha
+                                    i
+                        span.j-flag.time
+                            em 00:00
+                            |  / 00:00
+                .oper.f-fl
+                    a.icn.icn-add.j-flag(href='#', title='收藏')
+                    a.icn.icn-share(href='#', title='分享')
+                .ctrl.f-fl.f-pr.j-flag
+                    #auto-id-epndKXTBrRZxUtTX.m-vol(style='visibility:hidden;')
+                        .barbg
+                        #auto-id-Ps01blhP4eMKXBgn.vbg.j-t
+                            .curr.j-t(style='height: 74.4px;')
+                            span.btn.f-alpha.j-t(style='top: 16.2px;')
+                    a.icn.icn-vol(href='#')
+                    a.icn.icn-loop(href='#')
+                    span.add.f-pr
+                        span.tip(style='display: none;')
+                        a.icn.icn-list.s-fc3(href='#', title='播放列表') 0
+                    .tip.tip-1(style='display: none;') 循环
+// 底部结束
+script(src='gedanranking%20list-js/jquery-1.12.4.min.js')
+script(src='gedanranking%20list-js/common.js')
+script(src='gedanranking%20list-js/footer-js.js')

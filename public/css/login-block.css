@@ -1,0 +1,55 @@
+.login-block {
+    position: absolute;
+    width: 156px;
+    height: 190px;
+    padding-top: 10px;
+    z-index: 2;
+    right: -43px;
+    top: 27px;
+    border-bottom: 1px solid #2a2a2a;
+    border-radius: 4px;
+    display: none;
+}
+ .login-block ul {
+    width: 156px;
+    height: 190px;
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #2a2a2a;
+    border-radius: 4px;
+}
+ .login-block ul li {
+    width: 100%;
+
+    /*text-align: center;*/
+}
+ .login-block ul li a {
+    color: #c2c2c2;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+}
+ .login-block ul li a:hover {
+    background-color: #353535;
+}
+ .login-block ul li a i {
+    float: left;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 12px;
+    margin-top: 10px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/toplist.png");
+}
+ .login-block ul li a i.icon-wechart {
+    background-position: -20px -20px;
+}
+ .login-block ul li a i.icon-qq {
+    background-position: -20px -40px;
+}
+ .login-block ul li a i.icon-weibo {
+    background-position: 0px -20px;
+}
+ .login-block ul li a i.icon-nest {
+    background-position: 0px -40px;
+}

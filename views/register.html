@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>注册</title>
+    <script src="../public/js/register.js"></script>
+  </head>
+  <body>
+    <form action="index.html" method="get" onsubmit="return toValid()"><span>用户名：</span>
+      <input id="user" type="text" placeholder="请输入用户名" required=""><span id="user_err"></span><br><span>密码：</span>
+      <input id="pass" type="password" placeholder="请输入密码" required=""><span id="pass_err"></span><br><span>再次输入密码：</span>
+      <input id="pass_two" type="password" placeholder="请再次输入密码" required=""><span id="pass_two_err"></span><br>
+      <input type="submit" value="注册">
+    </form>
+  </body>
+</html>

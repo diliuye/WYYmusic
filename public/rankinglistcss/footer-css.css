@@ -1,0 +1,375 @@
+/*初始化开始*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.wrap {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/*初始化结束*/
+
+/*底部开始*/
+.body1 {
+    overflow: hidden;
+}
+
+.g-ft {
+    width: 100%;
+    height: 141px;
+    border-top: 1px solid #ccc;
+    background-color: #F5F5F5;
+}
+
+.m-ft {
+    position: relative;
+    height: 91px;
+}
+
+/*.m-back {*/
+    /*display: block;*/
+    /*position: fixed;*/
+    /*text-indent: -9999px;*/
+    /*left: 50%;*/
+    /*margin-left: 500px;*/
+    /*bottom: 160px;*/
+    /*width: 49px;*/
+    /*height: 44px;*/
+    /*background-position: -265px -47px;*/
+/*}*/
+
+.f-cb {
+    height: 91px;
+}
+.copy {
+    position: absolute;
+    top: 35px;
+    width: 490px;
+    height: 48px;
+    
+}
+.copy .s-fc4 {
+    color: #999;
+    font-size: 12px;
+}
+.copy p {
+    line-height: 24px;
+}
+.copy .line {
+    display: inline-block;
+    margin: 0 7px;
+    width: 2px;
+    height: 11px;
+    background-color: #ccc;
+}
+.copy .s-fc3 {
+    font-size: 12px;
+    color: #666;
+}
+.copy .sep {
+    margin-right: 10px;
+}
+
+.f-fr {
+    float: right;
+    width: 360px;
+    height: 70px;
+    margin-top: 21px;
+}
+.f-fr .f-tid {
+    float: left;
+    line-height: 140px;
+    width: 60px;
+    height: 70px;
+    margin-left: 30px;
+    font-size: 12px;
+    color: #AAA;
+    
+}
+.f-fr .logo-musician {
+    background: url("../images/foot_enter.png") no-repeat -65px -80px;
+}
+.f-fr .logo-topic {
+    background: url("../images/foot_enter.png") no-repeat -5px -80px;
+}
+.f-fr .logo-midea {
+    background: url("../images/foot_enter.png") no-repeat -5px -0px;
+}
+.f-fr .logo-reward {
+    background: url("../images/foot_enter.png") no-repeat -67px -0px;
+}
+
+
+/* 播放器的开始 */
+
+.g-btmbar {
+    position: fixed;
+    bottom: -47px;
+    height: 0;
+    width: 100%;
+}
+.g-btmbar-p {
+    position: absolute;
+    width: 100%;
+    height: 67px;
+}
+.g-btmbar .m-playbar {
+    position: absolute;
+    width: 100%;
+    height: 53px;
+}
+.g-btmbar .updn .left {
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+    width: 52px;
+    height: 67px;
+    background: url("../images/playbar.png") no-repeat 0 -385px;
+}
+.g-btmbar .updn .left .btn1 {
+    position: absolute;
+    left: 18px;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    background: url("../images/playbar.png") no-repeat -82px -382px;
+    /*z-index: 1;*/
+}
+.g-btmbar .updn .left .btn2 {
+    position: absolute;
+    left: 18px;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    background: url("../images/playbar.png") no-repeat -100px -382px;
+    /*z-index: 0;*/
+    display: none;
+}
+.g-btmbar .updn .left .btn1:hover {
+    background: url("../images/playbar.png") no-repeat -82px -402px;
+}
+.g-btmbar .updn .left .btn2:hover {
+    background: url("../images/playbar.png") no-repeat -100px -402px;
+}
+/*.g-btmbar .updn .right {*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*top: -1px;*/
+    /*width: 15px;*/
+    /*height: 54px;*/
+    /*background: url("../images/playbar.png");*/
+/*}*/
+
+.g-btmbar .bg {
+    position: absolute;
+    bottom: 0;
+    right: 52px;
+    width: 100%;
+    height: 53px;
+    background: url("../images/playbar.png");
+    overflow: visible;
+}
+
+.g-btmbar .wrap {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -490px;
+    /*background-color: red;*/
+    width: 980px;
+    height: 47px;
+}
+
+.g-btmbar .wrap .btns {
+    position: absolute;
+    bottom: 0;
+    width: 137px;
+    height: 42px;
+    /*background-color: blue;*/
+}
+.g-btmbar .wrap .btns .prv {
+    position: absolute;
+    top: 5px;
+    width: 28px;
+    height: 28px;
+    background: url("../images/playbar.png") no-repeat 0 -130px;
+}
+.g-btmbar .wrap .btns .prv:hover {
+    background: url("../images/playbar.png") no-repeat -30px -130px;
+}
+.g-btmbar .wrap .btns .ply {
+    position: absolute;
+    left: 38px;
+    width: 36px;
+    height: 36px;
+    background: url("../images/playbar.png") no-repeat 0px -204px;
+    display: block;
+}
+.g-btmbar .wrap .btns .ply:hover {
+    background: url("../images/playbar.png") no-repeat -40px -204px;
+}
+.g-btmbar .wrap .btns .plys {
+    position: absolute;
+    left: 38px;
+    width: 36px;
+    height: 36px;
+    background: url("../images/playbar.png") no-repeat 0px -165px;
+    display: none;
+}
+.g-btmbar .wrap .btns .plys:hover {
+    background: url("../images/playbar.png") no-repeat -40px -165px;
+}
+.g-btmbar .wrap .btns .nxt {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    width: 28px;
+    height: 28px;
+    background: url("../images/playbar.png") no-repeat -80px -130px;
+}
+.g-btmbar .wrap .btns .nxt:hover {
+    background: url("../images/playbar.png") no-repeat -110px -130px;
+}
+
+.g-btmbar .wrap .head {
+    position: absolute;
+    top: 6px;
+    left: 138px;
+    width: 34px;
+    height: 34px;
+}
+.g-btmbar .wrap .head img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.g-btmbar .wrap .play {
+    position: absolute;
+    left: 190px;
+    width: 608px;
+    height: 37px;
+}
+.g-btmbar .wrap .play .words {
+    position: absolute;
+    width: 608px;
+    height: 28px;
+}
+.g-btmbar .wrap .play .m-pbar {
+    position: absolute;
+    bottom: 0;
+    width: 493px;
+    height: 9px;
+    border-radius: 9px;
+    border-bottom: 1px solid #666;
+    background-color: #000;
+}
+.g-btmbar .wrap .play .m-pbar .time {
+    position: absolute;
+    bottom: -3px;
+    font-size: 12px;
+    color: #999;
+    right: -85px;
+}
+.g-btmbar .wrap .play .m-pbar .time em {
+    font-size: 12px;
+    color: #bbb;
+    font-style: normal;
+}
+.g-btmbar .wrap .play .f-alpha {
+    position: absolute;
+    left: -2px;
+    top: -4px;
+    width: 22px;
+    height: 24px;
+    background: url("../images/iconall.png") no-repeat 0px -252px;
+}
+.g-btmbar .wrap .play .f-alpha:hover {
+    background: url("../images/iconall.png") no-repeat 0px -282px;
+}
+.g-btmbar .wrap .oper {
+    position: absolute;
+    right: 120px;
+    width: 60px;
+    height: 36px;
+}
+.g-btmbar .wrap .oper .icn-add {
+    position: absolute;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: url("../images/playbar.png") no-repeat -90px -164px;
+}
+.g-btmbar .wrap .oper .icn-add:hover {
+    background: url("../images/playbar.png") no-repeat -90px -190px;
+}
+.g-btmbar .wrap .oper .icn-share {
+    position: absolute;
+    left: 28px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: url("../images/playbar.png") no-repeat -116px -164px;
+}
+.g-btmbar .wrap .oper .icn-share:hover {
+    background: url("../images/playbar.png") no-repeat -116px -190px;
+}
+.g-btmbar .wrap .ctrl {
+    position: absolute;
+    right: 0;
+    width: 126px;
+    height: 36px;
+}
+.g-btmbar .wrap .ctrl .icn-vol {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: url("../images/playbar.png") no-repeat -2px -250px;
+}
+.g-btmbar .wrap .ctrl .icn-vol:hover {
+    background: url("../images/playbar.png") no-repeat -31px -250px;
+}
+.g-btmbar .wrap .ctrl .icn-loop {
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: url("../images/playbar.png") no-repeat -68px -250px;
+}
+.g-btmbar .wrap .ctrl .icn-loop:hover {
+    background: url("../images/playbar.png") no-repeat -95px -250px;
+}
+.g-btmbar .wrap .ctrl .f-pr {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    width: 60px;
+    height: 25px;
+    background: url("../images/playbar.png") no-repeat -44px -70px;
+}
+.g-btmbar .wrap .ctrl .f-pr:hover {
+    background: url("../images/playbar.png") no-repeat -44px -100px;
+}
+.g-btmbar .wrap .ctrl .s-fc3 {
+    position: absolute;
+    font-size: 12px;
+    color: #666;
+    right: 20px;
+    bottom: 6px;
+}
+/* 播放器的结束 */
+
+
+/*底部结束*/

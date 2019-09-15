@@ -1,0 +1,102 @@
+/*css 初始化 */
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;  /*���滷����*/
+}
+
+
+ul, ol {
+    list-style: none;
+}
+
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+
+table {
+    border-collapse: collapse; /*�ϲ�������*/
+}
+
+
+body {
+    font: 12px/150% "microsoft yahei";
+    color: #666;
+    /* background: #F6F6F6; */
+}
+
+
+
+
+/* ���������Ӱ�� */
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    line-height: 0;
+    visibility: hidden;
+    height: 0;
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color:#4b8be2;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+
+s,
+i,
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.w {
+    width: 980px;
+    margin: 0 auto;
+}

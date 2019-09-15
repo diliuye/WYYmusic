@@ -1,0 +1,227 @@
+
+/*css 初始化 */
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+	margin: 0;
+	padding: 0;  /*清除元素的内外边距*/
+}
+
+fieldset, img, input, button {
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline-style: none;  /*外面环绕线*/
+}
+
+ul, ol {
+	list-style: none;
+}
+
+/*去掉原样式中的小黑点*/
+
+
+img {
+	vertical-align: middle;
+	border: 0;
+}
+
+
+
+table {
+	border-collapse: collapse; /*合并外连线*/
+}
+
+
+body {
+	font: 12px/150% "microsoft yahei";
+	color: #666;
+	background: #F6F6F6;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+
+a {
+	color: #666;   /*a 标签是不继承颜色 的*/
+	text-decoration: none;
+}
+
+a:hover {
+	color: #C81623;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+s,
+i,
+em {
+	font-style: normal;
+	text-decoration: none;
+}
+
+.col-red {
+	color: #F10215 !important;/*京东主色调*/
+}
+
+
+.w {
+	/*版心 提取 */
+	width: 1100px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+form,
+body,
+input,
+button,
+div,
+p {
+	margin: 0;
+	padding: 0;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+
+input,
+button {
+	border: 0 none;
+	outline-style: none;
+}
+
+body {
+	font: 12px/100% "Microsoft yahei","宋体";
+	background-color: #f5f5f5;
+}
+
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+
+i,
+s,
+em {
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.w {
+	width: 980px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+ul{
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: -40px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+	}

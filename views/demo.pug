@@ -1,0 +1,215 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title 网易云商城
+        link(rel='stylesheet', href='storecss/base.css')
+        link(rel='stylesheet', href='storecss/demo.css')
+        link(rel='stylesheet', href='storefont/iconfont.css')
+        link(rel='stylesheet', href='storeCss/footer-css.css')
+        link.ico(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
+        script(src='storejs/common.js')
+        script(src='storejs/jquery-1.12.4.min.js')
+        script(src='storejs/demo.js')
+        function () {
+// $('#search').children('li').mouseover(function () {
+//     $('#search').children('li').removeClass('scolor');
+//     $(this).addClass('scolor')
+// }).click(function () {
+//     var content = $(this).html();
+//     // console.log(content)
+//     $('#searchbox').attr('placeholder',)
+// })
+
+script#template1(type='text/plain').
+    <li class="rec"><i>x</i></li>
+body
+    .header
+        .w
+            .logo
+                a(href='#')
+                    img(src='storeimg/modules.png', alt='')
+            #box.login
+                span#word.word 登陆
+                // <span class="arr"></span>
+                span#arrtop.arrtop
+                ul#loginn
+                    li
+                        a(href='#')
+                            i.tel
+                            i 手机号登陆
+                    li
+                        a(href='#')
+                            i.weixin
+                            i 微信登陆
+                    li
+                        a(href='#')
+                            i.qq
+                            i QQ登陆
+                    li
+                        a(href='#')
+                            i.sina
+                            i 新浪微博登陆
+                    li
+                        a(href='#')
+                            i.mail
+                            i 网易邮箱账号登陆
+            .shopCar
+                span.num 0
+            .search
+                input#searchbox(type='text', placeholder='耳机')
+                ul#search
+                    span.head 热门搜索
+                    // <li>笔记本</li>
+                    li 帆布袋
+                    li 耳机
+                    li 蓝牙播放器
+                    li 魔声
+                    span.recentSearch 最近搜索
+    .carousel
+        .w
+            ul
+                li.current
+                    a(href='#')
+                        img(src='storeimg/轮播图01.jpg', alt='')
+                li
+                    a(href='#')
+                        img(src='storeimg/轮播图02.jpg', alt='')
+                li
+                    a(href='#')
+                        img(src='storeimg/轮播图03.jpg', alt='')
+                li
+                    a(href='#')
+                        img(src='storeimg/轮播图04.jpg', alt='')
+                li
+                    a(href='#')
+                        img(src='storeimg/轮播图05.jpg', alt='')
+                li
+                    a(href='#')
+                        img(src='storeimg/轮播图06.jpg', alt='')
+            .point
+                span.nowColor
+                span
+                span
+                span
+                span
+                span
+        .arr
+            .left.iconfont 󰍃
+            .right.iconfont 󰍄
+    #help.help
+        ule
+            li
+                span 100%
+                span 正品
+            li
+                span 七天无理
+                span 由退货
+            li
+                span.shopCar
+                    i.num
+                span 购物车
+            li
+                span.service
+                    i.num
+                span 客服
+            li#last.last
+    .nav
+        .w
+            a(href='#')
+                i.round
+                i.word 云音乐周边
+            span.line
+            a(href='#')
+                i.movie
+                i.word 数码影音
+            span.line
+            a(href='#')
+                i.notebook
+                i.word 云村笔记本
+            span.line
+            a(href='#')
+                i.shopscore
+                i.score 积分商城
+                i.numscore 0积分
+    .pic
+        .w
+            .pic-left
+                a(href='#')
+                    img(src='storeimg/毕业.jpg', alt='')
+            .pic-right
+                a(href='#')
+                    img(src='storeimg/纯粹.jpg', alt='')
+    .compile
+        .w
+            h2 编辑推荐
+            ul
+                li
+                    a(href='#')
+                        img(src='storeimg/耳机.jpg', alt='')
+                    p ￥1588
+                li
+                    a(href='#')
+                        img(src='storeimg/erji1.jpg', alt='')
+                    p ￥1588
+                li
+                    a(href='#')
+                        img(src='storeimg/erji2.jpg', alt='')
+                    p ￥1588
+                li
+                    a(href='#')
+                        img(src='storeimg/erji3.jpg', alt='')
+                    p ￥1588
+                li
+                    a(href='#')
+                        img(src='storeimg/erji4.jpg', alt='')
+                    p ￥1588
+                li
+                    a(href='#')
+                        img(src='storeimg/erji5.jpg', alt='')
+                    p ￥1588
+                li
+                    a(href='#')
+                        img(src='storeimg/erji6.jpg', alt='')
+                    p ￥1588
+                li
+                    a(href='#')
+                        img(src='storeimg/erji7.jpg', alt='')
+                    p ￥1588
+                // <li><a href="#"><img src="img/耳机.jpg" alt=""></a></li>
+                // <li><a href="#"><img src="img/耳机.jpg" alt=""></a></li>
+                // <li><a href="#"><img src="img/耳机.jpg" alt=""></a></li>
+                // <li><a href="#"><img src="img/耳机.jpg" alt=""></a></li>
+                // <li><a href="#"><img src="img/耳机.jpg" alt=""></a></li>
+                // <li><a href="#"><img src="img/耳机.jpg" alt=""></a></li>
+    .g-ft
+        .m-ft
+            .wrap.f-cb
+                .copy
+                    p
+                        a.s-fc4(href='#') 关于网易
+                        span.line
+                        a.s-fc4(href='#') 客户服务
+                        span.line
+                        a.s-fc4(href='#') 服务条款
+                        span.line
+                        a.s-fc4(href='#') 网站导航
+                        span.line
+                        a.s-fc4(href='#') 意见反馈
+                    p.s-fc3
+                        span.sep 网易公司版权所有©1997-2017
+                        |                     杭州乐读科技有限公司运营 :
+                        a.s-fc3(href='#') 浙网文[2015] 0415-135号
+                ul.enter.f-fr
+                    li
+                        a.logo.logo-musician.f-tid(href='#')
+                    li
+                        a.logo.logo-topic.f-tid(href='#')
+                    li
+                        a.logo.logo-midea.f-tid(href='#')
+                    li
+                        a.logo.logo-reward.f-tid(href='#')
+                .class='wrap.cfb::after'
+// <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>
