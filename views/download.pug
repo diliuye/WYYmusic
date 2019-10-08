@@ -1,0 +1,274 @@
+doctype html
+html
+    head(lang='en')
+        meta(charset='UTF-8')
+        title 网易云音乐
+        link(rel='stylesheet', href='下载客户端页面.css')
+        link.ico(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
+    body
+        // 顶部导航栏开始
+        #topBanner.topBanner
+            #bannerinner.bannerinner
+                .bgimg
+                ul
+                    li
+                        a(href='wyy') 发现音乐
+                    li |
+                    li
+                        a(href='myMusic') 我的音乐
+                    li |
+                    li
+                        a(href='friends') 朋友
+                    li |
+                    li
+                        a(href='demo',target='_blank') 商城
+                    li |
+                    li
+                        a(href='musicman') 音乐人
+                    li |
+                    li.lastLi
+                        a(href='javascript:location.reload()') 下载客户端
+                        .hot
+                        // <img src="img/hot.png" alt=""/>
+                        .redtriangle
+                .topSerach
+                    .searchTop
+                        .btnimg
+                        input#searchmusic(type='text', value='单曲/歌手/专辑/歌单/MV/用户')
+                .loginTop
+                    input(type='button', value='登录')
+                    #triangle.triangle
+                    ul
+                        .ultriangle
+                        li
+                            .li1
+                            a(href='#') 手机号登录
+                        li
+                            .li2
+                            a(href='#') 微信登录
+                        li
+                            .li3
+                            a(href='#') QQ登录
+                        li
+                            .li4
+                            a(href='#') 新浪微博登录
+                        li
+                            .li5
+                            a(href='#') 网易邮箱账号
+        .redMusic
+        // 顶部导航栏结束
+        // 导航栏下面轮播图开始
+        .ringpic
+            .ww
+                // 右边的精灵图部分开始
+                .rightPic
+                    #rightSprite.rightSprite
+                        ul
+                            li
+                                .sp1
+                                a(href='#') 安卓版
+                                span V4.1.2
+                            li
+                                .sp2
+                                a(href='#') iPid版
+                                span V1.6.1
+                            li
+                                .sp3
+                                a(href='#') PC版
+                                span V2.2.0
+                            li
+                                .sp4
+                                a(href='#') WP版
+                                span V1.5.0
+                        ul
+                            li
+                                .sp21
+                                a(href='#') iPhone版
+                                span V4.1.1
+                            li
+                                .sp22
+                                a(href='#') Mac版
+                                span V1.5.6
+                            li
+                                .sp23
+                                a(href='#') UWP版
+                                span V1.2.3
+                            li
+                                .sp24
+                                a(href='#') Linux版
+                                span V1.0.0
+                        .spriteTop
+                            .Top1
+                            a.Pc(href='#') PC版更新日志
+                // 右边的精灵图部分结束
+                // 左边的轮播图开始
+                .leftPic
+                    img#images(src='xiazaiimg/banner0.png', alt='')
+                    ol#ol1
+                        li
+                        li
+                        li
+            // 左边的轮播图结束
+            // 导航栏下面轮播图结束
+            // 扫描二维码开始
+            .appcode
+                img(src='xiazaiimg/code.png', alt='')
+            // 扫描二维码结束
+            // 中部千万曲库开始
+            .songs
+                .w
+                    .songs-describe
+                        h3 千万曲库 首首CD音质
+                        p 囊括百万无损SQ音乐，你在用手机听歌时，
+                        p 也能感受到纤毫毕现的CD音质，更能免费离线收听
+                    img(src='img/b1.jpg', alt='')
+            // 中部千万曲库结束
+            // 中部千万明星开始
+            .stars
+                .w
+                    .starss-describe
+                        h3 千位明星 亲自推荐音乐
+                        p
+                            | 陶喆，羽泉等
+                            em 千位明星已入驻
+                            | ，亲自创建私房歌单，录制独
+                        p 家DJ节目，推荐他们心中的好音乐
+                    img(src='xiazaiimg/b2.jpg', alt='')
+            // 中部千万明星结束
+            // 中部社交关系开始
+            .social-relation
+                .w
+                    .relation-describe
+                        h3 社交关系 发现全新音乐
+                        p
+                            | 你可以
+                            em 关注明星
+                            | 、DJ和好友，通过浏览他们的动态、收藏和
+                        p 分享，发现更多全新好音乐
+                    img(src='xiazaiimg/b3.jpg', alt='')
+            // 中部社交关系结束
+            // 中部手机电脑开始
+            .phonesongs
+                .w
+                    .plist-describe
+                        h3 手机电脑 歌单实时同步
+                        p 只要一个帐号，你就可以同步在手机、电脑上创建、收藏
+                        p
+                            | 的歌单，
+                            em 随时随地畅享好音乐
+                    img(src='xiazaiimg/b4.jpg', alt='')
+            // 中部手机电脑结束
+            // 中部听歌识曲开始
+            .listening
+                .w
+                    .listeningDs
+                        h3 听歌识曲 助你疯狂猜歌
+                        p 歌曲很动听却不知道歌名，歌名在嘴边却想不起来……
+                        p
+                            | 用
+                            em 听歌识曲
+                            | 功能，几秒钟就知道歌名
+                    img(src='xiazaiimg/b5.jpg', alt='')
+            // 中部听歌识曲结束
+            // 底部网易云音乐开始
+            .footMusic
+                h2 网易云音乐
+                p 下载网易云音乐客户端，随时随地畅享动听好音乐
+                ul
+                    li
+                        img(src='xiazaiimg/b8.jpg', alt='')
+                    li
+                        img(src='xiazaiimg/b6.png', alt='')
+                    li
+                        img(src='xiazaiimg/b9.jpg', alt='')
+                    li
+                        img(src='xiazaiimg/b7.png', alt='')
+                    li
+                        img(src='xiazaiimg/b10.png', alt='')
+                ol
+                    li.a1
+                        a(href='#') PC版下载
+                    li.a2
+                        a(href='#') iPhone版下载
+                    li.a3
+                        a(href='#') iPad下载
+                    li.a4
+                        a(href='#') 安卓版下载
+                    li.a5
+                        a(href='#') UWP版下载
+            // 底部网易云音乐结束
+            // 底部关于网易开始
+            .footer
+                .footw
+                    .foot-describe
+                        ul
+                            li
+                                a(href='#') 关于网易
+                            li |
+                            li
+                                a(href='#') 客户服务
+                            li |
+                            li
+                                a(href='#') 服务条款
+                            li |
+                            li
+                                a(href='#') 网站导航
+                            li |
+                            li
+                                a(href='#') 意见反馈
+                        p 网易公司版权所有©1997-2017  杭州乐读科技有限公司运营：浙网文[2015] 0415-135号
+                    .footpictures
+                        ul
+                            li
+                            li.lisTwo
+                            li.lisThree
+                            li
+            // 底部关于网易结束
+            // 底部播放器开始
+            #g-btmbar.g-btmbar
+                .g-btmbar-p(id='.g-btmbar-p')
+                    #auto-id-fpboJHu88h3Feay2.m-playbar.m-playbar-lock(style='top:-53px; visibility: visible;')
+                        .updn
+                            .left.f-f1
+                                a#fixBtn1.btn1(href='javascript:void(0);')
+                                a#fixBtn2.btn2(href='javascript:void(0);')
+                            .right.f-f1
+                        .bg
+                        #g_player.wrap
+                            .btns
+                                a#prv.prv(href='#')
+                                #ply01.ply.j-fkag
+                                    audio#songs1(src='audios/01.mp3', type='audio/mpeg ', name='songs1', autostart='false')
+                                a#ply02.plys.j-fkag(href='#')
+                                a#next.nxt(href='#')
+                            .head.j-flag
+                                a.mask(href='#')
+                                    img(src='xiazaiimg/default_album.jpg', alt='')
+                            .play
+                                .j-flag.words
+                                .m-pbar
+                                    #auto-id-ODscgwD3lbnJdK0A.barbg
+                                        .rdy(style='width: 0%;')
+                                        .cur
+                                    span.j-flag.time
+                                        em 00:00
+                                        |  / 00:00
+                            .oper.f-fl
+                                a.icn.icn-add.j-flag(href='#', title='收藏')
+                                a.icn.icn-share(href='#', title='分享')
+                            .ctrl.f-fl.f-pr.j-flag
+                                #auto-id-epndKXTBrRZxUtTX.m-vol(style='visibility:hidden;')
+                                    .barbg
+                                    #auto-id-Ps01blhP4eMKXBgn.vbg.j-t
+                                        .curr.j-t(style='height: 74.4px;')
+                                        span.btn.f-alpha.j-t(style='top: 16.2px;')
+                                a.icn.icn-vol(href='#')
+                                a.icn.icn-loop(href='#')
+                                span.add.f-pr
+                                    span.tip(style='display: none;')
+                                    a.icn.icn-list.s-fc3(href='#', title='播放列表') 0
+                                .tip.tip-1(style='display: none;') 循环
+            // 底部播放器结束
+            script(src='xiazailib/jquery-1.12.4.min.js')
+            script(src='common.js')
+            script(src='下载客户端页面.js')

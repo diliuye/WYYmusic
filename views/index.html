@@ -5,7 +5,7 @@
     <title>网易云音乐</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
-    <link class="ico" rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link class="ico" rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <script src="js/tools.js"></script>
     <script src="js/common.js"></script>
     <script src="js/demo06.js"></script>
@@ -21,15 +21,15 @@
           <ul>
             <li><a href="javascript:location.reload()">发现音乐</a></li>
             <li class="line"></li>
-            <li><a href="myMusic">我的音乐</a></li>
+            <li><a href="mymusic">我的音乐</a></li>
             <li class="line"></li>
             <li><a href="friends">朋友</a></li>
             <li class="line"></li>
-            <li><a href="demo">商城</a></li>
+            <li><a href="demo" target="_blank">商城</a></li>
             <li class="line"></li>
-            <li><a href="#">音乐人</a></li>
+            <li><a href="musicman">音乐人</a></li>
             <li class="line"></li>
-            <li><a href="下载客户端页面">下载客户端</a></li>
+            <li><a href="download">下载客户端</a></li>
           </ul>
         </div>
         <div class="login-block" id="loginBlock">
@@ -47,7 +47,7 @@
         <input id="text" type="text" value="音乐/视频电台/用户">
       </div>
       <div class="hot"></div>
-      <div class="deng" id="deng"><a href="register">登录</a></div>
+      <div class="deng" id="deng"><a href="mymusic">登录</a></div>
       <div class="daosan" id="daosan"></div>
     </div>
     <!-- //红色栏部分-->
@@ -57,7 +57,7 @@
           <ul>
             <li><a href="#">推荐</a></li>
             <li><a href="rankinglistindex">排行榜</a></li>
-            <li><a href="musiclist">歌单</a></li>
+            <li><a href="hometwo">歌单</a></li>
             <li><a href="discover">主播电台</a></li>
             <li><a href="singer">歌手</a></li>
             <li><a href="#">新碟上架</a></li>
@@ -69,10 +69,10 @@
     <script src="js/01.js"></script>
     <div class="bg" id="bg">
       <div class="top-w" id="top-w">
-        <div class="dlpic"><a href="#"></a>
+        <div class="dlpic"><a href="download"></a>
           <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
         </div>
-        <div class="top-imgs" id="top-imgs"><a href="#"><img id="images" src="img/00.png" alt=""></a>
+        <div class="top-imgs" id="top-imgs"><a href="#"><img id="images" src="img/01.png" alt=""></a>
           <ol class="spans" id="spans">
             <li><span id="s1"></span></li>
             <li><span id="s2"></span></li>
@@ -97,7 +97,7 @@
             </div>
             <div class="hotIndro-contont" id="hotContent">
               <ul id="imgShow">
-                <li class="first"><a href="#"><img src="img/热门推荐01.jpg" alt=""></a><a class="showDes" href="#">一个偏执的家人和他的平凡之痛</a><span class="transparent"><i class="headset"></i><i>33万</i><a href="#"><i class="player"></i></a></span></li>
+                <li class="first"><a href="/play"><img src="img/热门推荐01.jpg" alt=""></a><a class="showDes" href="play">最后一次-庄心妍</a><span class="transparent"><i class="headset"></i><i>33万</i><a href="#"><i class="player"></i></a></span></li>
                 <li><a href="#"><img src="img/热门推荐02.jpg" alt=""></a><a class="showDes" href="#">活泼的调子，不如跳支舞吧</a><span class="transparent"><i class="headset"></i><i>103万</i><a href="#"><i class="player"></i></a></span></li>
                 <li><a href="#"><img src="img/热门推荐03.jpg" alt=""></a><a class="showDes" href="#">安静又不失节奏</a><span class="transparent"><i class="headset"></i><i>99万</i><a href="#"><i class="player"></i></a></span></li>
                 <li><a href="#"><img src="img/热门推荐04.jpg" alt=""></a><a class="showDes" href="#"><i class="column"></i><span class="top2">最最最浪漫的</span><span class="botm">情调</span></a><span class="transparent"><i class="headset"></i><i>13万</i><a href="#"><i class="player"></i></a></span></li>
@@ -253,14 +253,14 @@
       <div class="right">
         <!-- 登陆开始-->
         <div class="login">
-          <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p><a class="login-btn" href="/WYYmusic/views/register">用户登陆</a>
+          <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p><a class="login-btn" href="mymusic">用户登陆</a>
         </div>
         <!-- 登陆结束-->
         <!-- 歌手开始-->
         <div class="singer">
           <!-- enter-singer-header的开始-->
           <div class="enter-singer">
-            <div class="enter-singer-header"><span class="es-singer">入驻歌手</span><a class="es-more" href="#">查看全部 ></a></div>
+            <div class="enter-singer-header"><span class="es-singer">入驻歌手</span><a class="es-more" href="singer">查看全部 ></a></div>
             <!-- enter-singer-header的结束-->
             <!-- enter-singer-middle的开始-->
             <ul class="enter-singer-middle" id="enterSingerMiddle">
@@ -292,7 +292,7 @@
             </ul>
             <!-- enter-singer-middle的结束-->
             <!-- enter-singer-bottom的开始-->
-            <div class="enter-singer-bottom"><a class="es-join" target="_blank" href="#">申请成为网易音乐人</a></div>
+            <div class="enter-singer-bottom"><a class="es-join" target="_blank" href="musicman">申请成为网易音乐人</a></div>
           </div>
         </div>
         <script src="js/enter-singer.js"></script>
@@ -345,7 +345,6 @@
             <li><a class="logo logo-midea f-tid" href="#"></a></li>
             <li><a class="logo logo-reward f-tid" href="#"></a></li>
           </ul>
-          <div class="class">wrap.cfb::after</div>
         </div>
       </div>
     </div>
@@ -359,7 +358,8 @@
           </div>
           <div class="bg"></div>
           <div class="wrap" id="g_player">
-            <div class="btns"><a class="prv" href="#"></a><a class="ply j-fkag" href="#"></a><a class="plys j-fkag" href="#"></a><a class="nxt" href="#"></a></div>
+            <div class="btns"><a class="prv" href="#"></a><a class="ply j-fkag" href="#">
+                <!-- audio(src='music/静sir - 骑上我心爱的小摩托(2019).mp3', controls='controls')--></a><a class="plys j-fkag" href="#"></a><a class="nxt" href="#"></a></div>
             <div class="head j-flag"><a class="mask" href="#"><img src="img/default_album.jpg" alt=""></a></div>
             <div class="play">
               <div class="j-flag words"></div>

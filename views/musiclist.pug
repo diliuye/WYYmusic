@@ -8,7 +8,7 @@ html
         script(src='gedanjs/jquery-1.12.4.min.js')
         script(src='gedanjs/music-list.js')
         link.ico(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
-        link(rel='stylesheet', href='css/footercss.css')
+        link(rel='stylesheet', href='css/footer-css.css')
     body
         .top
             .w
@@ -16,7 +16,7 @@ html
                 #nr.neirong
                     ul
                         li
-                            a(href='../index') 发现音乐
+                            a(href='../wyy') 发现音乐
                         li.line
                         li
                             a(href='../myMusic') 我的音乐
@@ -25,13 +25,13 @@ html
                             a(href='../friends') 朋友
                         li.line
                         li
-                            a(href='../demo') 商城
+                            a(href='../demo',target='_blank') 商城
                         li.line
                         li
-                            a(href='#') 音乐人
+                            a(href='musicman') 音乐人
                         li.line
                         li
-                            a(href='../下载客户端页面') 下载客户端
+                            a(href='download') 下载客户端
                 #loginBlock.login-block
                     ul
                         li
@@ -59,7 +59,7 @@ html
                 input#text(type='text', value='单曲/歌手/专辑/歌单/MV/用户')
             .hot
             #deng.deng
-                a(href='#') 登录
+                a(href='mymusic') 登录
             #daosan.daosan
         // //红色栏部分
         .nav
@@ -69,14 +69,14 @@ html
                         li
                             a(href='#') 推荐
                         li
-                            a(href='../rankinglist.index') 排行榜
+                            a(href='../rankinglistindex') 排行榜
                         li
                             a(href='javascript:location.reload()') 歌单
                             span
                         li
                             a(href='../discover') 主播电台
                         li
-                            a(href='../歌手') 歌手
+                            a(href='../singer') 歌手
                         li
                             a(href='#') 新碟上架
                 .sanjiao
@@ -749,8 +749,8 @@ html
                     .music-u-pager
                         a.music-selected(href='javascript:void(0)') 上一页
                         a.music-number2.showCurrent(href='javascript:void(0)') 1
-                        a.music-number2(href='javascript:void(0)') 2
-                        a.music-number2(href='javascript:void(0)') 3
+                        a.music-number2(href='home') 2
+                        a.music-number2(href='hometwo') 3
                         a.music-number2(href='javascript:void(0)') 4
                         a.music-number2(href='javascript:void(0)') 5
                         a.music-number2(href='javascript:void(0)') 6
@@ -758,7 +758,8 @@ html
                         a.music-number2(href='javascript:void(0)') 8
                         span ...
                         a.music-number2(href='javascript:void(0)') 39
-                        a.music-selected2(href='javascript:void(0)') 下一页
+                        a.music-selected2(href='home') 下一页
+                        div.M-box3
         // 底部开始
         .g-ft
             .m-ft
@@ -787,53 +788,13 @@ html
                             a.logo.logo-midea.f-tid(href='#')
                         li
                             a.logo.logo-reward.f-tid(href='#')
-                    .class='wrap.cfb::after'
+
 // <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>
-#g-btmbar.g-btmbar
-    .g-btmbar-p(id='.g-btmbar-p')
-        #auto-id-fpboJHu88h3Feay2.m-playbar.m-playbar-lock(style='top:-53px; visibility: visible;')
-            .updn
-                .left.f-f1
-                    a#fixBtn1.btn1(href='javascript:void(0);')
-                    a#fixBtn2.btn2(href='javascript:void(0);')
-                .right.f-f1
-            .bg
-            #g_player.wrap
-                .btns
-                    a.prv(href='#')
-                    a#ply01.ply.j-fkag(href='#')
-                    a#ply02.plys.j-fkag(href='#')
-                    a.nxt(href='#')
-                .head.j-flag
-                    a.mask(href='#')
-                        img(src='gedaimages/default_album.jpg', alt='')
-                .play
-                    .j-flag.words
-                    .m-pbar
-                        #auto-id-ODscgwD3lbnJdK0A.barbg.j-flag
-                            .rdy(style='width: 0%;')
-                            .cur(style='width: 0%;')
-                                span#auto-id-bxCC3M0eRZD76VpR.btn.f-tdn.f-alpha
-                                    i
-                        span.j-flag.time
-                            em 00:00
-                            |  / 00:00
-                .oper.f-fl
-                    a.icn.icn-add.j-flag(href='#', title='收藏')
-                    a.icn.icn-share(href='#', title='分享')
-                .ctrl.f-fl.f-pr.j-flag
-                    #auto-id-epndKXTBrRZxUtTX.m-vol(style='visibility:hidden;')
-                        .barbg
-                        #auto-id-Ps01blhP4eMKXBgn.vbg.j-t
-                            .curr.j-t(style='height: 74.4px;')
-                            span.btn.f-alpha.j-t(style='top: 16.2px;')
-                    a.icn.icn-vol(href='#')
-                    a.icn.icn-loop(href='#')
-                    span.add.f-pr
-                        span.tip(style='display: none;')
-                        a.icn.icn-list.s-fc3(href='#', title='播放列表') 0
-                    .tip.tip-1(style='display: none;') 循环
+
 // 底部结束
-script(src='gedanranking%20list-js/jquery-1.12.4.min.js')
-script(src='gedanranking%20list-js/common.js')
-script(src='gedanranking%20list-js/footer-js.js')
+script(src='gedanrankinglistjs/jquery-1.12.4.min.js')
+script(src='gedanrankinglistjs/common.js')
+script(src='gedanrankinglistjs/footer-js.js')
+script(src='gedanjs/pagination.js')
+script(src='gedanjs/gedan.js')
+

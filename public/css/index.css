@@ -6,6 +6,13 @@
     /*height: 31px;*/
     /*background-color: #b80b0b;*/
 /*}*/
+audio {
+    width: 30px;
+    height: 30px;
+    color: #3e3d3d;
+    opacity:1.0;
+}
+
 img.logo{
 	width: 200px;
 	height: 69px;
@@ -36,8 +43,7 @@ img.logo{
     line-height: 68px;
     text-align: center;
 	
-	
-    /*background: url("ÍøÒ×ÔÆÒôÀÖ_files/topbar.png") -0 -160px;*/
+
 }
 .top .neirong li.line {
     float: left;
@@ -182,7 +188,7 @@ img.logo{
 
 
 
-/*//ºìÉ«²¿·Ö*/
+/*//ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½*/
 .nav {
     position: relative;
     height: 40px;
@@ -386,7 +392,7 @@ img.logo{
 
 
 
-/*ÈÈÃÅ¿ªÊ¼*/
+/*ï¿½ï¿½ï¿½Å¿ï¿½Ê¼*/
 .content .left .hot {
      height: 544px;
  }
@@ -512,7 +518,7 @@ img.logo{
     height: 28px;
     background: url("../img/iconall.png") 0px -82px;
 }
-/*ÈÈÃÅ½áÊø*/
+/*ï¿½ï¿½ï¿½Å½ï¿½ï¿½ï¿½*/
 
 
 
@@ -856,7 +862,7 @@ img.logo{
     margin-left: 20px;
     /*overflow: hidden;*/
 }
-/*¡ã???top????¡Á¡Â????*/
+/*ï¿½ï¿½???top????ï¿½ï¿½ï¿½ï¿½????*/
 .BD-top{
     width: 691px;
     height: 41px;
@@ -895,9 +901,9 @@ img.logo{
     height: 12px;
     background: url(../img/index.png) 0 -240px no-repeat;
 }
-/*?¨¨?¨²????????¡Á¡Â????*/
+/*?ï¿½ï¿½?ï¿½ï¿½????????ï¿½ï¿½ï¿½ï¿½????*/
 
-/*??????¨¬???¡ã?*/
+/*??????ï¿½ï¿½???ï¿½ï¿½?*/
 .catalog-box{
     width: 685px;
     height: 470px;
@@ -1042,7 +1048,7 @@ img.logo{
 
 }
 
-/*?????????¨¨¡ã?*/
+/*?????????ï¿½ï¿½ï¿½ï¿½?*/
 
 .catalog-box .catalog-middle{
     float: left;
@@ -1180,7 +1186,7 @@ img.logo{
 
 }
 
-/*???¡Á?????????¨¨¡ã?*/
+/*???ï¿½ï¿½?????????ï¿½ï¿½ï¿½ï¿½?*/
 .catalog-box .catalog-right{
     float:left ;
     width: 227px;
@@ -1337,7 +1343,7 @@ img.logo{
 
 
 
-/*µÇÂ½¿ªÊ¼*/
+/*ï¿½ï¿½Â½ï¿½ï¿½Ê¼*/
 .content .right .login {
     height: 122px;
     border-bottom: 1px solid #d3d3d3;
@@ -1370,7 +1376,7 @@ img.logo{
     background-position: -111px -196px;
 }
 
-/*µÇÂ½½áÊø*/
+/*ï¿½ï¿½Â½ï¿½ï¿½ï¿½ï¿½*/
 
 
 
@@ -1378,7 +1384,7 @@ img.logo{
 
 
 
-/*¸èÊÖ¿ªÊ¼*/
+/*ï¿½ï¿½ï¿½Ö¿ï¿½Ê¼*/
 .content .right .singer {
     height: 500px;
     /*border-bottom: 1px solid #d3d3d3;*/
@@ -1407,7 +1413,7 @@ img.logo{
 .enter-singer .es-more {
     float: right;
 }
-/*enter-singer-header???¨¢??*/
+/*enter-singer-header???ï¿½ï¿½??*/
 
 
 /*enter-singer-middle??????*/
@@ -1457,7 +1463,7 @@ img.logo{
     color:black;
 }
 
-/*enter-singer-middle???¨¢??*/
+/*enter-singer-middle???ï¿½ï¿½??*/
 
 
 /*enter-singer-bottom??????*/
@@ -1491,7 +1497,7 @@ img.logo{
 .enter-singer-bottom  a:hover {
     color:black;
 }
-/*¸èÊÖ½áÊø*/
+/*ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½*/
 
 
 
@@ -1505,7 +1511,7 @@ img.logo{
 
 
 
-/*ÓÒ²àdj¿ªÊ¼*/
+/*ï¿½Ò²ï¿½djï¿½ï¿½Ê¼*/
 .content .right .dj {
     width: 250px;
     /*border-left: 1px solid #d3d3d3;*/
@@ -1558,12 +1564,12 @@ img.logo{
     color: #666;
     margin-top: 5px;
 }
-/*ÓÒ²àdj½áÊø*/
+/*ï¿½Ò²ï¿½djï¿½ï¿½ï¿½ï¿½*/
 
 
 
 
-/*·µ»Ø¶¥²¿¿ªÊ¼*/
+/*ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼*/
 .content .toTop {
     position: absolute;
     width: 48px;
@@ -1572,7 +1578,7 @@ img.logo{
     right: -60px;
     display: none;
 }
-/*·µ»Ø¶¥²¿½áÊø*/
+/*ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 
 
 
@@ -1671,7 +1677,7 @@ img.logo{
 }
 
 
-/* ??¡¤??¡Â?????? */
+/* ??ï¿½ï¿½??ï¿½ï¿½?????? */
 
 .g-btmbar {
     position: fixed;

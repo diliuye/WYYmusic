@@ -1,6 +1,4 @@
-/**
- * Created by wangyue on 2017/7/15.
- */
+
 var backTop = document.getElementById("backTop");
 var timerId_top = null;
 backTop.onmouseover = function () {

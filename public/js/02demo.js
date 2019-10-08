@@ -1,4 +1,4 @@
-//1.»ñÈ¡ÔªËØ£º
+
 var bg=document.getElementById("bg");
 var topImgs=document.getElementById("top-imgs");
 var images=document.getElementById("images");
@@ -8,7 +8,7 @@ var arr=document.getElementById("arrTop");
 var arrLeft=arr.children[0];
 var arrRight=arr.children[1];
 
-//¸øol1ÖÐµÄli±êÇ©×¢²áµ¥»÷ÊÂ¼þ£º
+//ï¿½ï¿½ol1ï¿½Ðµï¿½liï¿½ï¿½Ç©×¢ï¿½áµ¥ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 var json=["#f9cfce","#efefea","#ffff00","#85dcc7","#23062f","#ffffff","#fadfa5"];
 for(var i=0;i<ol1lis.length;i++){
     ol1lis[i].setAttribute("index",i);
@@ -19,12 +19,12 @@ for(var i=0;i<ol1lis.length;i++){
         bg.style.backgroundColor=json[x];
     }
 }
-//¸øÓÒ±ß¼ýÍ·×¢²áµ¥»÷ÊÂ¼þ£º
+//ï¿½ï¿½ï¿½Ò±ß¼ï¿½Í·×¢ï¿½áµ¥ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 var pic=0;
 arrRight.onclick=function(){
     nextImg();
 }
-//¸ø×ó±ß¼ýÍ·×¢²áµ¥»÷ÊÂ¼þ£º
+//ï¿½ï¿½ï¿½ï¿½ß¼ï¿½Í·×¢ï¿½áµ¥ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 arrLeft.onclick=function(){
     if(pic==0) {
         pic = 6;
@@ -39,7 +39,7 @@ arrLeft.onclick=function(){
     }
     ol1lis[pic].children[0].setAttribute("class","current");
 }
-//ÓÒ±ß¼ýÍ·µÄº¯Êý·â×°£º
+//ï¿½Ò±ß¼ï¿½Í·ï¿½Äºï¿½ï¿½ï¿½ï¿½ï¿½×°ï¿½ï¿½
 function nextImg(){
     if(pic==6) {
         pic = 0;
@@ -55,8 +55,6 @@ function nextImg(){
     }
     ol1lis[pic].children[0].setAttribute("class","current");
 }
-//ÉèÖÃ¼ÆÊ±Æ÷£º
+//è®¾ç½®è®¡æ—¶å™¨ï¼š
 var timerId=setInterval(nextImg,3000);
-/**
- * Created by wangyue on 2017/7/17.
- */
+

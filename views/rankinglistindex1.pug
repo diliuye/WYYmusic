@@ -1,0 +1,1000 @@
+doctype html
+html
+    head(lang='en')
+        meta(charset='UTF-8')
+        title 网易云音乐
+        link(rel='stylesheet', href='rankinglistcss/rankinglist1.css')
+        link(rel='stylesheet', href='rankinglistcss/footercss.css')
+        link.ico(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
+        link(rel='stylesheet', href='../css/login-block.css')
+    body
+        // 顶部导航开始
+        .m-top
+            .m-top-pass
+                .m-top-nav
+                    .m-top-nav-logo
+                        a(href='#')
+                    .m-top-nav-list
+                        ul
+                            li
+                                a(href='wyy', style='color:#fff') 发现音乐
+                            li
+                            li
+                                a(href='myMusic', style='color:#fff') 我的音乐
+                            li
+                            li
+                                a(href='friends', style='color:#fff') 朋友
+                            li
+                            li
+                                a(href='demo', style='color:#fff',target='_blank') 商城
+                            li
+                            li
+                                a(href='musicman', style='color:#fff') 音乐人
+                            li
+                            li
+                                a(href='下载客户端页面', style='color:#fff') 下载客户端
+                                span.hot
+                    .m-top-nav-input
+                        input.inp(type='txt', value='单曲/歌手/专辑/歌单/MV/用户')
+                        span.search
+                    #deng.m-top-nav-login
+                        .login-out
+                            a(href='#') 登录
+                            span.trigon1
+                        #loginBlock.login-block
+                            ul
+                                li
+                                    a(href='#')
+                                        i.icon-phone
+                                        em 手机号登陆
+                                li
+                                    a(href='#')
+                                        i.icon-wechart
+                                        em 微信登陆
+                                li
+                                    a(href='#')
+                                        i.icon-qq
+                                        em QQ登陆
+                                li
+                                    a(href='#')
+                                        i.icon-weibo
+                                        em 微博登陆
+                                li
+                                    a(href='#')
+                                        i.icon-nest
+                                        em 网易邮箱账号登陆
+                            .sanjiaojian
+                        <audio src="music/王嘉尔 - BULLET TO THE HEART.ncm" controls="controls"></audio>
+                        // <div class="login-over">
+                        // <a href="#">登录</a>
+                        // <span class="trigon2"></span>
+                        // </div>
+                        // 登录框
+                        // <div class="m-top-nav-login-case">
+                        // <ul>
+                        // <li>
+                        // <a href="#">
+                        // <i></i>
+                        // <span>手机登录</span>
+                        // </a>
+                        // </li>
+                        // <li>
+                        // <a href="#">
+                        // <i></i>
+                        // <span>微信登录</span>
+                        // </a>
+                        // </li>
+                        // <li>
+                        // <a href="#">
+                        // <i></i>
+                        // <span>QQ登录</span>
+                        // </a>
+                        // </li>
+                        // <li>
+                        // <a href="#">
+                        // <i></i>
+                        // <span>新浪微博登录</span>
+                        // </a>
+                        // </li>
+                        // <li>
+                        // <a href="#">
+                        // <i></i>
+                        // <span>网易邮箱账号登录</span>
+                        // </a>
+                        // </li>
+                        // </ul>
+                        // </div>
+            .m-bottom-nav
+                .m-bottom-nav-list
+                    ul
+                        li
+                            a(href='#') 推荐
+                            span
+                            i
+                        li
+                            a(href='javascript:location.reload()') 排行榜
+                            span
+                        li
+                            a(href='hometwo') 歌单
+                            span
+                        li
+                            a(href='discover') 主播电台
+                            span
+                        li
+                            a(href='歌手') 歌手
+                            span
+                        li
+                            a(href='#') 新碟上架
+                            span
+        // 顶部导航结束
+        // 主体部分的开始
+        .m-main
+            // 内容侧边栏开始
+            .m-main-side
+                .m-main-side-top
+                    p.txt-head1 云音乐飙升榜
+                    ul
+                        li
+                            a(href='rankinglistindex' style='background-color: rgb(247, 247, 247);')
+                                span.bg-img
+                                span.txt-top 云音乐飙升榜
+                                span.txt-bottom 每天更新
+                        li#top-bgc.top-bgc
+                            a(href='rankinglistindex1')
+                                span.bg-img
+                                span.txt-top 云音乐新歌榜
+                                span.txt-bottom 每天更新
+                        li
+                            a(href='rankinglistindex2')
+                                span.bg-img
+                                span.txt-top 网易原创歌曲榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='rankinglistindex3')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                .m-main-side-bottom
+                    p.txt-head2 全球媒体榜
+                    ul
+                        li#bottom-bgc.top-bgc
+                            a(href='rankinglistindex4')
+                                span.bg-img
+                                span.txt-top 云音乐说唱榜
+                                span.txt-bottom 每天更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐新歌榜
+                                span.txt-bottom 每天更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 网易原创歌曲榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+                        li
+                            a(href='#')
+                                span.bg-img
+                                span.txt-top 云音乐热歌榜
+                                span.txt-bottom 每周四更新
+            // 内容侧边栏结束
+            // 内容展示区开始
+            .m-main-content
+                // 飙升榜的开始
+                .content-bsb
+                    .content-bsb-top
+                        .bsb-t-logo
+                            img(src='rankinglistimages/18713687906568048.jpg', alt='')
+                        .bsb-t-content
+                            p 云音乐新歌榜
+                            span
+                                | ⏱最近更新：07月20日
+                                span.txt （每天更新）
+                            .bsb-t-btns
+                                span.btns1 播放
+                                span.btns2 +
+                                span.btns3 (598926)
+                                span.btns4 (2562)
+                                span.btns5 下载
+                                span.btns6 (64816)
+                    .content-bsb-bottom
+                        .bottom-txt
+                            span.txt1 歌曲列表
+                            span.txt2 100首歌
+                            span.txt3
+                                | 播放：
+                                span.txt4 40805
+                                |                         次
+                    .content-bsb-center
+                        .center-head
+                            .head1
+                            .head2 标题
+                            .head3 时长
+                            .head4 歌手
+                        .center-content
+                            ul#center-content-list.content-list
+                                li.list-song1
+                                    ul.tr01
+                                        li
+                                            | 1
+                                            span -0
+                                        li
+                                            i
+                                            b
+                                            |                                     BULLET TO THE HEART
+                                        li 06:55
+                                        li 王嘉尔
+                                li.list-song2
+                                    ul.tr01
+                                        li
+                                            | 2
+                                            span ↑3
+                                        li
+                                            i
+                                            b
+                                            |                                     少女
+                                        li 06:46
+                                        li 林宥嘉
+                                li.list-song3
+                                    ul.tr01
+                                        li
+                                            | 3
+                                            span ↓1
+                                        li
+                                            i
+                                            b
+                                            |                                     将故事写成我们
+                                        li 05:09
+                                        li 林俊杰
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 4
+                                            span new
+                                        li
+                                            b
+                                            |                                     Kwelanga (Original Mix)
+                                        li 06:30
+                                        li SecondCity
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 5
+                                            span new
+                                        li
+                                            b
+                                            |                                     醉里红尘
+                                        li 04:17
+                                        li 刘惜君
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 6
+                                            span new
+                                        li
+                                            b
+                                            |                                     非酋
+                                        li 02:52
+                                        li 薛明媛/朱贺
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 7
+                                            span ↓3
+                                        li
+                                            b
+                                            |                                     Despacito (Remix)
+                                        li 03:48
+                                        li Luis Fonsi/...
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 8
+                                            span new
+                                        li
+                                            b
+                                            |                                     MY DARLING
+                                        li 03:45
+                                        li 乐童音乐家
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 9
+                                            span new
+                                        li
+                                            b
+                                            |                                     老人与棉花糖和夏天
+                                        li 04:03
+                                        li 简弘亦
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 10
+                                            span -0
+                                        li
+                                            b
+                                            |                                     我害怕
+                                        li 04:08
+                                        li 薛之谦
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 11
+                                            span -0
+                                        li
+                                            b
+                                            |                                     我们的故事(Demo)
+                                        li 04:04
+                                        li 李遇
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 12
+                                            span new
+                                        li
+                                            b
+                                            |                                     MLKETEA
+                                        li 03:12
+                                        li JAEFORE...
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 13
+                                            span new
+                                        li
+                                            b
+                                            |                                     Hola Hola
+                                        li 03:22
+                                        li K.A.R.D
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 14
+                                            span new
+                                        li
+                                            b
+                                            |                                     Seasons
+                                        li 03:42
+                                        li Greyson C...
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 15
+                                            span new
+                                        li
+                                            b
+                                            |                                     远走高飞
+                                        li 04:01
+                                        li 金志文
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 16
+                                            span new
+                                        li
+                                            b
+                                            |                                     Love Love Love
+                                        li 04:37
+                                        li Moullinex
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 17
+                                            span new
+                                        li
+                                            b
+                                            |                                     Afterdark
+                                        li 03:20
+                                        li Myrne/Aviella
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 18
+                                            span new
+                                        li
+                                            b
+                                            |                                     罗曼蒂克
+                                        li 04:25
+                                        li 段同愿
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 19
+                                            span new
+                                        li
+                                            b
+                                            |                                     风起了
+                                        li 04:25
+                                        li 张敬轩
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 20
+                                            span new
+                                        li
+                                            b
+                                            |                                     原上草
+                                        li 03:08
+                                        li 刘惜君
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 21
+                                            span new
+                                        li
+                                            b
+                                            |                                     纪念册
+                                        li 04:18
+                                        li 音阙诗听/...
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 22
+                                            span new
+                                        li
+                                            b
+                                            |                                     诗人
+                                        li 04:10
+                                        li 孔垂楠
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 23
+                                            span new
+                                        li
+                                            b
+                                            |                                     心之焰
+                                        li 02:28
+                                        li G.E.M邓紫棋
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 24
+                                            span new
+                                        li
+                                            b
+                                            |                                     空情
+                                        li 03:31
+                                        li 韩雪/韩栋
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 25
+                                            span new
+                                        li
+                                            b
+                                            |                                     山下
+                                        li 04:46
+                                        li 方拾贰
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 26
+                                            span new
+                                        li
+                                            b
+                                            |                                     江州
+                                        li 03:39
+                                        li 王宇良
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 27
+                                            span new
+                                        li
+                                            b
+                                            |                                     暧昧
+                                        li 05:12
+                                        li 薛之谦
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 28
+                                            span new
+                                        li
+                                            b
+                                            |                                     识食物者为俊杰
+                                        li 03:49
+                                        li 冯提莫
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 29
+                                            span new
+                                        li
+                                            b
+                                            |                                     白山茶
+                                        li 04:14
+                                        li 陈雪凝
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 30
+                                            span new
+                                        li
+                                            b
+                                            |                                     才不枉过年少吧
+                                        li 03:17
+                                        li 张璐诗
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 31
+                                            span new
+                                        li
+                                            b
+                                            |                                     莫妮卡
+                                        li 04:49
+                                        li 柳爽
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 32
+                                            span new
+                                        li
+                                            b
+                                            |                                     动物世界
+                                        li 03:50
+                                        li 薛之谦
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 33
+                                            span new
+                                        li
+                                            b
+                                            |                                     易燃易爆炸
+                                        li 03:15
+                                        li 陈粒
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 34
+                                            span new
+                                        li
+                                            b
+                                            |                                     秋城
+                                        li 06:08
+                                        li 丢火车
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 35
+                                            span new
+                                        li
+                                            b
+                                            |                                     玫瑰
+                                        li 04:17
+                                        li 贰佰
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 36
+                                            span new
+                                        li
+                                            b
+                                            |                                     雀跃
+                                        li 03:55
+                                        li 任然/小来哥
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 37
+                                            span new
+                                        li
+                                            b
+                                            |                                     最美情侣
+                                        li 04:01
+                                        li 白小白
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 38
+                                            span new
+                                        li
+                                            b
+                                            |                                     Greed
+                                        li 02:50
+                                        li LEW
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 39
+                                            span new
+                                        li
+                                            b
+                                            |                                     Pretty Girl (Cheat Code Remix)
+                                        li 03:13
+                                        li Cheat Cod...
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 40
+                                            span new
+                                        li
+                                            b
+                                            |                                     Broken
+                                        li 03:29
+                                        li Masetti
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 41
+                                            span new
+                                        li
+                                            b
+                                            |                                     失恋重修手册
+                                        li 03:24
+                                        li 税子铭/赵...
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 42
+                                            span new
+                                        li
+                                            b
+                                            |                                     三角花
+                                        li 04:29
+                                        li 左成
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 43
+                                            span new
+                                        li
+                                            b
+                                            |                                     不露声色
+                                        li 05:05
+                                        li Jam
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 44
+                                            span new
+                                        li
+                                            b
+                                            |                                     梦间集
+                                        li 03:36
+                                        li 董贞
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 45
+                                            span new
+                                        li
+                                            b
+                                            |                                     入戏
+                                        li 03:52
+                                        li 李雨涛
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 46
+                                            span new
+                                        li
+                                            b
+                                            |                                     浓情淡如你
+                                        li 05:41
+                                        li 周深
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 47
+                                            span new
+                                        li
+                                            b
+                                            |                                     秀春
+                                        li 05:10
+                                        li 谭维维
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 48
+                                            span new
+                                        li
+                                            b
+                                            |                                     不搭
+                                        li 04:47
+                                        li 李荣浩
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 49
+                                            span new
+                                        li
+                                            b
+                                            |                                     下一站茶山刘
+                                        li 03:25
+                                        li 房东的猫
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 50
+                                            span new
+                                        li
+                                            b
+                                            |                                     矫情
+                                        li 04:08
+                                        li 老板娘与酒客
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 51
+                                            span new
+                                        li
+                                            b
+                                            |                                     阳光不锈
+                                        li 04:29
+                                        li 王源
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 52
+                                            span new
+                                        li
+                                            b
+                                            |                                     过客
+                                        li 04:30
+                                        li 是阿涵阿
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 53
+                                            span new
+                                        li
+                                            b
+                                            |                                     谷雨
+                                        li 05:31
+                                        li 东京塔子
+                                li.list-song01
+                                    ul.tr02
+                                        li
+                                            | 54
+                                            span new
+                                        li
+                                            b
+                                            |                                     烟火里的尘埃
+                                        li 03:18
+                                        li 华晨宇/宿涵
+                        .center-comment
+                            .comment-top
+                                span.txt1 评论
+                                span.txt2 共69235条评论
+                            .comment-center
+                                span.login
+                                    img(src='rankinglistimages/content_05.jpg', alt='')
+                                .text
+                                    span.sanjiao ◇
+                                    textarea.textarea(name='', id='', cols='30', rows='10')
+                                .center-login
+                                    a.txt1(href='#') ☺
+                                    a.txt2(href='#') @
+                                    a.txt3(href='#') 评论
+                                    span.txt4 140
+                                    span.txt5 精彩评论
+                            .comment-bottom
+                                ul.bottom-list
+                                    li
+                                        span.list11
+                                        a.list2(href='#') 有腹肌的Pdd
+                                        span.list3 ：明天linkinpark 专场
+                                        span.list4 12:38
+                                        a.list5(href='#')
+                                            span
+                                            | (84)
+                                        span.list6 回复
+                                        // <span class="list7"></span>
+                                    li
+                                        span.list12
+                                        a.list2(href='#') 云中雪
+                                        span.list3 ：血洗！血洗！LP屠榜吧！
+                                        span.list4 13:38
+                                        a.list5(href='#')
+                                            span
+                                            | (34)
+                                        span.list6 回复
+                                        // <span class="list7"></span>
+                                    li
+                                        span.list13
+                                        a.list2(href='#') 动视药丸
+                                        span.list3 ：我嗜睡（滑稽）
+                                        span.list4 14:22
+                                        a.list5(href='#')
+                                            span
+                                            | (33)
+                                        span.list6 回复
+                                        // <span class="list7"></span>
+                                    li
+                                        span.list14
+                                        a.list2(href='#') 风雨不动
+                                        span.list3 ：想当年，听lp时我还在用QQ音乐。。。
+                                        span.list4 58分钟前
+                                        a.list5(href='#')
+                                            span
+                                            | (1)
+                                        span.list6 回复
+                                        // <span class="list7"></span>
+                                    li
+                                        span.list15
+                                        a.list2(href='#') W_淏t
+                                        span.list3 ：美国独立后第一人总统
+                                        span.list4 33分钟前
+                                        a.list5(href='#')
+                                            span
+                                            | (3)
+                                        span.list6 回复
+                                        // <span class="list7"></span>
+                                    li
+                                        span.list16
+                                        a.list2(href='#') 天河童
+                                        span.list3 ：抢不到前排
+                                        span.list4 11分钟前
+                                        a.list5(href='#')
+                                            span
+                                            | (3)
+                                        span.list6 回复
+                                        // <span class="list7"></span>
+                            .comment-foot
+                                ul
+                                    li
+                                        a(href='#') < 上一页
+                                    li
+                                        a(href='#') 1
+                                    li
+                                        a(href='#') 2
+                                    li
+                                        a(href='#') 3
+                                    li
+                                        a(href='#') 4
+                                    li
+                                        a(href='#') 5
+                                    li
+                                        a(href='#') 6
+                                    li
+                                        a(href='#') 7
+                                    li
+                                        a(href='#') 8
+                                    li
+                                        a(href='#') ...
+                                    li
+                                        a(href='#') 3463
+                                    li
+                                        a(href='#') 下一页 >
+                // 飙升榜的结束
+                .content-xgb
+                .content-ycb
+                .content-rgb
+            // 内容展示区结束
+            // 主体部分的结束
+            // 底部开始
+            .g-ft
+                .m-ft
+                    .wrap.f-cb
+                        .copy
+
+                        ul.enter.f-fr
+                            li
+                                a.logo.logo-musician.f-tid(href='#')
+                            li
+                                a.logo.logo-topic.f-tid(href='#')
+                            li
+                                a.logo.logo-midea.f-tid(href='#')
+                            li
+                                a.logo.logo-reward.f-tid(href='#')
+
+        // <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>
+        #g-btmbar.g-btmbar
+            .g-btmbar-p(id='.g-btmbar-p')
+                #auto-id-fpboJHu88h3Feay2.m-playbar.m-playbar-lock(style='top:-53px; visibility: visible;')
+                    .updn
+                        .left.f-f1
+                            a#fixBtn1.btn1(href='javascript:void(0);')
+                            a#fixBtn2.btn2(href='javascript:void(0);')
+                        .right.f-f1
+                    .bg
+                    #g_player.wrap
+                        .btns
+                            a.prv(href='#')
+                            a#ply01.ply.j-fkag(href='#')
+                            a#ply02.plys.j-fkag(href='#')
+                            a.nxt(href='#')
+                        .head.j-flag
+                            a.mask(href='#')
+                                img(src='rankinglistimages/default_album.jpg', alt='')
+                        .play
+                            .j-flag.words
+                            .m-pbar
+                                #auto-id-ODscgwD3lbnJdK0A.barbg.j-flag
+                                    .rdy(style='width: 0%;')
+                                    .cur(style='width: 0%;')
+                                        span#auto-id-bxCC3M0eRZD76VpR.btn.f-tdn.f-alpha
+                                            i
+                                span.j-flag.time
+                                    em 00:00
+                                    |  / 00:00
+                        .oper.f-fl
+                            a.icn.icn-add.j-flag(href='#', title='收藏')
+                            a.icn.icn-share(href='#', title='分享')
+                        .ctrl.f-fl.f-pr.j-flag
+                            #auto-id-epndKXTBrRZxUtTX.m-vol(style='visibility:hidden;')
+                                .barbg
+                                #auto-id-Ps01blhP4eMKXBgn.vbg.j-t
+                                    .curr.j-t(style='height: 74.4px;')
+                                    span.btn.f-alpha.j-t(style='top: 16.2px;')
+                            a.icn.icn-vol(href='#')
+                            a.icn.icn-loop(href='#')
+                            span.add.f-pr
+                                span.tip(style='display: none;')
+                                a.icn.icn-list.s-fc3(href='#', title='播放列表') 0
+                            .tip.tip-1(style='display: none;') 循环
+        // 底部结束
+        script(src='rankinglistjs/jquery-1.12.4.min.js')
+        script(src='rankinglistjs/rankinglist.js')
+        script(src='rankinglistjs/common.js')
+        script(src='rankinglistjs/footer-js.js')
+        script(src='../rankinglistjs/login-block.js')

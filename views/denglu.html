@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link class="ico" rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="js/tools.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/demo06.js"></script>
+    <script src="js/animate.js"></script>
+  </head>
+  <body>
+    <!-- <div class="topBar"></div>-->
+    <!-- <div class="header-nav"></div>-->
+    <div class="top">
+      <div class="w">
+        <div><img class="logo" src="img/logo.png"></div>
+        <div class="neirong" id="nr">
+          <ul>
+            <li><a href="javascript:location.reload()">发现音乐</a></li>
+            <li class="line"></li>
+            <li><a href="myMusic">我的音乐</a></li>
+            <li class="line"></li>
+            <li><a href="friends">朋友</a></li>
+            <li class="line"></li>
+            <li><a href="demo" target="_blank">商城</a></li>
+            <li class="line"></li>
+            <li><a href="musicman">音乐人</a></li>
+            <li class="line"></li>
+            <li><a href="download">下载客户端</a></li>
+          </ul>
+        </div>
+        <div class="login-block" id="loginBlock">
+          <ul>
+            <li><a href="#"><i class="icon-phone"></i><em>手机号登陆</em></a></li>
+            <li><a href="#"><i class="icon-wechart"></i><em>微信登陆</em></a></li>
+            <li><a href="#"><i class="icon-qq"></i><em>QQ登陆</em></a></li>
+            <li><a href="#"><i class="icon-weibo"></i><em>微博登陆</em></a></li>
+            <li><a href="#"><i class="icon-nest"></i><em>网易邮箱账号登陆</em></a></li>
+          </ul>
+          <div class="sanjiaojian"></div>
+        </div>
+      </div>
+      <div class="seek">
+        <input id="text" type="text" value="音乐/视频电台/用户">
+      </div>
+      <div class="hot"></div>
+      <div class="deng" id="deng"><a href="mymusic">登录</a></div>
+      <div class="daosan" id="daosan"></div>
+    </div>
+    <!-- //红色栏部分-->
+    <div class="nav">
+      <div class="w">
+        <div class="xunze">
+          <ul>
+            <li><a href="#">推荐</a></li>
+            <li><a href="rankinglistindex">排行榜</a></li>
+            <li><a href="hometwo">歌单</a></li>
+            <li><a href="discover">主播电台</a></li>
+            <li><a href="singer">歌手</a></li>
+            <li><a href="#">新碟上架</a></li>
+          </ul>
+        </div>
+        <div class="sanjiao"></div>
+      </div>
+    </div>
+    <script src="js/01.js"></script>
+    <div class="bg" id="bg">
+      <div class="top-w" id="top-w">
+        <div class="dlpic"><a href="#"></a>
+          <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+        </div>
+        <div class="top-imgs" id="top-imgs"><a href="#"><img id="images" src="img/00.png" alt=""></a>
+          <ol class="spans" id="spans">
+            <li><span id="s1"></span></li>
+            <li><span id="s2"></span></li>
+            <li><span id="s3"></span></li>
+            <li><span id="s4"></span></li>
+            <li><span id="s5"></span></li>
+            <li><span id="s6"></span></li>
+            <li><span id="s7"></span></li>
+          </ol>
+        </div>
+        <div class="arrTop" id="arrTop"><span id="arrLeft"><</span><span id="arrRight">></span></div>
+      </div>
+    </div>
+    <script src="js/02demo.js"></script>
+    <div class="content w">
+      <div class="left">
+        <!-- 热门开始-->
+        <div class="hot">
+          <div class="hotIndro">
+            <div class="hotIndro-nav">
+              <div class="small-nav" id="smallnav"><span class="sCircle"></span><span class="head">热门推荐</span><a href="#">华语</a><span class="line"></span><a href="#">流行</a><span class="line"></span><a href="#">摇滚</a><span class="line"></span><a href="#">民谣</a><span class="line"></span><a href="#">电子</a><span class="arrRight"></span><a class="more" href="#">更多</a></div>
+            </div>
+            <div class="hotIndro-contont" id="hotContent">
+              <ul id="imgShow">
+                <li class="first"><a href="#"><img src="img/热门推荐01.jpg" alt=""></a><a class="showDes" href="#">一个偏执的家人和他的平凡之痛</a><span class="transparent"><i class="headset"></i><i>33万</i><a href="#"><i class="player"></i></a></span></li>
+                <li><a href="#"><img src="img/热门推荐02.jpg" alt=""></a><a class="showDes" href="#">活泼的调子，不如跳支舞吧</a><span class="transparent"><i class="headset"></i><i>103万</i><a href="#"><i class="player"></i></a></span></li>
+                <li><a href="#"><img src="img/热门推荐03.jpg" alt=""></a><a class="showDes" href="#">安静又不失节奏</a><span class="transparent"><i class="headset"></i><i>99万</i><a href="#"><i class="player"></i></a></span></li>
+                <li><a href="#"><img src="img/热门推荐04.jpg" alt=""></a><a class="showDes" href="#"><i class="column"></i><span class="top2">最最最浪漫的</span><span class="botm">情调</span></a><span class="transparent"><i class="headset"></i><i>13万</i><a href="#"><i class="player"></i></a></span></li>
+                <li class="five"><a href="#"><img src="img/热门推荐05.jpg" alt=""></a><a class="showDes" href="#">最重要的事情说</a><span class="transparent"><i class="headset"></i><i>3万</i><a href="#"><i class="player"></i></a></span></li>
+                <li><a href="#"><img src="img/热门推荐06.jpg" alt=""></a><a class="showDes" href="#"><i class="column"></i><span class="top2">别管那些嘴巴</span><span class="botm">先成为清爽温厚的人</span></a><span class="transparent"><i class="headset"></i><i>2万</i><a href="#"><i class="player"></i></a></span></li>
+                <li><a href="#"><img src="img/热门推荐07.jpg" alt=""></a><a class="showDes" href="#">浪漫复古小调 陷入微醺时光</a><span class="transparent"><i class="headset"></i><i>55万</i><a href="#"><i class="player"></i></a></span></li>
+                <li><a href="#"><img src="img/热门推荐08.jpg" alt=""></a><a class="showDes" href="#"><i class="column"></i><span class="top2">不如我们分手</span><span class="botm">吧!</span></a><span class="transparent"><i class="headset"></i><i>3369</i><a href="#"><i class="player"></i></a></span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 热门结束-->
+        <!-- <div class="ad">广告</div>-->
+        <!-- <div class="newCD">新碟</div>-->
+        <div class="zmx w">
+          <div class="centre-zmx" id="centre">
+            <div class="title-zmx" id="titles"><i class="jll1-zmx"></i><a href="#">新碟上架</a><span class="character-zmx"><a href="#">更多</a><i class="jll2-zmx"> </i></span></div>
+            <div class="newCd1-zmx" id="newCd1">
+              <div class="newCd2-zmx" id="newCd2">
+                <div class="newCd3-zmx" id="newCd3">
+                  <ul>
+                    <li><span>
+                        <div><a href="#" title="我的前半生 电视原声带"><img src="img/18887410742170941.jpg"></a><a class="play0" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="我的前半生 电视原声带">我的前半生 电视原声带</a></p>
+                        <p class="wz1"><a href="#" title="群星">群星</a></p></span><span>
+                        <div><a href="#" title="ONE DAY"><img src="img/19111711114264139.jpg"></a><a class="play1" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="ONE DAY">ONE DAY</a></p>
+                        <p class="wz1"><a href="#" title="ONE">ONE</a></p></span><span>
+                        <div><a href="#" title="燕返"><img src="img/18736777650906621.jpg"></a><a class="play2" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="燕返">燕返</a></p>
+                        <p class="wz1"><a href="#" title="燕池">燕池</a></p></span><span>
+                        <div><a href="#" title="Funk Wav Bounces Vol. 1"><img src="img/18980869230504690.jpg"></a><a class="play3" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="Funk Wav Bounces Vol. 1">Funk Wav Bounces Vol. 1</a></p>
+                        <p class="wz1"><a href="#" title="Calvin Harris">Calvin Harris</a></p></span><span>
+                        <div><a href="#" title="군주 - 가면의 주인 OST"><img src="img/18902803904961604.jpg"></a><a class="play4" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="군주 - 가면의 주인 OST">군주 - 가면의 주인 OST</a></p>
+                        <p class="wz1"><a href="#" title="V.A.">V.A.</a></p></span></li>
+                    <li><span>
+                        <div><a href="#" title="Kaleidoscope"><img src="img/18977570695642597.jpg"></a><a class="play5" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="Kaleidoscope">Kaleidoscope</a></p>
+                        <p class="wz1"><a href="#" title="Coldplay">Coldplay</a></p></span><span>
+                        <div><a href="#" title="2017跨界歌王 第十三期"><img src="img/19113910137488600.jpg"></a><a class="play6" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="2017跨界歌王 第十三期">2017跨界歌王 第十三期</a></p>
+                        <p class="wz1"><a href="#" title="群星">群星</a></p></span><span>
+                        <div><a href="#" title="涙を流せないピエロは太陽も月もない空を見上げた"><img src="img/18743374720672509.jpg"></a><a class="play7" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="涙を流せないピエロは太陽も月もない空を見上げた">涙を流せないピエロは太陽も月もない空を見上げた</a></p>
+                        <p class="wz1"><a href="#" title="GENERATIONS from EXILE TRIBE">GENERATIONS from EXILE TRIBE</a></p></span><span>
+                        <div><a href="#" title="TELEVISION"><img src="img/19111711114264181.jpg"></a><a class="play8" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="TELEVISION">TELEVISION</a></p>
+                        <p class="wz1"><a href="#" title="Zico">Zico</a></p></span><span>
+                        <div><a href="#" title="我想和你唱 第二季 第11期"><img src="img/19043541393299282.jpg"></a><a class="play9" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="我想和你唱 第二季 第11期">我想和你唱 第二季 第11期</a></p>
+                        <p class="wz1"><a href="#" title="群星">群星</a></p></span></li>
+                    <li><span>
+                        <div><a href="#" title="我的前半生 电视原声带"><img src="img/18887410742170941.jpg"></a><a class="play10" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="我的前半生 电视原声带">我的前半生 电视原声带</a></p>
+                        <p class="wz1"><a href="#" title="群星">群星</a></p></span><span>
+                        <div><a href="#" title="ONE DAY"><img src="img/19111711114264139.jpg"></a><a class="play11" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="ONE DAY">ONE DAY</a></p>
+                        <p class="wz1"><a href="#" title="ONE">ONE</a></p></span><span>
+                        <div><a href="#" title="燕返"><img src="img/18736777650906621.jpg"></a><a class="play12" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="燕返">燕返</a></p>
+                        <p class="wz1"><a href="#" title="燕池">燕池</a></p></span><span>
+                        <div><a href="#" title="Funk Wav Bounces Vol. 1"><img src="img/18980869230504690.jpg"></a><a class="play13" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="Funk Wav Bounces Vol. 1">Funk Wav Bounces Vol. 1</a></p>
+                        <p class="wz1"><a href="#" title="Calvin Harris">Calvin Harris</a></p></span><span>
+                        <div><a href="#" title="군주 - 가면의 주인 OST"><img src="img/18902803904961604.jpg"></a><a class="play14" href="javascript:;" title="播放"></a></div>
+                        <div class="pic"></div>
+                        <p class="wz"><a href="#" title="군주 - 가면의 주인 OST">군주 - 가면의 주인 OST</a></p>
+                        <p class="wz1"><a href="#" title="V.A.">V.A.</a></p></span></li>
+                  </ul>
+                </div>
+                <div id="arr"><span id="left"> </span><span id="right"> </span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script src="js/demo7.js"></script>
+        <div class="band">
+          <!-- 榜单top的制作开始-->
+          <div class="BD-top"><span class="spirit-one"></span><span class="BD-title">榜单</span><span class="more"><a href="#">更多</a><span class="spirit-two"></span></span></div>
+          <!-- 歌曲目录的制作开始-->
+          <div class="catalog-box">
+            <!-- 云音乐飙升榜-->
+            <div class="catalog-left" id="catalog-left">
+              <ul>
+                <li><a class="pic" href="#"><img src="img/飙升榜.jpg"></a><a class="bsb" href="#">云音乐飙升榜</a><span><a class="bf" id="bf" href="#"></a><a class="sc" id="sc" href="#"></a></span></li>
+                <li><span class="f-color">1</span><a class="gm" href="#">Fetish</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="f-color">2</span><a class="gm" href="#">如果我爱你</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="f-color">3</span><a class="gm" href="#">Summer Bummer</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">4</span><a class="gm" href="#">因你</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">5</span><a class="gm" href="#">再也没有</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">6</span><a class="gm" href="#">Coming Home</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">7</span><a class="gm" href="#">Miracles (Someone Special)</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">8</span><a class="gm" href="#">追光者</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">9</span><a class="gm" href="#">Tired (Kygo Remix)</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">10</span><a class="gm" href="#">齐天</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><a href="#">查看全部></a></li>
+              </ul>
+            </div>
+            <!-- 云音乐新歌榜-->
+            <div class="catalog-middle" id="catalog-middle">
+              <ul>
+                <li><a class="pic" href="#"><img src="img/新歌榜.jpg"></a><a class="bsb" href="#">云音乐新歌榜</a><span><a class="bf" id="bf2" href="#"></a><a class="sc" id="sc2" href="#"></a></span></li>
+                <li><span class="f-color">1</span><a class="gm" href="#">清白之年</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="f-color">2</span><a class="gm" href="#">Fetish</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="f-color">3</span><a class="gm" href="#">一百种热爱</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">4</span><a class="gm" href="#">마지막처럼</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">5</span><a class="gm" href="#">我们</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">6</span><a class="gm" href="#">我想念</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">7</span><a class="gm" href="#">Summer Bummer</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">8</span><a class="gm" href="#">Hold Me</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">9</span><a class="gm" href="#">해야해</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">10</span><a class="gm" href="#">桃花诺</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><a href="#">查看全部></a></li>
+              </ul>
+            </div>
+            <!-- 网易云原创新歌榜-->
+            <div class="catalog-right" id="catalog-right">
+              <ul>
+                <li><a class="pic" href="#"><img src="img/原创榜.jpg"></a><a class="bsb" href="#">网易原创歌曲榜</a><span><a class="bf" id="bf3" href="#"></a><a class="sc" id="sc3" href="#"></a></span></li>
+                <li><span class="f-color">1</span><a class="gm" href="#">依然</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="f-color">2</span><a class="gm" href="#">装</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="f-color">3</span><a class="gm" href="#">我喜欢如此的你</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">4</span><a class="gm" href="#">七月</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">5</span><a class="gm" href="#">后海</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">6</span><a class="gm" href="#">裁梦为魂</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">7</span><a class="gm" href="#">Lucky</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">8</span><a class="gm" href="#">封夜</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">9</span><a class="gm" href="#">隐</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><span class="num">10</span><a class="gm" href="#">RiCH</a><span class="s-function"><a class="s-bf" href="#"></a><a class="s-tj" href="#"></a><a class="s-sc" href="#"></a></span></li>
+                <li><a href="#">查看全部></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <script src="js/第八部分-榜单.js"></script>
+      </div>
+      <div class="right">
+        <!-- 登陆开始-->
+        <div class="login">
+          <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p><a class="login-btn" href="/WYYmusic/views/mymusic">用户登陆</a>
+        </div>
+        <!-- 登陆结束-->
+        <!-- 歌手开始-->
+        <div class="singer">
+          <!-- enter-singer-header的开始-->
+          <div class="enter-singer">
+            <div class="enter-singer-header"><span class="es-singer">入驻歌手</span><a class="es-more" href="#">查看全部 ></a></div>
+            <!-- enter-singer-header的结束-->
+            <!-- enter-singer-middle的开始-->
+            <ul class="enter-singer-middle" id="enterSingerMiddle">
+              <li><a href="#">
+                  <div class="head"><img src="img/zhm.jpg" alt=""></div>
+                  <div class="ifo"><span>张惠妹aMEI</span>
+                    <p>台湾歌手张惠妹</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="head"><img src="img/swj.jpg" alt=""></div>
+                  <div class="ifo"><span>尚雯婕</span>
+                    <p>原创电子唱作人</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="head"><img src="img/yq.jpg" alt=""></div>
+                  <div class="ifo"><span>羽泉组合</span>
+                    <p>国内知名演唱组合 羽..</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="head"><img src="img/lz.jpg" alt=""></div>
+                  <div class="ifo"><span>李志</span>
+                    <p>个体音乐人李志</p>
+                  </div></a></li>
+              <li><a href="#">
+                  <div class="head"><img src="img/mdmyy.jpg" alt=""></div>
+                  <div class="ifo"><span>马頔麻油叶</span>
+                    <p>民谣音乐人</p>
+                  </div></a></li>
+            </ul>
+            <!-- enter-singer-middle的结束-->
+            <!-- enter-singer-bottom的开始-->
+            <div class="enter-singer-bottom"><a class="es-join" target="_blank" href="#">申请成为网易音乐人</a></div>
+          </div>
+        </div>
+        <script src="js/enter-singer.js"></script>
+        <!-- 歌手结束-->
+        <!-- Dj开始-->
+        <div class="dj">
+          <h5>热门DJ</h5>
+          <ul>
+            <li><img src="img/dj1.jpg" alt="">
+              <div class="right"><a href="#">陈立</a><span class="v"></span>
+                <p>美食家陈立教授</p>
+              </div>
+            </li>
+            <li><img src="img/dj2.jpg" alt="">
+              <div class="right"><a href="#">Dj艳秋</a><span class="v"></span>
+                <p>著名音乐节目主持人</p>
+              </div>
+            </li>
+            <li><img src="img/dj3.jpg" alt="">
+              <div class="right"><a href="#">国家大剧院古典音乐频道</a><span class="v"></span>
+                <p>国家大剧院古典音乐官网</p>
+              </div>
+            </li>
+            <li><img src="img/dj4.jpg" alt="">
+              <div class="right"><a href="#">谢谢收听</a><span class="v"></span>
+                <p>南京电台主持人王馨</p>
+              </div>
+            </li>
+            <li><img src="img/dj5.jpg" alt="">
+              <div class="right"><a href="#">DJ晓苏</a><span class="v"></span>
+                <p>独立DJ，CRI环球旅游广播...</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- dj结束-->
+      </div>
+      <div class="toTop" id="backTop"></div>
+    </div>
+    <div class="g-ft">
+      <div class="m-ft">
+        <div class="w f-cb">
+          <div class="copy">
+            <p><a class="s-fc4" href="#">关于网易</a><span class="line"></span><a class="s-fc4" href="#">客户服务</a><span class="line"></span><a class="s-fc4" href="#">服务条款</a><span class="line"></span><a class="s-fc4" href="#">网站导航</a><span class="line"></span><a class="s-fc4" href="#">意见反馈</a></p>
+            <p class="s-fc3"><span class="sep">网易公司版权所有©1997-2017</span>                    杭州乐读科技有限公司运营 :<a class="s-fc3" href="#">浙网文[2015] 0415-135号</a></p>
+          </div>
+          <ul class="enter f-fr">
+            <li><a class="logo logo-musician f-tid" href="#"></a></li>
+            <li><a class="logo logo-topic f-tid" href="#"></a></li>
+            <li><a class="logo logo-midea f-tid" href="#"></a></li>
+            <li><a class="logo logo-reward f-tid" href="#"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>-->
+    <div class="g-btmbar" id="g-btmbar">
+      <div class="g-btmbar-p" id=".g-btmbar-p">
+        <div class="m-playbar m-playbar-lock" id="auto-id-fpboJHu88h3Feay2" style="top:-53px; visibility: visible;">
+          <div class="updn">
+            <div class="left f-f1"><a class="btn1" id="fixBtn1" href="javascript:void(0);"></a><a class="btn2" id="fixBtn2" href="javascript:void(0);"></a></div>
+            <div class="right f-f1"></div>
+          </div>
+          <div class="bg"></div>
+          <div class="wrap" id="g_player">
+            <div class="btns"><a class="prv" href="#"></a><a class="ply j-fkag" href="#"></a><a class="plys j-fkag" href="#"></a><a class="nxt" href="#"></a></div>
+            <div class="head j-flag"><a class="mask" href="#"><img src="img/default_album.jpg" alt=""></a></div>
+            <div class="play">
+              <div class="j-flag words"></div>
+              <div class="m-pbar">
+                <div class="barbg j-flag" id="auto-id-ODscgwD3lbnJdK0A">
+                  <div class="rdy" style="width: 0%;"></div>
+                  <div class="cur" style="width: 0%;"><span class="btn f-tdn f-alpha" id="auto-id-bxCC3M0eRZD76VpR"><i></i></span></div>
+                </div><span class="j-flag time"><em>00:00</em> / 00:00</span>
+              </div>
+            </div>
+            <div class="oper f-fl"><a class="icn icn-add j-flag" href="#" title="收藏"></a><a class="icn icn-share" href="#" title="分享"></a></div>
+            <div class="ctrl f-fl f-pr j-flag">
+              <div class="m-vol" id="auto-id-epndKXTBrRZxUtTX" style="visibility:hidden;">
+                <div class="barbg"></div>
+                <div class="vbg j-t" id="auto-id-Ps01blhP4eMKXBgn">
+                  <div class="curr j-t" style="height: 74.4px;"></div><span class="btn f-alpha j-t" style="top: 16.2px;"></span>
+                </div>
+              </div><a class="icn icn-vol" href="#"></a><a class="icn icn-loop" href="#"></a><span class="add f-pr"><span class="tip" style="display: none;"></span><a class="icn icn-list s-fc3" href="#" title="播放列表">0</a></span>
+              <div class="tip tip-1" style="display: none;">循环</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/footer-js.js"></script>
+    <!-- <div class="footer"></div>-->
+    <script src="js/backTop.js"></script>
+  </body>
+</html>

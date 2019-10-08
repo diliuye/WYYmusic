@@ -1,0 +1,984 @@
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+    margin: 0;
+    padding: 0;  /*���Ԫ�ص�����߾�*/
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;  /*���滷����*/
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/*ȥ��ԭ��ʽ�е�С�ڵ�*/
+
+table {
+    border-collapse: collapse; /*�ϲ�������*/
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+
+a {
+    color: #fff;   /*a ��ǩ�ǲ��̳���ɫ ��*/
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+s,
+i,
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/*������������ʼ*/
+.topBanner{
+    height: 72px;
+    width: 100%;
+    background-color: #2F2F2F;
+}
+.topBanner .bannerinner{
+    width: 1200px;
+    height: 72px;
+    position: relative;
+    margin: 0 auto;
+}
+.topBanner .bannerinner .bgimg{
+    width: 186px;
+    height: 72px;
+    float: left;
+    background:url("xiazaiimg/topbar.png") no-repeat 0 15px;
+}
+.topBanner .bannerinner ul{
+    float: left;
+
+}
+.topBanner .bannerinner ul li{
+    float: left;
+    padding-left: 18px;
+    padding-right: 18px;
+    height: 72px;
+    line-height: 72px;
+    margin: 0 auto;
+    color: #030303;
+    position: relative;
+
+}
+.topBanner .bannerinner .lastLi{
+    background-color: #252525;
+    width: 76px;
+}
+.topBanner .bannerinner .lastLi .hot{
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    top:24px;
+    left: 80px;
+    background:url("xiazaiimg/topbar.png") no-repeat -192px 0px;
+}
+.topBanner .bannerinner .lastLi .redtriangle{
+    width: 16px;
+    height: 12px;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+
+    margin-left: -8px;
+    background:url("xiazaiimg/topbar.png") no-repeat -226px 0px;
+}
+.topBanner .bannerinner ul li a{
+    color: white;
+    font-size: 12px;
+}
+.topBanner .bannerinner .topSerach{
+    width: 286px;
+    height: 72px;
+    position: absolute;
+    right:0;
+}
+.topBanner .bannerinner .topSerach .searchTop{
+    width: 210px;
+    height: 32px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #fff;
+    top:20px;
+}
+.topBanner .bannerinner .topSerach .searchTop .btnimg{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    background:url("xiazaiimg/icon2.png") no-repeat -148px -350px;
+}
+.topBanner .bannerinner .topSerach .searchTop input{
+    position: absolute;
+    right:20px;
+    top:8px;
+    font-size: 12px;
+    color: #C2C2C2;
+}
+.topBanner .loginTop{
+    width: 60px;
+    height: 34px;
+
+    position: absolute;
+    right: 0px;
+    top:18px;
+}
+.topBanner .loginTop input{
+    background-color:  #2F2F2F;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    color: #C2C2C2;
+}
+.topBanner .loginTop .triangle{
+    width: 16px;
+    height: 14px;
+    position: absolute;
+    left: 35px;
+    top:15px;
+    background: url("xiazaiimg/topbar.png") no-repeat -228px -380px;
+}
+.topBanner .loginTop .triangle1{
+    width: 16px;
+    height: 14px;
+    position: absolute;
+    left: 35px;
+    top:15px;
+    background: url("xiazaiimg/topbar.png") no-repeat -228px -418px;
+}
+.topBanner .loginTop ul{
+    width: 132px;
+    height: 160px;
+    position: absolute;
+    top:40px;
+    left: -50px;
+    background-color: #151515;
+    display: none;
+    z-index: 2;
+}
+.topBanner .loginTop ul .ultriangle{
+    width: 16px;
+    height: 14px;
+    position: absolute;
+    top:-8px;
+    left: 50%;
+    margin-left: -8px;
+    background: url("xiazaiimg/topbar.png") no-repeat -228px -418px;
+
+}
+.topBanner .loginTop ul li{
+    width: 132px;
+    height: 32px;
+    position: relative;
+}
+.topBanner .loginTop ul li a{
+    margin-left: 40px;
+    font-size: 12px;
+    color: #C2C2C2;
+}
+.topBanner .loginTop ul li .li1,
+.li2,
+.li3,
+.li4,
+.li5 {
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    left: 15px;
+    top:8px;
+}
+.topBanner .loginTop ul li .li1{
+    background: url("xiazaiimg/toplist.png") no-repeat -2px -3px;
+}
+.topBanner .loginTop ul li .li2{
+    background: url("xiazaiimg/toplist.png") no-repeat -20px -22px;
+}
+.topBanner .loginTop ul li .li3{
+    background: url("xiazaiimg/toplist.png") no-repeat -20px -40px;
+}
+.topBanner .loginTop ul li .li4{
+    background: url("xiazaiimg/toplist.png") no-repeat 0px -23px;
+}
+.topBanner .loginTop ul li .li5{
+    background: url("xiazaiimg/toplist.png") no-repeat -2px -42px;
+}
+.redMusic{
+    height: 4px;
+    background-color: #C70C0C;
+    width: 100%;
+
+}
+/*��������������*/
+/*�����������ֲ�ͼ��ʼ*/
+.ringpic{
+    height: 482px;
+    width: 100%;
+    background: url("xiazaiimg/bg.jpg") no-repeat 0 0;
+}
+
+.ringpic .ww {
+    width: 980px;
+    margin: 0 auto;
+    height: 482px;
+    position: relative;
+}
+/*�ұߵľ���ͼ���ֿ�ʼ*/
+.ringpic .rightPic{
+    width: 450px;
+    height: 482px;
+    position: absolute;
+    right: -95px;
+    top: 0;
+}
+.ringpic .rightPic .rightSprite{
+    position: absolute;
+    bottom: 52px;
+    left: 10px;
+    width: 450px;
+    height: 240px;
+}
+.ringpic .rightPic .rightSprite ul{
+    width: 172px;
+    height: 202px;
+    float: left;
+    margin-right: 25px;
+}
+.ringpic .rightPic .rightSprite ul li{
+    height: 40px;
+    margin-bottom: 15px;
+    background-color: #5C6577;
+}
+.ringpic .rightPic .rightSprite ul li a {
+    float: left;
+    margin-top: 10px;
+    margin-right: 6px;
+}
+.ringpic .rightPic .rightSprite ul li span {
+    font-size: 12px;
+    line-height: 25px;
+    float: right;
+    margin-right: 15px;
+    color: rgba(255,255,255,.5);
+
+}
+.ringpic .rightPic .rightSprite ul li .sp1,
+.sp2,
+.sp3,
+.sp4,
+.sp21,
+.sp22,
+.sp23,
+.sp24{
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 10px;
+    background-color: #2c2c2c;
+}
+.ringpic .rightPic .rightSprite ul li .sp1{
+    background: url("xiazaiimg/down_btn.png") no-repeat -62px -110px;
+}
+.ringpic .rightPic .rightSprite ul li .sp2,
+.sp21,
+.sp22{
+    background: url("xiazaiimg/down_btn.png") no-repeat -32px -110px;
+}
+.ringpic .rightPic .rightSprite ul li .sp3,
+.sp4,
+.sp23{
+    background: url("xiazaiimg/down_btn.png") no-repeat -2px -110px;
+}
+.ringpic .rightPic .rightSprite ul li .sp24{
+    background: url("xiazaiimg/down_btn.png") no-repeat -131px -109px;
+}
+.ringpic>.rightPic>.rightSprite>ul>li>a,span{
+    float: left;
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+.ringpic .rightPic .rightSprite .spriteTop{
+    width: 100px;
+    height: 20px;
+    float: left;
+    margin-top: 10px;
+}
+.ringpic .rightPic .rightSprite .spriteTop .Top1{
+    width: 4px;
+    height: 4px;
+    float: left;
+    margin-top: 5px;
+    border: 2px solid #A2A9B5;
+}
+
+.ringpic .rightPic .rightSprite .spriteTop .Pc{
+    font-size: 12px;
+    float: left;
+    color: #E4E6EB;
+    margin-left: 5px;
+}
+/*�ұߵľ���ͼ���ֽ���*/
+
+/*��ߵ��ֲ�ͼ��ʼ*/
+.ringpic .leftPic{
+    width: 700px;
+    height: 482px;
+    /*float: right;*/
+    /*float: left;*/
+    position: absolute;
+    left: -50px;
+    top: 0;
+}
+.ringpic .leftPic #images{
+    float: right;
+    margin-right: 140px;
+    margin-top: 20px;
+
+
+}
+.ringpic .leftPic ol{
+    width: 55px;
+    height: 24px;
+    margin-top: 453px;
+    margin-left: 20px;
+    float: left;
+}
+.ringpic .leftPic ol li{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #8695AC;
+    float: left;
+    margin-right: 4px;
+    margin-left: 4px;
+    margin-top: 7px;
+}
+/*��ߵ��ֲ�ͼ����*/
+/*�����������ֲ�ͼ����*/
+/*ɨ���ά�뿪ʼ*/
+.appcode{
+    width: 106px;
+    height: 106px;
+    position: fixed;
+    right: 30px;
+    top:430px;
+    z-index: 2;
+}
+/*ɨ���ά�����*/
+/*�в�ǧ�����⿪ʼ*/
+.w{
+    width: 1000px;
+    margin: 0 auto;
+}
+.songs{
+    height: 438px;
+    width: 100%;
+}
+.songs .songs-describe{
+    width: 498px;
+    height: 190px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 120px;
+}
+.songs h3{
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: '����';
+}
+.songs p{
+    font-size: 18px;
+    height: 28px;
+    line-height: 28px;
+}
+.songs img{
+    width: 400px;
+    height: 175px;
+    float: right;
+    margin-top: 120px;
+    margin-right: 0px;
+}
+/*�в�ǧ���������*/
+/*�в�ǧ�����ǿ�ʼ*/
+.stars{
+    height: 438px;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+.stars .starss-describe{
+    float: right;
+    margin-top: 120px;
+    margin-right: 0px;
+}
+.stars h3{
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: '����';
+}
+.stars .starss-describe p{
+    font-size: 18px;
+    height: 28px;
+    line-height: 28px;
+}
+.stars p em{
+    font-style:normal;
+    color: red;
+}
+.stars img{
+    float: left;
+    margin-top: 110px;
+    margin-left: 0px;
+    margin-right: 60px;
+}
+/*�в�ǧ�����ǽ���*/
+/*�в��罻��ϵ��ʼ*/
+
+.social-relation{
+    height: 438px;
+    width: 100%;
+
+}
+.social-relation img{
+    float: right;
+    margin-top: 90px;
+}
+.social-relation .relation-describe{
+    float: left;
+    margin-left: 0px;
+    margin-top: 120px;
+}
+.social-relation h3{
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: '����';
+}
+.social-relation .relation-describe p{
+    font-size: 18px;
+    height: 28px;
+    line-height: 28px;
+}
+.social-relation .relation-describe em{
+    font-style:normal;
+    color: red;
+}
+
+/*�в��罻��ϵ����*/
+/*�в��ֻ����Կ�ʼ*/
+.phonesongs{
+    height: 438px;
+    width: 100%;
+    background-color: #F8F8F8;
+}
+.phonesongs h3{
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: '����';
+}
+.phonesongs img{
+    margin-top: 100px;
+    float: left;
+}
+.phonesongs .plist-describe{
+    float: right;
+    margin-top: 130px;
+}
+
+.phonesongs .plist-describe p{
+    font-size: 18px;
+    height: 28px;
+    line-height: 28px;
+}
+.phonesongs .plist-describe p em{
+    font-style:normal;
+    color: red;
+}
+/*�в��ֻ����Խ���*/
+/*�в�����ʶ����ʼ*/
+.listening{
+    height: 438px;
+}
+.listening img{
+    float: right;
+    margin-top: 50px;
+}
+.listening .listeningDs{
+    float: left;
+    margin-top: 130px;
+}
+.listening .listeningDs h3{
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: '����';
+}
+.listening .listeningDs p{
+    font-size: 18px;
+    height: 28px;
+    line-height: 28px;
+}
+.listening .listeningDs p em{
+    font-style:normal;
+    color: red;
+}
+/*�в�����ʶ������*/
+/*�ײ����������ֿ�ʼ*/
+.footMusic{
+    height: 344px;
+    width: 100%;
+    position: relative;
+    background-color: #F8F8F8;
+}
+.footMusic h2{
+    font-size: 28px;
+    width: 140px;
+    position: absolute;
+    top:50px;
+    left:50%;
+    margin-left: -70px;
+}
+.footMusic p{
+    font-size: 14px;
+    width: 310px;
+    position: absolute;
+    top:88px;
+    left:50%;
+    margin-left: -155px;
+}
+.footMusic ul{
+    width: 1044px;
+    position: absolute;
+    top:140px;
+    left: 50%;
+    margin-left: -522px;
+}
+.footMusic ul li{
+    float: left;
+    margin-left: 122px;
+}
+.footMusic ul li:first-child{
+    margin-left: 0px;
+}
+.footMusic ol{
+    width: 1046px;
+    height: 32px;
+    position: absolute;
+    top:256px;
+    /*background-color: pink;*/
+    left: 50%;
+    margin-left: -523px;
+}
+.footMusic ol li{
+    float: left;
+    width: 122px;
+    margin-left: 106px;
+    height: 30px;
+    position: relative;
+    border-radius: 15px;
+}
+.footMusic ol li:first-child{
+    margin-left: 0px;
+    width: 122px;
+    height: 32px;
+
+}
+.footMusic ol li a{
+    width: 100px;
+    height: 32px;
+    position: absolute;
+    top:8px;
+    left: 40px;
+    font-size: 12px;
+}
+.footMusic ol .a1{
+    background: url("xiazaiimg/sprite.png") no-repeat 0px -495px;
+}
+
+.footMusic ol .a2{
+    background: url("xiazaiimg/sprite.png") no-repeat 0px -558px;
+}
+.footMusic ol .a3{
+    background: url("xiazaiimg/sprite.png") no-repeat 0px -558px;
+}
+.footMusic ol .a4{
+    background: url("xiazaiimg/sprite.png") no-repeat 0px -620px;
+}
+.footMusic ol .a5{
+    background: url("xiazaiimg/sprite.png") no-repeat 0px -434px;
+}
+
+/*�ײ����������ֽ���*/
+/*�ײ��������׿�ʼ*/
+.footer{
+    height: 141px;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+.footer .footw{
+    width: 978px;
+    margin: 0 auto;
+    height: 141px;
+}
+.footer .footw .foot-describe{
+    width: 530px;
+    height: 141px;
+    float: left;
+    position: relative;
+}
+.footer .footw .foot-describe ul{
+    position: absolute;
+    top:40px;
+
+}
+.footer .footw .foot-describe ul li{
+    float: left;
+    margin-right: 24px;
+    font-size: 12px;
+
+}
+.footer .footw .foot-describe ul li a{
+    color: #000;
+}
+.footer .footw .foot-describe ul li:last-child{
+    margin-right: 0;
+}
+.footer .footw .foot-describe p{
+    position: absolute;
+    top:66px;
+    font-size: 13px;
+}
+.footer .footw .footpictures{
+    float: right;
+    width: 326px;
+    height: 141px;
+    position: relative;
+}
+.footer .footw .footpictures ul{
+    position: absolute;
+    top:20px;
+    right: 0;
+}
+.footer .footw .footpictures li{
+    width: 52px;
+    height: 62px;
+    float: left;
+    margin-right: 39px;
+}
+.footer .footw .footpictures li:last-child{
+    margin-right: 0;
+    background: url("xiazaiimg/foot_enter.png") no-repeat -68px 0px;
+
+}
+.footer .footw .footpictures li:first-child{
+    background: url("xiazaiimg/foot_enter.png") no-repeat -68px -80px;
+}
+.footer .footw .footpictures ul .lisTwo{
+    background: url("xiazaiimg/foot_enter.png") no-repeat -8px -80px;
+}
+.footer .footw .footpictures ul .lisThree{
+    background: url("xiazaiimg/foot_enter.png") no-repeat -8px 0px;
+}
+/*-�ײ��������׽���*/
+
+/*�ײ���������ʼ*/
+.g-btmbar {
+    position: fixed;
+    bottom: -47px;
+    height: 0;
+    width: 100%;
+}
+.g-btmbar-p {
+    position: absolute;
+    width: 100%;
+    height: 67px;
+}
+.g-btmbar .m-playbar {
+    position: absolute;
+    width: 100%;
+    height: 53px;
+}
+.g-btmbar .updn .left {
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+    width: 52px;
+    height: 67px;
+    background: url("xiazaiimg/playbar.png") no-repeat 0 -385px;
+}
+.g-btmbar .updn .left .btn1 {
+    position: absolute;
+    left: 18px;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    background: url("xiazaiimg/playbar.png") no-repeat -82px -382px;
+}
+.g-btmbar .updn .left .btn2 {
+    position: absolute;
+    left: 18px;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    background: url("xiazaiimg/playbar.png") no-repeat -100px -382px;
+    display: none;
+}
+.g-btmbar .updn .left .btn1:hover {
+    background: url("xiazaiimg/playbar.png") no-repeat -82px -402px;
+}
+.g-btmbar .updn .left .btn2:hover {
+    background: url("xiazaiimg/playbar.png") no-repeat -100px -402px;
+}
+
+.g-btmbar .bg {
+    position: absolute;
+    bottom: 0;
+    right: 52px;
+    width: 100%;
+    height: 53px;
+    background: url("xiazaiimg/playbar.png");
+    overflow: visible;
+}
+
+.g-btmbar .wrap {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -490px;
+    width: 980px;
+    height: 47px;
+}
+
+.g-btmbar .wrap .btns {
+    position: absolute;
+    bottom: 0;
+    width: 137px;
+    height: 42px;
+}
+.g-btmbar .wrap .btns .prv {
+    position: absolute;
+    top: 5px;
+    width: 28px;
+    height: 28px;
+    background: url("xiazaiimg/playbar.png") no-repeat 0 -130px;
+}
+.g-btmbar .wrap .btns .prv:hover {
+    background: url("xiazaiimg/playbar.png") no-repeat -30px -130px;
+}
+.g-btmbar .wrap .btns #ply01 {
+    position: absolute;
+    left: 38px;
+    width: 36px;
+    height: 36px;
+    background: url("xiazaiimg/playbar.png") no-repeat 0px -204px;
+    display: block;
+}
+.g-btmbar .wrap .btns  #ply01:hover {
+    background: url("xiazaiimg/playbar.png") no-repeat -40px -204px;
+}
+.g-btmbar .wrap .btns .plys {
+    position: absolute;
+    left: 38px;
+    width: 36px;
+    height: 36px;
+    background: url("xiazaiimg/playbar.png") no-repeat 0px -165px;
+    display: none;
+}
+.g-btmbar .wrap .btns .plys:hover {
+    background: url("xiazaiimg/playbar.png") no-repeat -40px -165px;
+}
+.g-btmbar .wrap .btns .nxt {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    width: 28px;
+    height: 28px;
+    background: url("xiazaiimg/playbar.png") no-repeat -80px -130px;
+}
+.g-btmbar .wrap .btns .nxt:hover {
+    background: url("xiazaiimg/playbar.png") no-repeat -110px -130px;
+}
+
+.g-btmbar .wrap .head {
+    position: absolute;
+    top: 6px;
+    left: 138px;
+    width: 34px;
+    height: 34px;
+}
+.g-btmbar .wrap .head img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.g-btmbar .wrap .play {
+    position: absolute;
+    left: 190px;
+    width: 608px;
+    height: 37px;
+}
+.g-btmbar .wrap .play .words {
+    position: absolute;
+    width: 608px;
+    height: 28px;
+}
+.g-btmbar .wrap .play .m-pbar {
+    position: absolute;
+    bottom: 0;
+    width: 493px;
+    height: 9px;
+    border-radius: 9px;
+    border-bottom: 1px solid #666;
+    background-color: #000;
+}
+.g-btmbar .wrap .play .m-pbar .time {
+    position: absolute;
+    bottom: -3px;
+    font-size: 12px;
+    color: #999;
+    right: -85px;
+}
+.g-btmbar .wrap .play .m-pbar .time em {
+    font-size: 12px;
+    color: #bbb;
+    font-style: normal;
+}
+.g-btmbar .wrap .play .m-pbar .barbg .cur {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    background: url("xiazaiimg/iconall.png") no-repeat -43px -253px;
+}
+.g-btmbar .wrap .play .m-pbar .barbg .cur:hover {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    background: url("xiazaiimg/iconall.png") no-repeat -3px -253px;
+}
+.g-btmbar .wrap .oper {
+    position: absolute;
+    right: 120px;
+    width: 60px;
+    height: 36px;
+}
+.g-btmbar .wrap .oper .icn-add {
+    position: absolute;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: url("xiazaiimg/playbar.png") no-repeat -90px -164px;
+}
+.g-btmbar .wrap .oper .icn-add:hover {
+    background: url("xiazaiimg/playbar.png") no-repeat -90px -190px;
+}
+.g-btmbar .wrap .oper .icn-share {
+    position: absolute;
+    left: 28px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: url("xiazaiimg/playbar.png") no-repeat -116px -164px;
+}
+.g-btmbar .wrap .oper .icn-share:hover {
+    background: url("xiazaiimg/playbar.png") no-repeat -116px -190px;
+}
+.g-btmbar .wrap .ctrl {
+    position: absolute;
+    right: 0;
+    width: 126px;
+    height: 36px;
+}
+.g-btmbar .wrap .ctrl .icn-vol {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: url("xiazaiimg/playbar.png") no-repeat -2px -250px;
+}
+.g-btmbar .wrap .ctrl .icn-vol:hover {
+    background: url("xiazaiimg/playbar.png") no-repeat -31px -250px;
+}
+.g-btmbar .wrap .ctrl .icn-loop {
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: url("xiazaiimg/playbar.png") no-repeat -68px -250px;
+}
+.g-btmbar .wrap .ctrl .icn-loop:hover {
+    background: url("xiazaiimg/playbar.png") no-repeat -95px -250px;
+}
+.g-btmbar .wrap .ctrl .f-pr {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    width: 60px;
+    height: 25px;
+    background: url("xiazaiimg/playbar.png") no-repeat -44px -70px;
+}
+.g-btmbar .wrap .ctrl .f-pr:hover {
+    background: url("xiazaiimg/playbar.png") no-repeat -44px -100px;
+}
+.g-btmbar .wrap .ctrl .s-fc3 {
+    position: absolute;
+    font-size: 12px;
+    color: #666;
+    right: 20px;
+    bottom: 6px;
+}
+
+/*�ײ�����������*/

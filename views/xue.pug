@@ -1,0 +1,559 @@
+doctype html
+html
+    head(lang='en')
+        meta(charset='UTF-8')
+        title 网易云音乐
+        link(rel='stylesheet', href='css/base.css')
+        link(rel='stylesheet', href='css/index.css')
+        link(rel='stylesheet', href='xue.css')
+        link(rel='stylesheet', href='rankinglistcss/rankinglist.css')
+        link(rel='stylesheet', href='rankinglistcss/footercss.css')
+        link.ico(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
+        script(src='js/tools.js')
+        script(src='js/common.js')
+        script(src='js/demo06.js')
+        script(src='js/animate.js')
+    body
+        // <div class="topBar"></div>
+        // <div class="header-nav"></div>
+        .top
+            .w
+                div
+                    img.logo(src='img/logo.png')
+                #nr.neirong
+                    ul
+                        li
+                            a(href='javascript:location.reload()') 发现音乐
+                        li.line
+                        li
+                            a(href='mymusic') 我的音乐
+                        li.line
+                        li
+                            a(href='friends') 朋友
+                        li.line
+                        li
+                            a(href='demo',target='_blank') 商城
+                        li.line
+                        li
+                            a(href='musicman') 音乐人
+                        li.line
+                        li
+                            a(href='download') 下载客户端
+                #loginBlock.login-block
+                    ul
+                        li
+                            a(href='#')
+                                i.icon-phone
+                                em 手机号登陆
+                        li
+                            a(href='#')
+                                i.icon-wechart
+                                em 微信登陆
+                        li
+                            a(href='#')
+                                i.icon-qq
+                                em QQ登陆
+                        li
+                            a(href='#')
+                                i.icon-weibo
+                                em 微博登陆
+                        li
+                            a(href='#')
+                                i.icon-nest
+                                em 网易邮箱账号登陆
+                    .sanjiaojian
+            .seek
+                input#text(type='text', value='音乐/视频电台/用户')
+            .hot
+            #deng.deng
+                a(href='mymusic') 登录
+            #daosan.daosan
+        // //红色栏部分
+        .nav
+            .w
+                .xunze
+                    //ul
+                        li
+                            a(href='#') 推荐
+                        li
+                            a(href='rankinglistindex') 排行榜
+                        li
+                            a(href='hometwo') 歌单
+                        li
+                            a(href='discover') 主播电台
+                        li
+                            a(href='singer') 歌手
+                        li
+                            a(href='#') 新碟上架
+                .sanjiao
+
+        .xue1.m-main-content
+            // 飙升榜的开始
+            .content-bsb
+                .content-bsb-top
+                    .bsb-t-logo
+                        img(src='singerimg/薛之谦.jpg', alt='')
+                    .bsb-t-content
+                        p 薛之谦
+                        span
+                            | ⏱最近更新：09月28日
+                            span.txt （每天更新）
+                        .bsb-t-btns
+                            a(href='musicplay')
+                                span.btns1 播放
+                            span.btns2 +
+                            span.btns3 (476102)
+                            span.btns4 (1922)
+                            span.btns5 下载
+                            span.btns6 (69128)
+                            br
+                            br
+                            br
+
+
+                .content-bsb-bottom
+                    .bottom-txt
+                        span.txt1 歌曲列表
+                        span.txt2 100首歌
+                        span.txt3
+                            | 播放：
+                            span.txt4 408
+                            |                         次
+                .content-bsb-center
+                    .center-head
+                        .head1
+                        .head2 歌名
+                        .head3 时长
+                        .head4 专辑
+                    .center-content
+                        ul#center-content-list.content-list
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 1
+                                        span new
+                                    li
+                                        a(href='musicplay')
+                                            b
+                                            |                                     刚刚好
+                                    li 06:30
+                                    li 尘
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 2
+                                        span new
+                                    li
+                                        b
+                                        |                                     笑场
+                                    li 06:30
+                                    li 尘
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 3
+                                        span new
+                                    li
+                                        b
+                                        |                                     木偶人
+                                    li 06:30
+                                    li 尘
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 4
+                                        span new
+                                    li
+                                        b
+                                        |                                     我好像在哪里见过你
+                                    li 06:30
+                                    li 初学者
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 5
+                                        span new
+                                    li
+                                        b
+                                        |                                     这么久不见
+                                    li 04:17
+                                    li 尘
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 6
+                                        span new
+                                    li
+                                        b
+                                        |                                     意外
+                                    li 02:52
+                                    li 意外
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 7
+                                        span ↓3
+                                    li
+                                        b
+                                        |                                     慢半拍
+                                    li 03:48
+                                    li 尘
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 8
+                                        span new
+                                    li
+                                        b
+                                        |                                     天份
+                                    li 03:45
+                                    li 怪咖
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 9
+                                        span new
+                                    li
+                                        b
+                                        |                                     演员
+                                    li 04:03
+                                    li 绅士
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 10
+                                        span -0
+                                    li
+                                        b
+                                        |                                     暧昧
+                                    li 04:08
+                                    li 渡
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 11
+                                        span -0
+                                    li
+                                        b
+                                        |                                     你还要我怎样
+                                    li 04:04
+                                    li 意外
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 12
+                                        span new
+                                    li
+                                        b
+                                        |                                     绅士
+                                    li 03:12
+                                    li 绅士
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 13
+                                        span new
+                                    li
+                                        b
+                                        |                                     刚刚好
+                                    li 03:22
+                                    li 初学者
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 14
+                                        span new
+                                    li
+                                        b
+                                        |                                     其实
+                                    li 03:42
+                                    li 意外
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 15
+                                        span new
+                                    li
+                                        b
+                                        |                                     动物世界
+                                    li 04:01
+                                    li 渡
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 16
+                                        span new
+                                    li
+                                        b
+                                        |                                     哑巴
+                                    li 04:37
+                                    li 怪咖
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 17
+                                        span new
+                                    li
+                                        b
+                                        |                                     怪咖
+                                    li 03:20
+                                    li 怪咖
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 18
+                                        span new
+                                    li
+                                        b
+                                        |                                     像风一样
+                                    li 04:25
+                                    li 渡
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 19
+                                        span new
+                                    li
+                                        b
+                                        |                                     认真的雪
+                                    li 04:25
+                                    li 未完成的歌
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 20
+                                        span new
+                                    li
+                                        b
+                                        |                                     丑八怪
+                                    li 03:08
+                                    li 意外
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 21
+                                        span new
+                                    li
+                                        b
+                                        |                                     刚刚好
+                                    li 06:30
+                                    li 尘
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 22
+                                        span new
+                                    li
+                                        b
+                                        |                                     笑场
+                                    li 06:30
+                                    li 尘
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 23
+                                        span new
+                                    li
+                                        b
+                                        |                                     木偶人
+                                    li 06:30
+                                    li 尘
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 24
+                                        span new
+                                    li
+                                        b
+                                        |                                     我好像在哪里见过你
+                                    li 06:30
+                                    li 初学者
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 25
+                                        span new
+                                    li
+                                        b
+                                        |                                     这么久不见
+                                    li 04:17
+                                    li 尘
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 26
+                                        span new
+                                    li
+                                        b
+                                        |                                     意外
+                                    li 02:52
+                                    li 意外
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 27
+                                        span ↓3
+                                    li
+                                        b
+                                        |                                     慢半拍
+                                    li 03:48
+                                    li 尘
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 28
+                                        span new
+                                    li
+                                        b
+                                        |                                     天份
+                                    li 03:45
+                                    li 怪咖
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 29
+                                        span new
+                                    li
+                                        b
+                                        |                                     演员
+                                    li 04:03
+                                    li 绅士
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 30
+                                        span -0
+                                    li
+                                        b
+                                        |                                     暧昧
+                                    li 04:08
+                                    li 渡
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 31
+                                        span -0
+                                    li
+                                        b
+                                        |                                     你还要我怎样
+                                    li 04:04
+                                    li 意外
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 32
+                                        span new
+                                    li
+                                        b
+                                        |                                     绅士
+                                    li 03:12
+                                    li 绅士
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 33
+                                        span new
+                                    li
+                                        b
+                                        |                                     刚刚好
+                                    li 03:22
+                                    li 初学者
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 34
+                                        span new
+                                    li
+                                        b
+                                        |                                     其实
+                                    li 03:42
+                                    li 意外
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 35
+                                        span new
+                                    li
+                                        b
+                                        |                                     动物世界
+                                    li 04:01
+                                    li 渡
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 36
+                                        span new
+                                    li
+                                        b
+                                        |                                     哑巴
+                                    li 04:37
+                                    li 怪咖
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 37
+                                        span new
+                                    li
+                                        b
+                                        |                                     怪咖
+                                    li 03:20
+                                    li 怪咖
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 38
+                                        span new
+                                    li
+                                        b
+                                        |                                     像风一样
+                                    li 04:25
+                                    li 渡
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 39
+                                        span new
+                                    li
+                                        b
+                                        |                                     认真的雪
+                                    li 04:25
+                                    li 未完成的歌
+                            li.list-song01
+                                ul.tr02
+                                    li
+                                        | 40
+                                        span new
+                                    li
+                                        b
+                                        |                                     丑八怪
+                                    li 03:08
+                                    li 意外
+                                    // dj结束
+                                br
+                                br
+                                br
+                                br
+                                #backTop.toTop
+                                    .g-ft
+                                        .m-ft
+                                            .w.f-cb
+                                                .copy
+                                                    p
+                                                        a.s-fc4(href='#') 关于网易
+                                                        span.line
+                                                        a.s-fc4(href='#') 客户服务
+                                                        span.line
+                                                        a.s-fc4(href='#') 服务条款
+                                                        span.line
+                                                        a.s-fc4(href='#') 网站导航
+                                                        span.line
+                                                        a.s-fc4(href='#') 意见反馈
+                                                    p.s-fc3
+                                                        span.sep 网易公司版权所有©1997-2017
+                                                        |                     杭州乐读科技有限公司运营 :
+                                                        a.s-fc3(href='#') 浙网文[2015] 0415-135号
+
+
+        script(src='js/footer-js.js')
+        // <div class="footer"></div>
+        script(src='js/backTop.js')

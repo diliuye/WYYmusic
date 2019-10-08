@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="rankinglistcss/rankinglist4.css">
+    <link rel="stylesheet" href="rankinglistcss/footercss.css">
+    <link class="ico" rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/login-block.css">
+  </head>
+  <body>
+    <!-- 顶部导航开始-->
+    <div class="m-top">
+      <div class="m-top-pass">
+        <div class="m-top-nav">
+          <div class="m-top-nav-logo"><a href="#"></a></div>
+          <div class="m-top-nav-list">
+            <ul>
+              <li><a href="wyy" style="color:#fff">发现音乐</a></li>
+              <li></li>
+              <li><a href="myMusic" style="color:#fff">我的音乐</a></li>
+              <li></li>
+              <li><a href="friends" style="color:#fff">朋友</a></li>
+              <li></li>
+              <li><a href="demo" style="color:#fff" target="_blank">商城</a></li>
+              <li></li>
+              <li><a href="musicman" style="color:#fff">音乐人</a></li>
+              <li></li>
+              <li><a href="download" style="color:#fff">下载客户端</a><span class="hot"></span></li>
+            </ul>
+          </div>
+          <div class="m-top-nav-input">
+            <input class="inp" type="txt" value="单曲/歌手/专辑/歌单/MV/用户"><span class="search"></span>
+          </div>
+          <div class="m-top-nav-login" id="deng">
+            <div class="login-out"><a href="#">登录</a><span class="trigon1"></span></div>
+            <div class="login-block" id="loginBlock">
+              <ul>
+                <li><a href="#"><i class="icon-phone"></i><em>手机号登陆</em></a></li>
+                <li><a href="#"><i class="icon-wechart"></i><em>微信登陆</em></a></li>
+                <li><a href="#"><i class="icon-qq"></i><em>QQ登陆</em></a></li>
+                <li><a href="#"><i class="icon-weibo"></i><em>微博登陆</em></a></li>
+                <li><a href="#"><i class="icon-nest"></i><em>网易邮箱账号登陆</em></a></li>
+              </ul>
+              <div class="sanjiaojian"></div>
+            </div><audio src="music/潘玮柏,SeanT肖恩恩,黄旭 - 爱你3000 (Live).mp3" controls="controls"></audio>
+            <!-- <div class="login-over">-->
+            <!-- <a href="#">登录</a>-->
+            <!-- <span class="trigon2"></span>-->
+            <!-- </div>-->
+            <!-- 登录框-->
+            <!-- <div class="m-top-nav-login-case">-->
+            <!-- <ul>-->
+            <!-- <li>-->
+            <!-- <a href="#">-->
+            <!-- <i></i>-->
+            <!-- <span>手机登录</span>-->
+            <!-- </a>-->
+            <!-- </li>-->
+            <!-- <li>-->
+            <!-- <a href="#">-->
+            <!-- <i></i>-->
+            <!-- <span>微信登录</span>-->
+            <!-- </a>-->
+            <!-- </li>-->
+            <!-- <li>-->
+            <!-- <a href="#">-->
+            <!-- <i></i>-->
+            <!-- <span>QQ登录</span>-->
+            <!-- </a>-->
+            <!-- </li>-->
+            <!-- <li>-->
+            <!-- <a href="#">-->
+            <!-- <i></i>-->
+            <!-- <span>新浪微博登录</span>-->
+            <!-- </a>-->
+            <!-- </li>-->
+            <!-- <li>-->
+            <!-- <a href="#">-->
+            <!-- <i></i>-->
+            <!-- <span>网易邮箱账号登录</span>-->
+            <!-- </a>-->
+            <!-- </li>-->
+            <!-- </ul>-->
+            <!-- </div>-->
+          </div>
+        </div>
+      </div>
+      <div class="m-bottom-nav">
+        <div class="m-bottom-nav-list">
+          <ul>
+            <li><a href="#">推荐</a><span></span><i></i></li>
+            <li><a href="javascript:location.reload()">排行榜</a><span></span></li>
+            <li><a href="hometwo">歌单</a><span></span></li>
+            <li><a href="discover">主播电台</a><span></span></li>
+            <li><a href="歌手">歌手</a><span></span></li>
+            <li><a href="#">新碟上架</a><span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 顶部导航结束-->
+    <!-- 主体部分的开始-->
+    <div class="m-main">
+      <!-- 内容侧边栏开始-->
+      <div class="m-main-side">
+        <div class="m-main-side-top">
+          <p class="txt-head1">云音乐飙升榜</p>
+          <ul>
+            <li><a href="rankinglistindex" style="background-color: rgb(247, 247, 247);"><span class="bg-img"></span><span class="txt-top">云音乐飙升榜</span><span class="txt-bottom">每天更新</span></a></li>
+            <li><a href="rankinglistindex1"><span class="bg-img"></span><span class="txt-top">云音乐新歌榜</span><span class="txt-bottom">每天更新</span></a></li>
+            <li><a href="rankinglistindex2"><span class="bg-img"></span><span class="txt-top">网易原创歌曲榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="rankinglistindex3"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+          </ul>
+        </div>
+        <div class="m-main-side-bottom">
+          <p class="txt-head2">全球媒体榜</p>
+          <ul>
+            <li class="top-bgc" id="top-bgc"><a href="rankinglistindex4"><span class="bg-img"></span><span class="txt-top">云音乐说唱榜</span><span class="txt-bottom">每天更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐新歌榜</span><span class="txt-bottom">每天更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">网易原创歌曲榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 内容侧边栏结束-->
+      <!-- 内容展示区开始-->
+      <div class="m-main-content">
+        <!-- 飙升榜的开始-->
+        <div class="content-bsb">
+          <div class="content-bsb-top">
+            <div class="bsb-t-logo"><img src="rankinglistimages/109951164353220919.jpg" alt=""></div>
+            <div class="bsb-t-content">
+              <p>云音乐说唱榜</p><span>⏱最近更新：07月20日<span class="txt">（每天更新）</span></span>
+              <div class="bsb-t-btns"><span class="btns1">播放</span><span class="btns2">+</span><span class="btns3">(567890)</span><span class="btns4">(157)</span><span class="btns5">下载</span><span class="btns6">(22222)</span></div>
+            </div>
+          </div>
+          <div class="content-bsb-bottom">
+            <div class="bottom-txt"><span class="txt1">歌曲列表</span><span class="txt2">100首歌</span><span class="txt3">播放：<span class="txt4">4055555</span>                        次</span></div>
+          </div>
+          <div class="content-bsb-center">
+            <div class="center-head">
+              <div class="head1"></div>
+              <div class="head2">标题</div>
+              <div class="head3">时长</div>
+              <div class="head4">歌手</div>
+            </div>
+            <div class="center-content">
+              <ul class="content-list" id="center-content-list">
+                <li class="list-song1">
+                  <ul class="tr01">
+                    <li>1<span>-0</span></li>
+                    <li><i></i><b></b>                                    Cola</li>
+                    <li>06:55</li>
+                    <li>CamelPha...</li>
+                  </ul>
+                </li>
+                <li class="list-song2">
+                  <ul class="tr01">
+                    <li>2<span>↑3</span></li>
+                    <li><i></i><b></b>                                    爱你3000 (live)</li>
+                    <li>06:46</li>
+                    <li>潘玮柏/Sea..</li>
+                  </ul>
+                </li>
+                <li class="list-song3">
+                  <ul class="tr01">
+                    <li>3<span>↓1</span></li>
+                    <li><i></i><b></b>                                    Rainbow</li>
+                    <li>05:09</li>
+                    <li>VaVa毛衍七</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>4<span>new</span></li>
+                    <li><b></b>                                    我要的</li>
+                    <li>06:30</li>
+                    <li>C.vo/阿达..</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>5<span>new</span></li>
+                    <li><b></b>                                    醉里红尘</li>
+                    <li>04:17</li>
+                    <li>刘惜君</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>6<span>new</span></li>
+                    <li><b></b>                                    非酋</li>
+                    <li>02:52</li>
+                    <li>薛明媛/朱贺</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>7<span>↓3</span></li>
+                    <li><b></b>                                    Despacito (Remix)</li>
+                    <li>03:48</li>
+                    <li>Luis Fonsi/...</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>8<span>new</span></li>
+                    <li><b></b>                                    MY DARLING</li>
+                    <li>03:45</li>
+                    <li>乐童音乐家</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>9<span>new</span></li>
+                    <li><b></b>                                    老人与棉花糖和夏天</li>
+                    <li>04:03</li>
+                    <li>简弘亦</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>10<span>-0</span></li>
+                    <li><b></b>                                    我害怕</li>
+                    <li>04:08</li>
+                    <li>薛之谦</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>11<span>-0</span></li>
+                    <li><b></b>                                    我们的故事(Demo)</li>
+                    <li>04:04</li>
+                    <li>李遇</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>12<span>new</span></li>
+                    <li><b></b>                                    MLKETEA</li>
+                    <li>03:12</li>
+                    <li>JAEFORE...</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>13<span>new</span></li>
+                    <li><b></b>                                    Hola Hola</li>
+                    <li>03:22</li>
+                    <li>K.A.R.D</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>14<span>new</span></li>
+                    <li><b></b>                                    Seasons</li>
+                    <li>03:42</li>
+                    <li>Greyson C...</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>15<span>new</span></li>
+                    <li><b></b>                                    远走高飞</li>
+                    <li>04:01</li>
+                    <li>金志文</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>16<span>new</span></li>
+                    <li><b></b>                                    Love Love Love</li>
+                    <li>04:37</li>
+                    <li>Moullinex</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>17<span>new</span></li>
+                    <li><b></b>                                    Afterdark</li>
+                    <li>03:20</li>
+                    <li>Myrne/Aviella</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>18<span>new</span></li>
+                    <li><b></b>                                    罗曼蒂克</li>
+                    <li>04:25</li>
+                    <li>段同愿</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>19<span>new</span></li>
+                    <li><b></b>                                    风起了</li>
+                    <li>04:25</li>
+                    <li>张敬轩</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>20<span>new</span></li>
+                    <li><b></b>                                    原上草</li>
+                    <li>03:08</li>
+                    <li>刘惜君</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>21<span>new</span></li>
+                    <li><b></b>                                    纪念册</li>
+                    <li>04:18</li>
+                    <li>音阙诗听/...</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>22<span>new</span></li>
+                    <li><b></b>                                    诗人</li>
+                    <li>04:10</li>
+                    <li>孔垂楠</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>23<span>new</span></li>
+                    <li><b></b>                                    心之焰</li>
+                    <li>02:28</li>
+                    <li>G.E.M邓紫棋</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>24<span>new</span></li>
+                    <li><b></b>                                    空情</li>
+                    <li>03:31</li>
+                    <li>韩雪/韩栋</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>25<span>new</span></li>
+                    <li><b></b>                                    山下</li>
+                    <li>04:46</li>
+                    <li>方拾贰</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>26<span>new</span></li>
+                    <li><b></b>                                    江州</li>
+                    <li>03:39</li>
+                    <li>王宇良</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>27<span>new</span></li>
+                    <li><b></b>                                    暧昧</li>
+                    <li>05:12</li>
+                    <li>薛之谦</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>28<span>new</span></li>
+                    <li><b></b>                                    识食物者为俊杰</li>
+                    <li>03:49</li>
+                    <li>冯提莫</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>29<span>new</span></li>
+                    <li><b></b>                                    白山茶</li>
+                    <li>04:14</li>
+                    <li>陈雪凝</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>30<span>new</span></li>
+                    <li><b></b>                                    才不枉过年少吧</li>
+                    <li>03:17</li>
+                    <li>张璐诗</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>31<span>new</span></li>
+                    <li><b></b>                                    莫妮卡</li>
+                    <li>04:49</li>
+                    <li>柳爽</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>32<span>new</span></li>
+                    <li><b></b>                                    动物世界</li>
+                    <li>03:50</li>
+                    <li>薛之谦</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>33<span>new</span></li>
+                    <li><b></b>                                    易燃易爆炸</li>
+                    <li>03:15</li>
+                    <li>陈粒</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>34<span>new</span></li>
+                    <li><b></b>                                    秋城</li>
+                    <li>06:08</li>
+                    <li>丢火车</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>35<span>new</span></li>
+                    <li><b></b>                                    玫瑰</li>
+                    <li>04:17</li>
+                    <li>贰佰</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>36<span>new</span></li>
+                    <li><b></b>                                    雀跃</li>
+                    <li>03:55</li>
+                    <li>任然/小来哥</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>37<span>new</span></li>
+                    <li><b></b>                                    最美情侣</li>
+                    <li>04:01</li>
+                    <li>白小白</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>38<span>new</span></li>
+                    <li><b></b>                                    Greed</li>
+                    <li>02:50</li>
+                    <li>LEW</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>39<span>new</span></li>
+                    <li><b></b>                                    Pretty Girl (Cheat Code Remix)</li>
+                    <li>03:13</li>
+                    <li>Cheat Cod...</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>40<span>new</span></li>
+                    <li><b></b>                                    Broken</li>
+                    <li>03:29</li>
+                    <li>Masetti</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>41<span>new</span></li>
+                    <li><b></b>                                    失恋重修手册</li>
+                    <li>03:24</li>
+                    <li>税子铭/赵...</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>42<span>new</span></li>
+                    <li><b></b>                                    三角花</li>
+                    <li>04:29</li>
+                    <li>左成</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>43<span>new</span></li>
+                    <li><b></b>                                    不露声色</li>
+                    <li>05:05</li>
+                    <li>Jam</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>44<span>new</span></li>
+                    <li><b></b>                                    梦间集</li>
+                    <li>03:36</li>
+                    <li>董贞</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>45<span>new</span></li>
+                    <li><b></b>                                    入戏</li>
+                    <li>03:52</li>
+                    <li>李雨涛</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>46<span>new</span></li>
+                    <li><b></b>                                    浓情淡如你</li>
+                    <li>05:41</li>
+                    <li>周深</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>47<span>new</span></li>
+                    <li><b></b>                                    秀春</li>
+                    <li>05:10</li>
+                    <li>谭维维</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>48<span>new</span></li>
+                    <li><b></b>                                    不搭</li>
+                    <li>04:47</li>
+                    <li>李荣浩</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>49<span>new</span></li>
+                    <li><b></b>                                    下一站茶山刘</li>
+                    <li>03:25</li>
+                    <li>房东的猫</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>50<span>new</span></li>
+                    <li><b></b>                                    矫情</li>
+                    <li>04:08</li>
+                    <li>老板娘与酒客</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>51<span>new</span></li>
+                    <li><b></b>                                    阳光不锈</li>
+                    <li>04:29</li>
+                    <li>王源</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>52<span>new</span></li>
+                    <li><b></b>                                    过客</li>
+                    <li>04:30</li>
+                    <li>是阿涵阿</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>53<span>new</span></li>
+                    <li><b></b>                                    谷雨</li>
+                    <li>05:31</li>
+                    <li>东京塔子</li>
+                  </ul>
+                </li>
+                <li class="list-song01">
+                  <ul class="tr02">
+                    <li>54<span>new</span></li>
+                    <li><b></b>                                    烟火里的尘埃</li>
+                    <li>03:18</li>
+                    <li>华晨宇/宿涵</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="center-comment">
+              <div class="comment-top"><span class="txt1">评论</span><span class="txt2">共69235条评论</span></div>
+              <div class="comment-center"><span class="login"><img src="rankinglistimages/content_05.jpg" alt=""></span>
+                <div class="text"><span class="sanjiao">◇</span>
+                  <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="center-login"><a class="txt1" href="#">☺</a><a class="txt2" href="#">@</a><a class="txt3" href="#">评论</a><span class="txt4">140</span><span class="txt5">精彩评论</span></div>
+              </div>
+              <div class="comment-bottom">
+                <ul class="bottom-list">
+                  <li><span class="list11"></span><a class="list2" href="#">有腹肌的Pdd</a><span class="list3">：明天linkinpark 专场</span><span class="list4">12:38</span><a class="list5" href="#"><span></span>(84)</a><span class="list6">回复</span>
+                    <!-- <span class="list7"></span>-->
+                  </li>
+                  <li><span class="list12"></span><a class="list2" href="#">云中雪</a><span class="list3">：血洗！血洗！LP屠榜吧！</span><span class="list4">13:38</span><a class="list5" href="#"><span></span>(34)</a><span class="list6">回复</span>
+                    <!-- <span class="list7"></span>-->
+                  </li>
+                  <li><span class="list13"></span><a class="list2" href="#">动视药丸</a><span class="list3">：我嗜睡（滑稽）</span><span class="list4">14:22</span><a class="list5" href="#"><span></span>(33)</a><span class="list6">回复</span>
+                    <!-- <span class="list7"></span>-->
+                  </li>
+                  <li><span class="list14"></span><a class="list2" href="#">风雨不动</a><span class="list3">：想当年，听lp时我还在用QQ音乐。。。</span><span class="list4">58分钟前</span><a class="list5" href="#"><span></span>(1)</a><span class="list6">回复</span>
+                    <!-- <span class="list7"></span>-->
+                  </li>
+                  <li><span class="list15"></span><a class="list2" href="#">W_淏t</a><span class="list3">：美国独立后第一人总统</span><span class="list4">33分钟前</span><a class="list5" href="#"><span></span>(3)</a><span class="list6">回复</span>
+                    <!-- <span class="list7"></span>-->
+                  </li>
+                  <li><span class="list16"></span><a class="list2" href="#">天河童</a><span class="list3">：抢不到前排</span><span class="list4">11分钟前</span><a class="list5" href="#"><span></span>(3)</a><span class="list6">回复</span>
+                    <!-- <span class="list7"></span>-->
+                  </li>
+                </ul>
+              </div>
+              <div class="comment-foot">
+                <ul>
+                  <li><a href="#">< 上一页</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">...</a></li>
+                  <li><a href="#">3463</a></li>
+                  <li><a href="#">下一页 ></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 飙升榜的结束-->
+        <div class="content-xgb"></div>
+        <div class="content-ycb"></div>
+        <div class="content-rgb"></div>
+      </div>
+      <!-- 内容展示区结束-->
+      <!-- 主体部分的结束-->
+      <!-- 底部开始-->
+      <div class="g-ft">
+        <div class="m-ft">
+          <div class="wrap f-cb">
+            <div class="copy"></div>
+            <ul class="enter f-fr">
+              <li><a class="logo logo-musician f-tid" href="#"></a></li>
+              <li><a class="logo logo-topic f-tid" href="#"></a></li>
+              <li><a class="logo logo-midea f-tid" href="#"></a></li>
+              <li><a class="logo logo-reward f-tid" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>-->
+    <div class="g-btmbar" id="g-btmbar">
+      <div class="g-btmbar-p" id=".g-btmbar-p">
+        <div class="m-playbar m-playbar-lock" id="auto-id-fpboJHu88h3Feay2" style="top:-53px; visibility: visible;">
+          <div class="updn">
+            <div class="left f-f1"><a class="btn1" id="fixBtn1" href="javascript:void(0);"></a><a class="btn2" id="fixBtn2" href="javascript:void(0);"></a></div>
+            <div class="right f-f1"></div>
+          </div>
+          <div class="bg"></div>
+          <div class="wrap" id="g_player">
+            <div class="btns"><a class="prv" href="#"></a><a class="ply j-fkag" id="ply01" href="#"></a><a class="plys j-fkag" id="ply02" href="#"></a><a class="nxt" href="#"></a></div>
+            <div class="head j-flag"><a class="mask" href="#"><img src="rankinglistimages/default_album.jpg" alt=""></a></div>
+            <div class="play">
+              <div class="j-flag words"></div>
+              <div class="m-pbar">
+                <div class="barbg j-flag" id="auto-id-ODscgwD3lbnJdK0A">
+                  <div class="rdy" style="width: 0%;"></div>
+                  <div class="cur" style="width: 0%;"><span class="btn f-tdn f-alpha" id="auto-id-bxCC3M0eRZD76VpR"><i></i></span></div>
+                </div><span class="j-flag time"><em>00:00</em> / 00:00</span>
+              </div>
+            </div>
+            <div class="oper f-fl"><a class="icn icn-add j-flag" href="#" title="收藏"></a><a class="icn icn-share" href="#" title="分享"></a></div>
+            <div class="ctrl f-fl f-pr j-flag">
+              <div class="m-vol" id="auto-id-epndKXTBrRZxUtTX" style="visibility:hidden;">
+                <div class="barbg"></div>
+                <div class="vbg j-t" id="auto-id-Ps01blhP4eMKXBgn">
+                  <div class="curr j-t" style="height: 74.4px;"></div><span class="btn f-alpha j-t" style="top: 16.2px;"></span>
+                </div>
+              </div><a class="icn icn-vol" href="#"></a><a class="icn icn-loop" href="#"></a><span class="add f-pr"><span class="tip" style="display: none;"></span><a class="icn icn-list s-fc3" href="#" title="播放列表">0</a></span>
+              <div class="tip tip-1" style="display: none;">循环</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部结束-->
+    <script src="rankinglistjs/jquery-1.12.4.min.js"></script>
+    <script src="rankinglistjs/rankinglist.js"></script>
+    <script src="rankinglistjs/common.js"></script>
+    <script src="rankinglistjs/footer-js.js"></script>
+    <script src="../rankinglistjs/login-block.js"></script>
+  </body>
+</html>

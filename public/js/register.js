@@ -25,5 +25,6 @@ function toValid(){
 	else{
 		document.getElementById("pass_two_err").innerHTML = "";
 	}
-	return true;
 }
+
+

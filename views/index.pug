@@ -5,7 +5,7 @@ html
         title 网易云音乐
         link(rel='stylesheet', href='css/base.css')
         link(rel='stylesheet', href='css/index.css')
-        link.ico(rel='shortcut icon', type='image/x-icon', href='favicon.ico')
+        link.ico(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
         script(src='js/tools.js')
         script(src='js/common.js')
         script(src='js/demo06.js')
@@ -23,19 +23,19 @@ html
                             a(href='javascript:location.reload()') 发现音乐
                         li.line
                         li
-                            a(href='myMusic') 我的音乐
+                            a(href='mymusic') 我的音乐
                         li.line
                         li
                             a(href='friends') 朋友
                         li.line
                         li
-                            a(href='demo') 商城
+                            a(href='demo',target='_blank') 商城
                         li.line
                         li
-                            a(href='#') 音乐人
+                            a(href='musicman') 音乐人
                         li.line
                         li
-                            a(href='下载客户端页面') 下载客户端
+                            a(href='download') 下载客户端
                 #loginBlock.login-block
                     ul
                         li
@@ -63,7 +63,7 @@ html
                 input#text(type='text', value='音乐/视频电台/用户')
             .hot
             #deng.deng
-                a(href='register') 登录
+                a(href='mymusic') 登录
             #daosan.daosan
         // //红色栏部分
         .nav
@@ -75,7 +75,7 @@ html
                         li
                             a(href='rankinglistindex') 排行榜
                         li
-                            a(href='musiclist') 歌单
+                            a(href='hometwo') 歌单
                         li
                             a(href='discover') 主播电台
                         li
@@ -87,11 +87,11 @@ html
         #bg.bg
             #top-w.top-w
                 .dlpic
-                    a(href='#')
+                    a(href='download')
                     p PC 安卓 iPhone WP iPad Mac 六大客户端
                 #top-imgs.top-imgs
                     a(href='#')
-                        img#images(src='img/00.png', alt='')
+                        img#images(src='img/01.png', alt='')
                     ol#spans.spans
                         li
                             span#s1
@@ -134,9 +134,9 @@ html
                         #hotContent.hotIndro-contont
                             ul#imgShow
                                 li.first
-                                    a(href='#')
+                                    a(href='/play')
                                         img(src='img/热门推荐01.jpg', alt='')
-                                    a.showDes(href='#') 一个偏执的家人和他的平凡之痛
+                                    a.showDes(href='play') 最后一次-庄心妍
                                     span.transparent
                                         i.headset
                                         i 33万
@@ -647,7 +647,7 @@ html
                 // 登陆开始
                 .login
                     p 登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机
-                    a.login-btn(href='/WYYmusic/views/register') 用户登陆
+                    a.login-btn(href='mymusic') 用户登陆
                 // 登陆结束
                 // 歌手开始
                 .singer
@@ -655,7 +655,7 @@ html
                     .enter-singer
                         .enter-singer-header
                             span.es-singer 入驻歌手
-                            a.es-more(href='#') 查看全部 >
+                            a.es-more(href='singer') 查看全部 >
                         // enter-singer-header的结束
                         // enter-singer-middle的开始
                         ul#enterSingerMiddle.enter-singer-middle
@@ -697,7 +697,7 @@ html
                         // enter-singer-middle的结束
                         // enter-singer-bottom的开始
                         .enter-singer-bottom
-                            a.es-join(target='_blank', href='#') 申请成为网易音乐人
+                            a.es-join(target='_blank', href='musicman') 申请成为网易音乐人
                 script(src='js/enter-singer.js')
                 // 歌手结束
                 // Dj开始
@@ -763,7 +763,7 @@ html
                             a.logo.logo-midea.f-tid(href='#')
                         li
                             a.logo.logo-reward.f-tid(href='#')
-                    .class wrap.cfb::after
+
         // <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>
         #g-btmbar.g-btmbar
             .g-btmbar-p(id='.g-btmbar-p')
@@ -778,6 +778,7 @@ html
                         .btns
                             a.prv(href='#')
                             a.ply.j-fkag(href='#')
+                               // audio(src='music/静sir - 骑上我心爱的小摩托(2019).mp3', controls='controls')
                             a.plys.j-fkag(href='#')
                             a.nxt(href='#')
                         .head.j-flag

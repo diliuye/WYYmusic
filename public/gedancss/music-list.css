@@ -293,7 +293,7 @@ body {
 .music-title .music-fr {
     width: 93px;
     height: 29px;
-    background: url("../img/button.png") no-repeat;
+    background: url("../gedanimg/button.png") no-repeat;
     background-position: 0 0;
     float: right;
     font-size: 12px;
@@ -495,13 +495,13 @@ body {
     text-align: left;
     line-height: 24px;
     display: inline-block;
-    padding-left: 22px;
-    background: url("../img/button.png") no-repeat;
+    padding-left: 10px;
+    background: url("../gedanimg/button.png") no-repeat;
     background-position: 0 -619px;
     color: #cacaca;
 }
 .music-selected2 {
-    width: 57px;
+    width: 47px;
     margin:0 1px 0 2px;
     border:1px solid #ccc;
     border-radius: 2px;
@@ -509,13 +509,13 @@ body {
     text-align: left;
     line-height: 24px;
     display: inline-block;
-    padding-left: 12px;
-    background: url("../img/button.png") no-repeat;
+    padding-left: 10px;
+    background: url("../gedanimg/button.png") no-repeat;
     background-position: -75px -559px;
     color: #333;
 }
 .music-selected2:hover {
-    background: url("../img/button.png") no-repeat;
+    background: url("../gedanimg/button.png") no-repeat;
     background-position: -75px -589px;
     color:#333;
 }
@@ -558,7 +558,7 @@ body {
     /*color:#333;*/
 }
 .music-number2.showCurrent {
-    background:url("../img/button.png") no-repeat;
+    background:url("../gedanimg/button.png") no-repeat;
     background-position: 0 -650px;
     color:#fff;
 }
@@ -589,13 +589,13 @@ body {
 /*n-sltlyr-show*/
 .sltlyr-show-hd {
     height: 32px;
-    background: url("../img/sltlyr.png") no-repeat;
+    background: url("../gedanimg/sltlyr.png") no-repeat;
     background-position: 0 0;
 }
 .sltlyr-show-bd {
     width: 700px;
     padding: 0 10px;
-    background: url("../img/sltlyr.png") no-repeat;
+    background: url("../gedanimg/sltlyr.png") no-repeat;
     background-repeat: repeat-y;
     background-position: -720px 0;
     line-height: 34px;
@@ -616,7 +616,7 @@ body {
     height: 26px;
     text-align: center;
     line-height: 19px;
-    background: url("../img/button.png") no-repeat;
+    background: url("../gedanimg/button.png") no-repeat;
     background-position: 0 -64px ;
 }
 .sltlyr-show-bd .show-all:hover {
@@ -737,14 +737,14 @@ body {
 }
 .show-ft {
     height: 20px;
-    background:url("../img/sltlyr.png") no-repeat;
+    background:url("../gedanimg/sltlyr.png") no-repeat;
     background-position:  -1440px 0;
 }
 
 .music-fr1 {
     width: 93px;
     height: 29px;
-    background: url("../img/button.png") no-repeat;
+    background: url("../gedanimg/button.png") no-repeat;
     background-position: 0 -30px;
     float: right;
     font-size: 12px;

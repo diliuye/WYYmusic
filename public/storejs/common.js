@@ -1,8 +1,6 @@
+
 /**
- * Created by Walker on 2017/7/13.
- */
-/**
- * ×èÖ¹ÊÂ¼þÃ°ÅÝµÄ¼æÈÝº¯Êý
+ * ï¿½ï¿½Ö¹ï¿½Â¼ï¿½Ã°ï¿½ÝµÄ¼ï¿½ï¿½Ýºï¿½ï¿½ï¿½
  * @param e
  */
 function stopPropagetion(e) {
@@ -13,7 +11,7 @@ function stopPropagetion(e) {
   }
 }
 /**
- * ÒÆ³ýÊÂ¼þ¼æÈÝ
+ * ï¿½Æ³ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
  * @param obj
  * @param type
  * @param listener
@@ -28,7 +26,7 @@ function removeEventListener(obj,type,listener) {
   }
 }
 /**
- * ×¢²áÊÂ¼þ¼æÈÝ
+ * ×¢ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
  * @param obj
  * @param type
  * @param listener
@@ -43,7 +41,7 @@ function addEventListener(obj,type,listener) {
   }
 }
 /**
- * ·â×°ÁËÒ»¸ö»ñÈ¡Ò³Ãæ±»¾íÈ¥µÄ¸ß¶È»òÊÇ×ó²à¾àÀëµÄº¯Êý
+ * ï¿½ï¿½×°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½È¡Ò³ï¿½æ±»ï¿½ï¿½È¥ï¿½Ä¸ß¶È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äºï¿½ï¿½ï¿½
  * @returns {{scrollTop: (Number|number), scrollLeft: (Number|number)}}
  */
 function getScroll() {
@@ -69,12 +67,12 @@ function getPage(e){
 }
 
 /**
- * ·â×°ÁËÒ»¸ö¼æÈÝ°æ±¾µÄ»ñÈ¡±êÇ©¼äÄÚÈÝµÄº¯Êý
+ * ï¿½ï¿½×°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý°æ±¾ï¿½Ä»ï¿½È¡ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄºï¿½ï¿½ï¿½
  * @param ele
  * @returns {*}
  */
 function getText(ele) {
-  // ÄÜÁ¦¼ì²â    ¾ÍÊÇÒª¿´µ±Ç°µÄä¯ÀÀÆ÷ÊÇ·ñÖ§³Ö´Ë¶ÔÏóµÄÊôÐÔ»òÊÇ·½·¨
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Ö§ï¿½Ö´Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½Ç·ï¿½ï¿½ï¿½
   if (ele.innerText) {
     return ele.innerText;
 //      return 2;
@@ -85,7 +83,7 @@ function getText(ele) {
 }
 
 /**
-* ·â×°ÁËÒ»¸ö¼æÈÝ°æ±¾µÄÉèÖÃ±êÇ©¼äÄÚÈÝµÄº¯Êý
+* ï¿½ï¿½×°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý°æ±¾ï¿½ï¿½ï¿½ï¿½ï¿½Ã±ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄºï¿½ï¿½ï¿½
 * @param ele
 * @param value
 */
@@ -98,17 +96,17 @@ function setText(ele, value) {
 }
 
 /**
- * ·â×°ÁËÒ»¸ö¼æÈÝ°æ±¾µÄ»ñÈ¡ÏÂÒ»¸ö±êÇ©½ÚµãµÄº¯Êý
+ * ï¿½ï¿½×°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý°æ±¾ï¿½Ä»ï¿½È¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ç©ï¿½Úµï¿½Äºï¿½ï¿½ï¿½
  * @param ele
  * @returns {*}
  */
 function getNextElement(ele) { // undefined
-  //ÄÜÁ¦¼ì²â  ¾ÍÊÇÒª¿´µ±Ç°µÄä¯ÀÀÆ÷ÊÇ·ñÖ§³Ö´Ë¶ÔÏóµÄÊôÐÔ»òÊÇ·½·¨
-  if (ele && ele.nextElementSibling) { // Âß¼­   ¶ÌÂ·ÔËËã
+  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Ö§ï¿½Ö´Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½Ç·ï¿½ï¿½ï¿½
+  if (ele && ele.nextElementSibling) { // ï¿½ß¼ï¿½   ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½
     return ele.nextElementSibling;
   } else { // IE8
     if (ele) {
-      ele = ele.nextSibling; // ÒòÎªÏÂÒ»¸ö½Úµã£¬ÓÐ¿ÉÄÜÊÇÎÄ±¾¡¢×¢ÊÍ¡¢»òÊÇ±êÇ©£¬ËùÒÔÐèÒªÅÐ¶Ï½ÚµãÀàÐÍ£¬¶øÇÒÐèÒªÓÃwhileÀ´ÅÐ¶Ï
+      ele = ele.nextSibling; // ï¿½ï¿½Îªï¿½ï¿½Ò»ï¿½ï¿½ï¿½Úµã£¬ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½×¢ï¿½Í¡ï¿½ï¿½ï¿½ï¿½Ç±ï¿½Ç©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ð¶Ï½Úµï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½whileï¿½ï¿½ï¿½Ð¶ï¿½
       while (ele.nodeType != 1) {
         ele = ele.nextSibling;
       }
@@ -117,14 +115,14 @@ function getNextElement(ele) { // undefined
   }
 }
 /**
- * ·â×°ÁËÒ»¸ö¼æÈÝ°æ±¾µÄ»ñµÃÉÏÒ»¸ö±êÇ©½ÚµãµÄº¯Êý
+ * ï¿½ï¿½×°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý°æ±¾ï¿½Ä»ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ç©ï¿½Úµï¿½Äºï¿½ï¿½ï¿½
  * @param ele
  * @returns {*}
  */
 function getPreviousElement(ele) {
-  // ÄÜÁ¦¼ì²â
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   if (ele) {
-    if (ele.previousElementSibling) { // ¸ß¼¶ä¯ÀÀÆ÷Ö§³ÖµÄ·½Ê½
+    if (ele.previousElementSibling) { // ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½ÖµÄ·ï¿½Ê½
       return ele.previousElementSibling;
     } else {
       ele = ele.previousSibling;
@@ -138,17 +136,17 @@ function getPreviousElement(ele) {
 
 
 /**
- * ·â×°ÁËÒ»¸ö¼æÈÝ°æ±¾µÄ»ñµÃµÚÒ»¸ö×Ó±êÇ©½ÚµãµÄº¯Êý
+ * ï¿½ï¿½×°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý°æ±¾ï¿½Ä»ï¿½Ãµï¿½Ò»ï¿½ï¿½ï¿½Ó±ï¿½Ç©ï¿½Úµï¿½Äºï¿½ï¿½ï¿½
  * @param ele
  * @returns {*}
  */
 function getFirstElement(ele) {
-  // ÄÜÁ¦¼ì²â
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   if (ele) {
     if (ele.firstElementChild) {
       return ele.firstElementChild;
     } else {
-      ele = ele.firstChild;//ÏÈÓÃ¸÷ä¯ÀÀÆ÷Ö§³ÖµÄÕâ¸öÊôÐÔ»ñµÃÒ»ÏÂµÚÒ»¸ö×Ó½Úµã
+      ele = ele.firstChild;//ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½Ò»ï¿½Âµï¿½Ò»ï¿½ï¿½ï¿½Ó½Úµï¿½
       while (ele.nodeType != 1) {
         ele = ele.nextSibling;
       }
@@ -157,17 +155,17 @@ function getFirstElement(ele) {
   }
 }
 /**
- * ·â×°ÁËÒ»¸ö¼æÈÝ°æ±¾µÄ»ñµÃ×îºóÒ»¸ö×Ó±êÇ©½ÚµãµÄº¯Êý
+ * ï¿½ï¿½×°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý°æ±¾ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ó±ï¿½Ç©ï¿½Úµï¿½Äºï¿½ï¿½ï¿½
  * @param ele
  * @returns {*}
  */
 function getLastElement(ele) {
-  // ÄÜÁ¦¼ì²â
+  // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
   if (ele) {
     if (ele.lastElementChild) {
       return ele.lastElementChild;
     } else {
-      ele = ele.lastChild;//ÏÈÓÃ¸÷ä¯ÀÀÆ÷Ö§³ÖµÄÕâ¸öÊôÐÔ»ñµÃÒ»ÏÂµÚÒ»¸ö×Ó½Úµã
+      ele = ele.lastChild;//ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö§ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½Ò»ï¿½Âµï¿½Ò»ï¿½ï¿½ï¿½Ó½Úµï¿½
       while (ele.nodeType != 1) {
         ele = ele.previousSibling;
       }

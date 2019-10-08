@@ -1,9 +1,7 @@
-/**
- * Created by xusheng on 2017/7/15.
- */
-//ÍøÒ×ÔÆÒôÀÖ µ×²¿ js ¿ªÊ¼
 
-//  ÏÔÊ¾²¥·ÅÆ÷
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×²ï¿½ js ï¿½ï¿½Ê¼
+
+//  ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 var bbp = document.getElementById(".g-btmbar-p");
 var footBar = document.getElementById("g-btmbar");

@@ -37,7 +37,7 @@ body {
 .header .login .arrtop {
     width: 160px;
     height: 18px;
-    background: url('../img/modules.png') 0 -128px;
+    background: url('../storeimg/modules.png') 0 -128px;
     position: absolute;
     top:32px;
     right: -50px;
@@ -73,19 +73,19 @@ body {
     left:20px
 }
 .header .login ul li i.tel{
-    background: url('../img/phonelog.png');
+    background: url('../storeimg/phonelog.png');
 }
 .header .login ul li i.weixin{
-    background: url('../img/logins.png') -84px 0
+    background: url('../storeimg/logins.png') -84px 0
 }
 .header .login ul li i.qq {
-    background: url('../img/logins.png') -112px 0
+    background: url('../storeimg/logins.png') -112px 0
 }
 .header .login ul li i.sina{
-    background: url('../img/sina.png')
+    background: url('../storeimg/sina.png')
 }
 .header .login ul li i.mail{
-    background: url('../img/netease.png')
+    background: url('../storeimg/netease.png')
 }
 /* .header .login .arrBot{
 
@@ -99,7 +99,7 @@ body {
     margin-right: 40px;
     position: relative;
     /* z-index: 33; */
-    background: url('../img/modules.png') -110px -160px;
+    background: url('../storeimg/modules.png') -110px -160px;
     /* border:1px solid #000; */
 }
  .header .shopCar .num{
@@ -110,7 +110,7 @@ body {
     color: #fff;
     font-size: 14px;
     /* z-index: 99;  */
-    background:url('../img/modules.png') -156px -158px;
+    background:url('../storeimg/modules.png') -156px -158px;
     position: absolute;
     right: -5px;
     top: -11px;
@@ -122,7 +122,7 @@ body {
      margin-top: 15px;
      margin-right: 40px;
      /* background-color: green; */
-     background: url('../img/modules.png') 0px 0px;
+     background: url('../storeimg/modules.png') 0px 0px;
      position: relative
  }
 .header .search input{
@@ -261,7 +261,7 @@ body {
     height: 240px;
     border:1px solid #999999;
     position: fixed;
-    top: 670px;
+    top: 500px;
     right: 140px;
 }
 .help ul li {
@@ -281,15 +281,15 @@ body {
     width: 24px;
     height: 24px;
     margin:0 auto;
-    background: url('../img/totop.png') 0 -71px;
+    background: url('../storeimg/totop.png') 0 -71px;
 }
 .help ul li span.service{
-    background: url('../img/totop.png') 0 -97px;
+    background: url('../storeimg/totop.png') 0 -97px;
 }
 .help ul li.last{
     height: 35px;
     border-bottom: 0px;
-    background: url('../img/totop.png') -70px 0;
+    background: url('../storeimg/totop.png') -70px 0;
      display: none 
 }
 .nav {
@@ -331,20 +331,20 @@ body {
     position: relative;
     top:15px;
     left:75px;
-    background: url('../img/云音乐周边.png')
+    background: url('../storeimg/云音乐周边.png')
 }
 .nav a .word {
     position: relative;
     left:80px; 
 }
 .nav a .movie {
-    background: url('../img/数码影音.png')
+    background: url('../storeimg/数码影音.png')
 }
 .nav a .notebook {
-    background: url('../img/云村笔记本.png')
+    background: url('../storeimg/云村笔记本.png')
 }
 .nav a .shopscore {
-    background: url('../img/jifen.png')
+    background: url('../storeimg/jifen.png')
 }
 .nav a .score {
     position: absolute;

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="xue.css">
+    <link rel="stylesheet" href="rankinglistcss/rankinglist.css">
+    <link rel="stylesheet" href="rankinglistcss/footercss.css">
+    <link class="ico" rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <script src="js/tools.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/demo06.js"></script>
+    <script src="js/animate.js"></script>
+  </head>
+  <body>
+    <!-- <div class="topBar"></div>-->
+    <!-- <div class="header-nav"></div>-->
+    <div class="top">
+      <div class="w">
+        <div><img class="logo" src="img/logo.png"></div>
+        <div class="neirong" id="nr">
+          <ul>
+            <li><a href="javascript:location.reload()">发现音乐</a></li>
+            <li class="line"></li>
+            <li><a href="mymusic">我的音乐</a></li>
+            <li class="line"></li>
+            <li><a href="friends">朋友</a></li>
+            <li class="line"></li>
+            <li><a href="demo" target="_blank">商城</a></li>
+            <li class="line"></li>
+            <li><a href="musicman">音乐人</a></li>
+            <li class="line"></li>
+            <li><a href="download">下载客户端</a></li>
+          </ul>
+        </div>
+        <div class="login-block" id="loginBlock">
+          <ul>
+            <li><a href="#"><i class="icon-phone"></i><em>手机号登陆</em></a></li>
+            <li><a href="#"><i class="icon-wechart"></i><em>微信登陆</em></a></li>
+            <li><a href="#"><i class="icon-qq"></i><em>QQ登陆</em></a></li>
+            <li><a href="#"><i class="icon-weibo"></i><em>微博登陆</em></a></li>
+            <li><a href="#"><i class="icon-nest"></i><em>网易邮箱账号登陆</em></a></li>
+          </ul>
+          <div class="sanjiaojian"></div>
+        </div>
+      </div>
+      <div class="seek">
+        <input id="text" type="text" value="音乐/视频电台/用户">
+      </div>
+      <div class="hot"></div>
+      <div class="deng" id="deng"><a href="mymusic">登录</a></div>
+      <div class="daosan" id="daosan"></div>
+    </div>
+    <!-- //红色栏部分-->
+    <div class="nav">
+      <div class="w">
+        <div class="xunze">
+          <!--ul
+          li
+              a(href='#') 推荐
+          li
+              a(href='rankinglistindex') 排行榜
+          li
+              a(href='hometwo') 歌单
+          li
+              a(href='discover') 主播电台
+          li
+              a(href='singer') 歌手
+          li
+              a(href='#') 新碟上架
+          -->
+        </div>
+        <div class="sanjiao"></div>
+      </div>
+    </div>
+    <div class="xue1 m-main-content">
+      <!-- 飙升榜的开始-->
+      <div class="content-bsb">
+        <div class="content-bsb-top">
+          <div class="bsb-t-logo"><img src="singerimg/薛之谦.jpg" alt=""></div>
+          <div class="bsb-t-content">
+            <p>薛之谦</p><span>⏱最近更新：09月28日<span class="txt">（每天更新）</span></span>
+            <div class="bsb-t-btns"><a href="musicplay"><span class="btns1">播放</span></a><span class="btns2">+</span><span class="btns3">(476102)</span><span class="btns4">(1922)</span><span class="btns5">下载</span><span class="btns6">(69128)</span><br><br><br></div>
+          </div>
+        </div>
+        <div class="content-bsb-bottom">
+          <div class="bottom-txt"><span class="txt1">歌曲列表</span><span class="txt2">100首歌</span><span class="txt3">播放：<span class="txt4">408</span>                        次</span></div>
+        </div>
+        <div class="content-bsb-center">
+          <div class="center-head">
+            <div class="head1"></div>
+            <div class="head2">歌名</div>
+            <div class="head3">时长</div>
+            <div class="head4">专辑</div>
+          </div>
+          <div class="center-content">
+            <ul class="content-list" id="center-content-list">
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>1<span>new</span></li>
+                  <li><a href="musicplay"><b></b>                                    刚刚好</a></li>
+                  <li>06:30</li>
+                  <li>尘</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>2<span>new</span></li>
+                  <li><b></b>                                    笑场</li>
+                  <li>06:30</li>
+                  <li>尘</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>3<span>new</span></li>
+                  <li><b></b>                                    木偶人</li>
+                  <li>06:30</li>
+                  <li>尘</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>4<span>new</span></li>
+                  <li><b></b>                                    我好像在哪里见过你</li>
+                  <li>06:30</li>
+                  <li>初学者</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>5<span>new</span></li>
+                  <li><b></b>                                    这么久不见</li>
+                  <li>04:17</li>
+                  <li>尘</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>6<span>new</span></li>
+                  <li><b></b>                                    意外</li>
+                  <li>02:52</li>
+                  <li>意外</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>7<span>↓3</span></li>
+                  <li><b></b>                                    慢半拍</li>
+                  <li>03:48</li>
+                  <li>尘</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>8<span>new</span></li>
+                  <li><b></b>                                    天份</li>
+                  <li>03:45</li>
+                  <li>怪咖</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>9<span>new</span></li>
+                  <li><b></b>                                    演员</li>
+                  <li>04:03</li>
+                  <li>绅士</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>10<span>-0</span></li>
+                  <li><b></b>                                    暧昧</li>
+                  <li>04:08</li>
+                  <li>渡</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>11<span>-0</span></li>
+                  <li><b></b>                                    你还要我怎样</li>
+                  <li>04:04</li>
+                  <li>意外</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>12<span>new</span></li>
+                  <li><b></b>                                    绅士</li>
+                  <li>03:12</li>
+                  <li>绅士</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>13<span>new</span></li>
+                  <li><b></b>                                    刚刚好</li>
+                  <li>03:22</li>
+                  <li>初学者</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>14<span>new</span></li>
+                  <li><b></b>                                    其实</li>
+                  <li>03:42</li>
+                  <li>意外</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>15<span>new</span></li>
+                  <li><b></b>                                    动物世界</li>
+                  <li>04:01</li>
+                  <li>渡</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>16<span>new</span></li>
+                  <li><b></b>                                    哑巴</li>
+                  <li>04:37</li>
+                  <li>怪咖</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>17<span>new</span></li>
+                  <li><b></b>                                    怪咖</li>
+                  <li>03:20</li>
+                  <li>怪咖</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>18<span>new</span></li>
+                  <li><b></b>                                    像风一样</li>
+                  <li>04:25</li>
+                  <li>渡</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>19<span>new</span></li>
+                  <li><b></b>                                    认真的雪</li>
+                  <li>04:25</li>
+                  <li>未完成的歌</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>20<span>new</span></li>
+                  <li><b></b>                                    丑八怪</li>
+                  <li>03:08</li>
+                  <li>意外</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>21<span>new</span></li>
+                  <li><b></b>                                    刚刚好</li>
+                  <li>06:30</li>
+                  <li>尘</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>22<span>new</span></li>
+                  <li><b></b>                                    笑场</li>
+                  <li>06:30</li>
+                  <li>尘</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>23<span>new</span></li>
+                  <li><b></b>                                    木偶人</li>
+                  <li>06:30</li>
+                  <li>尘</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>24<span>new</span></li>
+                  <li><b></b>                                    我好像在哪里见过你</li>
+                  <li>06:30</li>
+                  <li>初学者</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>25<span>new</span></li>
+                  <li><b></b>                                    这么久不见</li>
+                  <li>04:17</li>
+                  <li>尘</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>26<span>new</span></li>
+                  <li><b></b>                                    意外</li>
+                  <li>02:52</li>
+                  <li>意外</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>27<span>↓3</span></li>
+                  <li><b></b>                                    慢半拍</li>
+                  <li>03:48</li>
+                  <li>尘</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>28<span>new</span></li>
+                  <li><b></b>                                    天份</li>
+                  <li>03:45</li>
+                  <li>怪咖</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>29<span>new</span></li>
+                  <li><b></b>                                    演员</li>
+                  <li>04:03</li>
+                  <li>绅士</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>30<span>-0</span></li>
+                  <li><b></b>                                    暧昧</li>
+                  <li>04:08</li>
+                  <li>渡</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>31<span>-0</span></li>
+                  <li><b></b>                                    你还要我怎样</li>
+                  <li>04:04</li>
+                  <li>意外</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>32<span>new</span></li>
+                  <li><b></b>                                    绅士</li>
+                  <li>03:12</li>
+                  <li>绅士</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>33<span>new</span></li>
+                  <li><b></b>                                    刚刚好</li>
+                  <li>03:22</li>
+                  <li>初学者</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>34<span>new</span></li>
+                  <li><b></b>                                    其实</li>
+                  <li>03:42</li>
+                  <li>意外</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>35<span>new</span></li>
+                  <li><b></b>                                    动物世界</li>
+                  <li>04:01</li>
+                  <li>渡</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>36<span>new</span></li>
+                  <li><b></b>                                    哑巴</li>
+                  <li>04:37</li>
+                  <li>怪咖</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>37<span>new</span></li>
+                  <li><b></b>                                    怪咖</li>
+                  <li>03:20</li>
+                  <li>怪咖</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>38<span>new</span></li>
+                  <li><b></b>                                    像风一样</li>
+                  <li>04:25</li>
+                  <li>渡</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>39<span>new</span></li>
+                  <li><b></b>                                    认真的雪</li>
+                  <li>04:25</li>
+                  <li>未完成的歌</li>
+                </ul>
+              </li>
+              <li class="list-song01">
+                <ul class="tr02">
+                  <li>40<span>new</span></li>
+                  <li><b></b>                                    丑八怪</li>
+                  <li>03:08</li>
+                  <li>意外</li>
+                  <!-- dj结束-->
+                </ul><br><br><br><br>
+                <div class="toTop" id="backTop">
+                  <div class="g-ft">
+                    <div class="m-ft">
+                      <div class="w f-cb">
+                        <div class="copy">
+                          <p><a class="s-fc4" href="#">关于网易</a><span class="line"></span><a class="s-fc4" href="#">客户服务</a><span class="line"></span><a class="s-fc4" href="#">服务条款</a><span class="line"></span><a class="s-fc4" href="#">网站导航</a><span class="line"></span><a class="s-fc4" href="#">意见反馈</a></p>
+                          <p class="s-fc3"><span class="sep">网易公司版权所有©1997-2017</span>                    杭州乐读科技有限公司运营 :<a class="s-fc3" href="#">浙网文[2015] 0415-135号</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/footer-js.js"></script>
+    <!-- <div class="footer"></div>-->
+    <script src="js/backTop.js"></script>
+  </body>
+</html>

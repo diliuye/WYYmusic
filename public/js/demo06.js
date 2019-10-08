@@ -1,6 +1,4 @@
-/**
- * Created by Walker on 2017/7/15.
- */
+
 window.onload = function () {
   var smallnav = $$("smallnav");
   var imgShow = $$("imgShow");

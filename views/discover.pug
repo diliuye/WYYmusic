@@ -1,0 +1,700 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title 网易云音乐
+        link(rel='stylesheet', href='zhubocss/base.css')
+        link(rel='stylesheet', href='zhubocss/discover.css')
+        link.ico(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
+        link(rel='stylesheet', href='../rankinglist-css/footer-css.css')
+        script(src='../zhubojs/animate.js')
+        link(rel='stylesheet', href='../zhubocss/login-block.css')
+    body
+        // 头部开始
+        // 顶部导航开始
+        .m-top
+            .m-top-pass
+                .m-top-nav
+                    .m-top-nav-logo
+                        a(href='#')
+                    .m-top-nav-list
+                        ul
+                            li
+                                a(href='wyy', style='color:#fff') 发现音乐
+                            li
+                            li
+                                a(href='myMusic', style='color:#fff') 我的音乐
+                            li
+                            li
+                                a(href='friends', style='color:#fff') 朋友
+                            li
+                            li
+                                a(href='demo', style='color:#fff',target='_blank') 商城
+                            li
+                            li
+                                a(href='musicman', style='color:#fff') 音乐人
+                            li
+                            li
+                                a(href='download', style='color:#fff') 下载客户端
+                                span.hot
+                    .m-top-nav-input
+                        input.inp(type='txt', value='单曲/歌手/专辑/歌单/MV/用户')
+                        span.search
+                    #deng.m-top-nav-login
+                        .login-out
+                            a(href='#') 登录
+                            //
+                            .sanjiaojian
+                        // <div class="login-over">
+                        // <a href="#">登录</a>
+                        // <span class="trigon2"></span>
+                        // </div>
+            .m-bottom-nav
+                .m-bottom-nav-list
+                    ul
+                        li
+                            a(href='#') 推荐
+                            span
+                            i
+                        li
+                            a(href='rankinglistindex') 排行榜
+                            span
+                        li
+                            a(href='hometwo') 歌单
+                            span
+                        li
+                            a(href='javascript:location.reload()') 主播电台
+                            span
+                        li
+                            a(href='singer') 歌手
+                            span
+                        li
+                            a(href='#') 新碟上架
+                            span
+        // 顶部导航结束
+        // 头部结束
+        .zmx.w
+            #main.main-zmx
+                #lb1.lb1-zmx
+                    #lb2.lb2-zmx
+                        ul#ul1
+                            li
+                                a(href='#')
+                                    span.pic1
+                                    span.wz1 有声书
+                            li
+                                a(href='#')
+                                    span.pic2
+                                    span.wz2 知识技能
+                            li
+                                a(href='#')
+                                    span.pic3
+                                    span.wz2 商业财经
+                            li
+                                a(href='#')
+                                    span.pic4
+                                    span.wz2 人文历史
+                            li
+                                a(href='#')
+                                    span.pic5
+                                    span.wz2 外语世界
+                            li
+                                a(href='#')
+                                    span.pic6
+                                    span.wz2 亲子宝贝
+                            li
+                                a(href='#')
+                                    span.pic7
+                                    span.wz2 创作翻唱
+                            li
+                                a(href='#')
+                                    span.pic8
+                                    span.wz2 音乐故事
+                            li
+                                a(href='#')
+                                    span.pic9
+                                    span.wz3 3D|电子
+                            li
+                                a(href='#')
+                                    span.pic10
+                                    span.wz2 相声曲艺
+                            li
+                                a(href='#')
+                                    span.pic11
+                                    span.wz2 情感调频
+                            li
+                                a(href='#')
+                                    span.pic12
+                                    span.wz2 美文读物
+                            li
+                                a(href='#')
+                                    span.pic13
+                                    span.wz1 脱口秀
+                            li
+                                a(href='#')
+                                    span.pic14
+                                    span.wz1 广播剧
+                            li
+                                a(href='#')
+                                    span.pic15
+                                    span.wz1 二次元
+                            li
+                                a(href='#')
+                                    span.pic16
+                                    span.wz4 明星做主播
+                            li
+                                a(href='#')
+                                    span.pic17
+                                    span.wz2 娱乐|影视
+                            li
+                                a(href='#')
+                                    span.pic18
+                                    span.wz2 科技科学
+                        ul#ul2
+                            li
+                                a(href='#')
+                                    span.pic19
+                                    span.wz2 校园|教育
+                            li
+                                a(href='#')
+                                    span.pic20
+                                    span.wz2 旅途|城市
+                            li
+                                a(href='#')
+                                    span.pic21
+                                    span.wz4 我要做主播
+                    #arr
+                        span#left
+                        span#right
+                    #round
+                        span#round1
+                        span#round2
+                .recommend-zmx
+                    .recommend-box-zmx
+                        .recommend-title-zmx
+                            a.big-zmx(href='#') 推荐节目
+                            a.more-zmx(href='#') 更多 >
+                        .recommend-main-zmx
+                            ul
+                                li
+                                    a.pt1-zmx(href='#')
+                                        img(src='zhuboimg/1396379778174456.jpg')
+                                        i.play1
+                                    .center-zmx
+                                        a(href='#', title='第二季 - 你知道松鼠桂鱼名字的来由吗？') 第二季 - 你知道松鼠桂鱼名字的来由吗？
+                                        a(href='#', title='围炉夜话') 围炉夜话
+                                    .last-zmx
+                                        a(href='#') 人文历史
+                                li
+                                    a.pt1-zmx(href='#')
+                                        img(src='zhuboimg/18633423557852484.jpg')
+                                        i.play1
+                                    .center-zmx
+                                        a(href='#', title='十二星座的睡前故事') 十二星座的睡前故事
+                                        a(href='#', title='伦敦华语电台') 伦敦华语电台
+                                    .last1-zmx
+                                        a(href='#') 脱口秀
+                                li
+                                    a.pt1-zmx(href='#')
+                                        img(src='zhuboimg/19090820393266546.jpg')
+                                        i.play1
+                                    .center-zmx
+                                        a(href='#', title='精益创业：创业像开车一样简单？') 精益创业：创业像开车一样简单？
+                                        a(href='#', title='老马商书房') 老马商书房
+                                    .last-zmx
+                                        a(href='#') 商业财经
+                                li
+                                    a.pt1-zmx(href='#')
+                                        img(src='zhuboimg/18958878997907413.jpg')
+                                        i.play1
+                                    .center-zmx
+                                        a(href='#', title='钮大可与陈本瑜 山谷与风的对话（1989）-听山谷的爱与风的心事') 钮大可与陈本瑜 山谷与风的对话（1989）-听山谷的爱与风的心事
+                                        a(href='#', title='林非的唱片私藏馆') 林非的唱片私藏馆
+                                    .last-zmx
+                                        a(href='#') 音乐故事
+                                li
+                                    a.pt1-zmx(href='#')
+                                        img(src='zhuboimg/18692797185553323.jpg')
+                                        i.play1
+                                    .center-zmx
+                                        a(href='#', title='《李光斗观察》世界上最容易的赚钱方式：故事营销') 《李光斗观察》世界上最容易的赚钱方式：故事营销
+                                        a(href='#', title='李光斗观察') 李光斗观察
+                                    .last-zmx
+                                        a(href='#') 商业财经
+                                li
+                                    a.pt1-zmx(href='#')
+                                        img(src='zhuboimg/19147994997852270.jpg')
+                                        i.play1
+                                    .center-zmx
+                                        a(href='#', title='香炸天的炸藕盒&茄盒，一口吃下菜与肉的大满足！') 香炸天的炸藕盒&茄盒，一口吃下菜与肉的大满足！
+                                        a(href='#', title='小厨FM') 小厨FM
+                                    .last1-zmx
+                                        a(href='#') 脱口秀
+                                li
+                                    a.pt1-zmx(href='#')
+                                        img(src='zhuboimg/18541064581135410.jpg')
+                                        i.play1
+                                    .center-zmx
+                                        a(href='#', title='张雨生 想念我（1989）-向学生告别，向明天致敬') 张雨生 想念我（1989）-向学生告别，向明天致敬
+                                        a(href='#', title='林非的唱片私藏馆') 林非的唱片私藏馆
+                                    .last-zmx
+                                        a(href='#') 音乐故事
+                                li
+                                    a.pt1-zmx(href='#')
+                                        img(src='zhuboimg/18544363116011671.jpg')
+                                        i.play1
+                                    .center-zmx
+                                        a(href='#', title='第二季 - 诈尸') 第二季 - 诈尸
+                                        a(href='#', title='中国诡实录') 中国诡实录
+                                    .last1-zmx
+                                        a(href='#') 有声书
+                                li
+                                    a.pt1-zmx(href='#')
+                                        img(src='zhuboimg/19042441881628004.jpg')
+                                        i.play1
+                                    .center-zmx
+                                        a(href='#', title='Cheer绮贞 让我想一想（1998）-不确定的年代里，最真实的声音') Cheer绮贞 让我想一想（1998）-不确定的年代里，最真实的声音
+                                        a(href='#', title='林非的唱片私藏馆') 林非的唱片私藏馆
+                                    .last-zmx
+                                        a(href='#') 音乐故事
+                                li
+                                    a.pt1-zmx(href='#')
+                                        img(src='zhuboimg/18692797185763780.jpg')
+                                        i.play1
+                                    .center-zmx
+                                        a(href='#', title='史上最淫乱的公主-刘楚玉') 史上最淫乱的公主-刘楚玉
+                                        a(href='#', title='圣人请卸妆') 圣人请卸妆
+                                    .last-zmx
+                                        a(href='#') 知识技能
+                    .recommend-box1-zmx
+                        .recommend-title-zmx
+                            a.big-zmx(href='#') 节目排行榜
+                            a.more1-zmx(href='#') 更多 >
+                        .recommend-main-zmx
+                            ul
+                                li
+                                    .num-zmx
+                                        span 01
+                                        sapn.s-color
+                                            i.i-con
+                                            | 0
+                                    a.pt2-zmx(href='#')
+                                        img(src='zhuboimg/18752170813697980.jpg')
+                                        i.play1
+                                    .center1-zmx
+                                        a(href='#', title='你总要历经艰辛，习惯一个人') 你总要历经艰辛，习惯一个人
+                                        a(href='#', title='一个人听') 一个人听
+                                    span.pmgressbar-zmx
+                                        span.pmgressbar1-zmx
+                                        span.pmgressbar2-zmx
+                                li
+                                    .num-zmx
+                                        span 02
+                                        sapn.s-color
+                                            i.i-con1
+                                    a.pt2-zmx(href='#')
+                                        img(src='zhuboimg/19083123811923739.jpg')
+                                        i.play1
+                                    .center1-zmx
+                                        a(href='#', title='宝贝，你是我的例外。') 宝贝，你是我的例外。
+                                        a(href='#', title='程一电台') 程一电台
+                                    span.pmgressbar-zmx
+                                        span.pmgressbar1-1-zmx
+                                        span.pmgressbar2-1-zmx
+                                li
+                                    .num-zmx
+                                        span 03
+                                        sapn.s-color
+                                            i.i-con
+                                            | 0
+                                    a.pt2-zmx(href='#')
+                                        img(src='zhuboimg/18727981557899391.jpg')
+                                        i.play1
+                                    .center1-zmx
+                                        a(href='#', title='【翻唱】儿歌') 【翻唱】儿歌
+                                        a(href='#', title='岁慕天寒') 岁慕天寒
+                                    span.pmgressbar-zmx
+                                        span.pmgressbar1-2-zmx
+                                        span.pmgressbar2-2-zmx
+                                li
+                                    .num1-zmx
+                                        span 04
+                                        sapn.s-color-red
+                                            i.i-con2
+                                            | 3
+                                    a.pt2-zmx(href='#')
+                                        img(src='zhuboimg/18664209883406106.jpg')
+                                        i.play1
+                                    .center1-zmx
+                                        a(href='#', title='我的一个道姑朋友 - 桃十五') 我的一个道姑朋友 - 桃十五
+                                        a(href='#', title='桃桃桃15-') 桃桃桃15-
+                                    span.pmgressbar-zmx
+                                        span.pmgressbar1-3-zmx
+                                        span.pmgressbar2-3-zmx
+                                li
+                                    .num1-zmx
+                                        span 05
+                                        sapn.s-color-blue
+                                            i.i-con3
+                                            | 5
+                                    a.pt2-zmx(href='#')
+                                        img(src='zhuboimg/19097417463121025.jpg')
+                                        i.play1
+                                    .center1-zmx
+                                        a(href='#', title='我是真的真的很喜欢你啊') 我是真的真的很喜欢你啊
+                                        a(href='#', title='小北电台') 小北电台
+                                    span.pmgressbar-zmx
+                                        span.pmgressbar1-4-zmx
+                                        span.pmgressbar2-4-zmx
+                                li
+                                    .num1-zmx
+                                        span 06
+                                        sapn.s-color-red
+                                            i.i-con2
+                                            | 10
+                                    a.pt2-zmx(href='#')
+                                        img(src='zhuboimg/19100715997996313.jpg')
+                                        i.play1
+                                    .center1-zmx
+                                        a(href='#', title='拉黑吧，前任。') 拉黑吧，前任。
+                                        a(href='#', title='小北电台') 小北电台
+                                    span.pmgressbar-zmx
+                                        span.pmgressbar1-zmx
+                                        span.pmgressbar2-zmx
+                                li
+                                    .num1-zmx
+                                        span 07
+                                        sapn.s-color
+                                            i.i-con1
+                                    a.pt2-zmx(href='#')
+                                        img(src='zhuboimg/18819241023017021.jpg')
+                                        i.play1
+                                    .center1-zmx
+                                        a(href='#', title='还没说再见，就再也不见了。') 还没说再见，就再也不见了。
+                                        a(href='#', title='程一电台') 程一电台
+                                    span.pmgressbar-zmx
+                                        span.pmgressbar1-2-zmx
+                                        span.pmgressbar2-2-zmx
+                                li
+                                    .num1-zmx
+                                        span 08
+                                        sapn.s-color-blue
+                                            i.i-con3
+                                            | 4
+                                    a.pt2-zmx(href='#')
+                                        img(src='zhuboimg/18559756278836993.jpg')
+                                        i.play1
+                                    .center1-zmx
+                                        a(href='#', title='【3D环绕】Game of Thrones (KSHMR）') 【3D环绕】Game of Thrones (KSHMR）
+                                        a(href='#', title='3D环绕，刺激每一个听神经♪') 3D环绕，刺激每一个听神经♪
+                                    span.pmgressbar-zmx
+                                        span.pmgressbar1-5-zmx
+                                        span.pmgressbar2-5-zmx
+                                li
+                                    .num1-zmx
+                                        span 09
+                                        sapn.s-color-blue
+                                            i.i-con3
+                                            | 8
+                                    a.pt2-zmx(href='#')
+                                        img(src='zhuboimg/18601537720685733.jpg')
+                                        i.play1
+                                    .center1-zmx
+                                        a(href='#', title='ofo小黄车：人多，钱傻，速来') ofo小黄车：人多，钱傻，速来
+                                        a(href='#', title='亮三点') 亮三点
+                                    span.pmgressbar-zmx
+                                        span.pmgressbar1-6-zmx
+                                        span.pmgressbar2-6-zmx
+                                li
+                                    .num1-zmx
+                                        span 10
+                                        sapn.s-color
+                                            i.i-con1
+                                    a.pt2-zmx(href='#')
+                                        img(src='zhuboimg/18910500486367230.jpg')
+                                        i.play1
+                                    .center1-zmx
+                                        a(href='#', title='连浓眉大眼的阿联酋航空都抠门了!') 连浓眉大眼的阿联酋航空都抠门了!
+                                        a(href='#', title='网易轻松一刻') 网易轻松一刻
+                                    span.pmgressbar-zmx
+                                        span.pmgressbar1-3-zmx
+                                        span.pmgressbar2-3-zmx
+                .station1
+                    .music
+                        span.music-story
+                            a(href='#') 音乐故事
+                            |  · 电台
+                        a.more-zmx(href='#') 更多 >
+                    .box1-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18687299627598261.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='林非的唱片私藏馆') 林非的唱片私藏馆
+                            span.title2-zmx DJ林非跟你分享他的两万张老唱片
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/1365593487663277.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='艳秋电台') 艳秋电台
+                            span.title2-zmx 这个治愈的声音得听
+                    .box2-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18762066418273062.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='文茜的异想世界') 文茜的异想世界
+                            span.title2-zmx 文茜带你听甜点音乐
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18644418673640939.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='园园蓝调口琴电台') 园园蓝调口琴电台
+                            span.title2-zmx 搜罗所有蓝调口琴音乐
+                .station2
+                    .music
+                        span.music-story
+                            a(href='#') 美文读物
+                            |  · 电台
+                        a.more-zmx(href='#') 更多 >
+                    .box1-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18612532836930965.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='疼哥深夜电台') 疼哥深夜电台
+                            span.title2-zmx 读有趣的书，做有点儿酷的人
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/3426078273674073.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='孟京辉戏剧工作室 | 为你读诗') 孟京辉戏剧工作室 | 为你读诗
+                            span.title2-zmx 听孟京辉戏剧工作室为你读诗
+                    .box2-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18557557255384267.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='边江de恋声馆') 边江de恋声馆
+                            span.title2-zmx 配音演员边江静静地读给你听
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/3442570908612801.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='一听散文') 一听散文
+                            span.title2-zmx 听经典散文，分享品读之乐
+                .station3
+                    .music
+                        span.music-story
+                            a(href='#') 脱口秀
+                            |  · 电台
+                        a.more-zmx(href='#') 更多 >
+                    .box1-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/19200771556089129.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='DJ林非 非常有笑果') DJ林非 非常有笑果
+                            span.title2-zmx DJ林非和你讲讲段子逗逗乐
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18495984603865929.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='蔡骏的悬疑世界') 蔡骏的悬疑世界
+                            span.title2-zmx 作家蔡骏的网易云电台
+                    .box2-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18878614648928302.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='徐老师讲故事') 徐老师讲故事
+                            span.title2-zmx 英雄联盟中的情仇故事
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/2946691247486341.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='开普勒452b') 开普勒452b
+                            span.title2-zmx 李维嘉主持的星座大数据脱口秀
+                .station4
+                    .music
+                        span.music-story
+                            a(href='#') 情感调频
+                            |  · 电台
+                        a.more-zmx(href='#') 更多 >
+                    .box1-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18582846022726200.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='陪你·说一世晚安') 陪你·说一世晚安
+                            span.title2-zmx 二更食堂，深夜陪你道声晚安
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/19205169602369194.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='酒鬼一家跳票电台') 酒鬼一家跳票电台
+                            span.title2-zmx 国民老岳父公的暖心故事
+                    .box2-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18568552371730335.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='夜听') 夜听
+                            span.title2-zmx 晚上十点，向你问好
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18645518184650127.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='开普勒452b') 米莉.听见花开
+                            span.title2-zmx 一个让你念念不忘的人
+                .station5
+                    .music
+                        span.music-story
+                            a(href='#') 创作|翻唱
+                            |  · 电台
+                        a.more-zmx(href='#') 更多 >
+                    .box1-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/19113910137364418.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='猫小梦的gamefun') 猫小梦的gamefun
+                            span.title2-zmx 人气主播猫小梦的翻唱作品
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18705991324767857.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='nG家的猫') nG家的猫
+                            span.title2-zmx 正能量摄影师nG唱歌也好听
+                    .box2-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/3315027563349819.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='隐姓埋名的花日天') 隐姓埋名的花日天
+                            span.title2-zmx 花粥正经翻唱不耍流氓
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18923694625709511.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='小缘的直播节选') 小缘的直播节选
+                            span.title2-zmx 人气主播小缘喵的直播精华
+                .station6
+                    .music
+                        span.music-story
+                            a(href='#') 人文历史
+                            |  · 电台
+                        a.more-zmx(href='#') 更多 >
+                    .box1-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/1396379778174456(1).jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='围炉夜话') 围炉夜话
+                            span.title2-zmx 美食家陈立带你品美食、说历史
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18740076185614730.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='而我想…成为一个有趣的妞') 而我想…成为一个有趣的妞
+                            span.title2-zmx F小姐的读书观影笔记
+                    .box2-zmx
+                        .img1-zmx
+                            a(href='#')
+                                img(src='zhuboimg/18642219650818010.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='泪痕书场') 泪痕书场
+                            span.title2-zmx 聊一聊古今中外人生百态
+                        .img2-zmx
+                            a(href='#')
+                                img(src='zhuboimg/19201871067547683.jpg', alt='')
+                            span.title1-zmx
+                                a(href='#', title='你好，中文系') 你好，中文系
+                            span.title2-zmx 全宇宙文学都在这里了
+        #gotop.top-zmx
+            a(href='#')
+                p.p1 ^
+                p TOP
+        // 底部开始
+        .g-ft
+            .m-ft
+                .wrap.f-cb
+                    .copy
+                        p
+                            a.s-fc4(href='#') 关于网易
+                            span.line
+                            a.s-fc4(href='#') 客户服务
+                            span.line
+                            a.s-fc4(href='#') 服务条款
+                            span.line
+                            a.s-fc4(href='#') 网站导航
+                            span.line
+                            a.s-fc4(href='#') 意见反馈
+                        p.s-fc3
+                            span.sep 网易公司版权所有©1997-2017
+                            |                     杭州乐读科技有限公司运营 :
+                            a.s-fc3(href='#') 浙网文[2015] 0415-135号
+                    ul.enter.f-fr
+                        li
+                            a.logo.logo-musician.f-tid(href='#')
+                        li
+                            a.logo.logo-topic.f-tid(href='#')
+                        li
+                            a.logo.logo-midea.f-tid(href='#')
+                        li
+                            a.logo.logo-reward.f-tid(href='#')
+
+// <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>
+#g-btmbar.g-btmbar
+    .g-btmbar-p(id='.g-btmbar-p')
+        #auto-id-fpboJHu88h3Feay2.m-playbar.m-playbar-lock(style='top:-53px; visibility: visible;')
+            .updn
+                .left.f-f1
+                    a#fixBtn1.btn1(href='javascript:void(0);')
+                    a#fixBtn2.btn2(href='javascript:void(0);')
+                .right.f-f1
+            .bg
+            #g_player.wrap
+                .btns
+                    a.prv(href='#')
+                    a#ply01.ply.j-fkag(href='#')
+                    a#ply02.plys.j-fkag(href='#')
+                    a.nxt(href='#')
+                .head.j-flag
+                    a.mask(href='#')
+                        img(src='zhuboimages/default_album.jpg', alt='')
+                .play
+                    .j-flag.words
+                    .m-pbar
+                        #auto-id-ODscgwD3lbnJdK0A.barbg.j-flag
+                            .rdy(style='width: 0%;')
+                            .cur(style='width: 0%;')
+                                span#auto-id-bxCC3M0eRZD76VpR.btn.f-tdn.f-alpha
+                                    i
+                        span.j-flag.time
+                            em 00:00
+                            |  / 00:00
+                .oper.f-fl
+                    a.icn.icn-add.j-flag(href='#', title='收藏')
+                    a.icn.icn-share(href='#', title='分享')
+                .ctrl.f-fl.f-pr.j-flag
+                    #auto-id-epndKXTBrRZxUtTX.m-vol(style='visibility:hidden;')
+                        .barbg
+                        #auto-id-Ps01blhP4eMKXBgn.vbg.j-t
+                            .curr.j-t(style='height: 74.4px;')
+                            span.btn.f-alpha.j-t(style='top: 16.2px;')
+                    a.icn.icn-vol(href='#')
+                    a.icn.icn-loop(href='#')
+                    span.add.f-pr
+                        span.tip(style='display: none;')
+                        a.icn.icn-list.s-fc3(href='#', title='播放列表') 0
+                    .tip.tip-1(style='display: none;') 循环
+// 底部结束
+script(src='rankinglist-js/jquery-1.12.4.min.js')
+script(src='rankinglist-js/footer-js.js')
+// <script src="js/animate.js"></script>
+script(src='zhubojs/jquery-1.12.4.min.js')
+script(src='zhubojs/discover.js')
+script(src='../js/login-block.js')

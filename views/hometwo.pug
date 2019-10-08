@@ -1,0 +1,350 @@
+doctype html
+html
+    head(lang='en')
+        meta(charset='UTF-8')
+        title 网易云音乐
+        link(rel='stylesheet', href='/hometwo/base.css')
+        link(rel='stylesheet', href='/hometwo/music-list.css')
+        script(src='/gedanjs/jquery-1.12.4.min.js')
+        script(src='/gedanjs/music-list.js')
+        link.ico(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
+        link(rel='stylesheet', href='/css/footer-css.css')
+        script(src='jquery-3.4.1.min.js')
+
+    body
+        .top
+            .w
+                .logo
+                #nr.neirong
+                    ul
+                        li
+                            a(href='../wyy') 发现音乐
+                        li.line
+                        li
+                            a(href='../myMusic') 我的音乐
+                        li.line
+                        li
+                            a(href='../friends') 朋友
+                        li.line
+                        li
+                            a(href='../demo',target='_blank') 商城
+                        li.line
+                        li
+                            a(href='../musicman') 音乐人
+                        li.line
+                        li
+                            a(href='../download') 下载客户端
+                #loginBlock.login-block
+                    ul
+                        li
+                            a(href='#')
+                                i.icon-phone
+                                em 手机号登陆
+                        li
+                            a(href='#')
+                                i.icon-wechart
+                                em 微信登陆
+                        li
+                            a(href='#')
+                                i.icon-qq
+                                em QQ登陆
+                        li
+                            a(href='#')
+                                i.icon-weibo
+                                em 微博登陆
+                        li
+                            a(href='#')
+                                i.icon-nest
+                                em 网易邮箱账号登陆
+                    .sanjiaojian
+            .seek
+                input#text(type='text', value='单曲/歌手/专辑/歌单/MV/用户')
+            .hot
+            #deng.deng
+                a(href='../mymusic') 登录
+            #daosan.daosan
+        // //红色栏部分
+        .nav
+            .w
+                .xunze
+                    ul
+                        li
+                            a(href='#') 推荐
+                        li
+                            a(href='../rankinglistindex') 排行榜
+                        li
+                            a(href='javascript:location.reload()') 歌单
+                            span
+                        li
+                            a(href='../discover') 主播电台
+                        li
+                            a(href='../singer') 歌手
+                        li
+                            a(href='#') 新碟上架
+                .sanjiao
+        script(src='../gedanjs/01.js')
+        .music-bd.w
+            .music-wrap
+                .music-title
+                    h3
+                        span.music-all 全部
+                        a.music-choese(href='#')
+                            i
+                                | 选择分类
+                                em.music-icon1
+                    .music-fr
+                        a.music-hot(href='#') 热门
+                        a.music-new(href='#') 最新
+                    .n-sltlyr-show
+                        .sltlyr-show-hd
+                            i.show-icn
+                        .sltlyr-show-bd
+                            h3
+                                a.show-all(href='#')
+                                    em 全部风格
+                            dl.show-cb
+                                dt.yuzhong
+                                    i.show-icon71
+                                    | 语种
+                                dd
+                                    a(href='#') 华语
+                                    span.line |
+                                    a(href='#') 欧美
+                                    span.line |
+                                    a(href='#') 日语
+                                    span.line |
+                                    a(href='#') 韩语
+                                    span.line |
+                                    a(href='#') 粤语
+                                    span.line |
+                                    a(href='#') 小语种
+                                    span.line |
+                            dl.show-cb1
+                                dt.yuzhong
+                                    i.show-icon72
+                                    | 风格
+                                dd
+                                    a(href='#') 流行
+                                    span.line |
+                                    a(href='#') 摇滚
+                                    span.line |
+                                    a(href='#') 民谣
+                                    span.line |
+                                    a(href='#') 电子
+                                    span.line |
+                                    a(href='#') 舞曲
+                                    span.line |
+                                    a(href='#') 说唱
+                                    span.line |
+                                    a(href='#') 轻音乐
+                                    span.line |
+                                    a(href='#') 爵士
+                                    span.line |
+                                    a(href='#') 乡村
+                                    span.line |
+                                    a(href='#') R&B/Soul
+                                    span.line |
+                                    a(href='#') 古典
+                                    span.line |
+                                    a(href='#') 民族
+                                    span.line |
+                                    a(href='#') 英伦
+                                    span.line |
+                                    a(href='#') 金属
+                                    span.line |
+                                    a(href='#') 朋克
+                                    span.line |
+                                    a(href='#') 蓝调
+                                    span.line |
+                                    a(href='#') 雷鬼
+                                    span.line |
+                                    a(href='#') 世界音乐
+                                    span.line |
+                                    a(href='#') 拉丁
+                                    span.line |
+                                    a(href='#') 另类/独立
+                                    span.line |
+                                    a(href='#') New Age
+                                    span.line |
+                                    a(href='#') 古风
+                                    span.line |
+                                    a(href='#') 后摇
+                                    span.line |
+                                    a(href='#') Bossa Nova
+                                    span.line |
+                            dl.show-cb2
+                                dt.yuzhong
+                                    i.show-icon73
+                                    | 场景
+                                dd
+                                    a(href='#') 清晨
+                                    span.line |
+                                    a(href='#') 夜晚
+                                    span.line |
+                                    a(href='#') 学习
+                                    span.line |
+                                    a(href='#') 工作
+                                    span.line |
+                                    a(href='#') 午休
+                                    span.line |
+                                    a(href='#') 下午茶
+                                    span.line |
+                                    a(href='#') 地铁
+                                    span.line |
+                                    a(href='#') 驾车
+                                    span.line |
+                                    a(href='#') 运动
+                                    span.line |
+                                    a(href='#') 旅行
+                                    span.line |
+                                    a(href='#') 散步
+                                    span.line |
+                                    a(href='#') 酒吧
+                                    span.line |
+                            dl.show-cb2
+                                dt.yuzhong
+                                    i.show-icon74
+                                    | 情感
+                                dd
+                                    a(href='#') 怀旧
+                                    span.line |
+                                    a(href='#') 清新
+                                    span.line |
+                                    a(href='#') 浪漫
+                                    span.line |
+                                    a(href='#') 性感
+                                    span.line |
+                                    a(href='#') 伤感
+                                    span.line |
+                                    a(href='#') 治愈
+                                    span.line |
+                                    a(href='#') 放松
+                                    span.line |
+                                    a(href='#') 孤独
+                                    span.line |
+                                    a(href='#') 感动
+                                    span.line |
+                                    a(href='#') 兴奋
+                                    span.line |
+                                    a(href='#') 快乐
+                                    span.line |
+                                    a(href='#') 安静
+                                    span.line |
+                                    a(href='#') 思念
+                                    span.line |
+                            dl.show-cb2
+                                dt.yuzhong
+                                    i.show-icon75
+                                    | 主题
+                                dd
+                                    a(href='#') 影视原声
+                                    span.line |
+                                    a(href='#') ACG
+                                    span.line |
+                                    a(href='#') 校园
+                                    span.line |
+                                    a(href='#') 游戏
+                                    span.line |
+                                    a(href='#') 70后
+                                    span.line |
+                                    a(href='#') 80后
+                                    span.line |
+                                    a(href='#') 90后
+                                    span.line |
+                                    a(href='#') 网络歌曲
+                                    span.line |
+                                    a(href='#') KTV
+                                    span.line |
+                                    a(href='#') 经典
+                                    span.line |
+                                    a(href='#') 翻唱
+                                    span.line |
+                                    a(href='#') 吉他
+                                    span.line |
+                                    a(href='#') 钢琴
+                                    span.line |
+                                    a(href='#') 器乐
+                                    span.line |
+                                    a(href='#') 儿童
+                                    span.line |
+                                    a(href='#') 榜单
+                                    span.line |
+                                    a(href='#') 00后
+                                    span.line |
+                        .show-ft
+
+
+                div
+                    span#js_test(onclick = 'tc(this)')
+
+                    br
+                div
+                    input(type='hidden', value=index, id='page_index')
+                    ul.music-cvrlst.ul_active
+                        each i in row
+                            div
+                                li
+                                    .u-cover
+                                        img(src = i.home_img)
+                                        a.msk(href='#', title='')
+
+                                    p.music-dec
+                                        a.f-thide(href='#') #{i.home_text}
+                                    p
+                                        span.music-fc4 by
+                                        a.music-nm(href='#') #{i.home_text1}
+                                        i.u-icn-84
+
+
+
+                .music-pager
+                    .music-u-pager
+                        input.music-selected2(type='button',value='上一页',onclick='')
+                        a.music-number2.showCurrent(href='../musiclist') 1
+                        //a.music-number2(href='javascript:void(0)') 2
+                        //a.music-number2(href='javascript:void(0)') 3
+                        //a.music-number2(href='javascript:void(0)') 4
+                        //a.music-number2(href='javascript:void(0)') 5
+                        //a.music-number2(href='javascript:void(0)') 6
+                        //a.music-number2(href='javascript:void(0)') 7
+                        //a.music-number2(href='javascript:void(0)') 8
+                        //span ...
+                        //a.music-number2(href='javascript:void(0)') 39
+                        input.music-selected2(type='button',value='下一页',onclick='load()')
+
+        // 底部开始
+        .g-ft
+            .m-ft
+                .wrap.f-cb
+                    .copy
+                        p
+                            a.s-fc4(href='#') 关于网易
+                            span.line
+                            a.s-fc4(href='#') 客户服务
+                            span.line
+                            a.s-fc4(href='#') 服务条款
+                            span.line
+                            a.s-fc4(href='#') 网站导航
+                            span.line
+                            a.s-fc4(href='#') 意见反馈
+                        p.s-fc3
+                            span.sep 网易公司版权所有©1997-2017
+                            |                     杭州乐读科技有限公司运营 :
+                            a.s-fc3(href='#') 浙网文[2015] 0415-135号
+                    ul.enter.f-fr
+                        li
+                            a.logo.logo-musician.f-tid(href='#')
+                        li
+                            a.logo.logo-topic.f-tid(href='#')
+                        li
+                            a.logo.logo-midea.f-tid(href='#')
+                        li
+                            a.logo.logo-reward.f-tid(href='#')
+
+// <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>
+
+// 底部结束
+script(src='/gedanrankinglistjs/jquery-1.12.4.min.js')
+script(src='/gedanrankinglistjs/common.js')
+script(src='/gedanrankinglistjs/footer-js.js')
+script(src='/hometwo/hometwo.js')

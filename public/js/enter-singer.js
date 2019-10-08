@@ -1,6 +1,4 @@
-/**
- * Created by Bobby on 2017/7/15.
- */
+
 var enterSingerMiddle = document.getElementById("enterSingerMiddle")
 var ifo =  enterSingerMiddle.children;
 

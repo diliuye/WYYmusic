@@ -3,8 +3,8 @@ html
     head(lang='en')
         meta(charset='UTF-8')
         title 网易云音乐
-        link(rel='stylesheet', href='rankinglistcss/ranking%20list.css')
-        link(rel='stylesheet', href='rankinglistcss/footer-css.css')
+        link(rel='stylesheet', href='rankinglistcss/rankinglist.css')
+        link(rel='stylesheet', href='rankinglistcss/footercss.css')
         link.ico(rel='shortcut icon', type='image/x-icon', href='../favicon.ico')
         link(rel='stylesheet', href='../css/login-block.css')
     body
@@ -17,7 +17,7 @@ html
                     .m-top-nav-list
                         ul
                             li
-                                a(href='index', style='color:#fff') 发现音乐
+                                a(href='wyy', style='color:#fff') 发现音乐
                             li
                             li
                                 a(href='myMusic', style='color:#fff') 我的音乐
@@ -26,9 +26,10 @@ html
                                 a(href='friends', style='color:#fff') 朋友
                             li
                             li
-                                a(href='demo', style='color:#fff') 商城
+                                a(href='demo', style='color:#fff',target='_blank') 商城
                             li
-                            li 音乐人
+                            li
+                                a(href='musicman', style='color:#fff') 音乐人
                             li
                             li
                                 a(href='下载客户端页面', style='color:#fff') 下载客户端
@@ -63,6 +64,7 @@ html
                                         i.icon-nest
                                         em 网易邮箱账号登陆
                             .sanjiaojian
+                        <audio src="music/静sir - 骑上我心爱的小摩托(2019).mp3" controls="controls"></audio>
                         // <div class="login-over">
                         // <a href="#">登录</a>
                         // <span class="trigon2"></span>
@@ -113,13 +115,13 @@ html
                             a(href='javascript:location.reload()') 排行榜
                             span
                         li
-                            a(href='musiclist') 歌单
+                            a(href='hometwo') 歌单
                             span
                         li
                             a(href='discover') 主播电台
                             span
                         li
-                            a(href='歌手') 歌手
+                            a(href='singer') 歌手
                             span
                         li
                             a(href='#') 新碟上架
@@ -138,17 +140,17 @@ html
                                 span.txt-top 云音乐飙升榜
                                 span.txt-bottom 每天更新
                         li
-                            a(href='#')
+                            a(href='rankinglistindex1' style='background-color: rgb(247, 247, 247);')
                                 span.bg-img
                                 span.txt-top 云音乐新歌榜
                                 span.txt-bottom 每天更新
                         li
-                            a(href='#')
+                            a(href='rankinglistindex2')
                                 span.bg-img
                                 span.txt-top 网易原创歌曲榜
                                 span.txt-bottom 每周四更新
                         li
-                            a(href='#')
+                            a(href='rankinglistindex3')
                                 span.bg-img
                                 span.txt-top 云音乐热歌榜
                                 span.txt-bottom 每周四更新
@@ -156,9 +158,9 @@ html
                     p.txt-head2 全球媒体榜
                     ul
                         li#bottom-bgc.top-bgc
-                            a(href='#')
+                            a(href='rankinglistindex4')
                                 span.bg-img
-                                span.txt-top 云音乐飙升榜
+                                span.txt-top 云音乐说唱榜
                                 span.txt-bottom 每天更新
                         li
                             a(href='#')
@@ -247,7 +249,7 @@ html
                 .content-bsb
                     .content-bsb-top
                         .bsb-t-logo
-                            img(src='rankingimages/18696095720518497.jpg', alt='')
+                            img(src='rankinglistimages/18696095720518497.jpg', alt='')
                         .bsb-t-content
                             p 云音乐飙升榜
                             span
@@ -256,18 +258,22 @@ html
                             .bsb-t-btns
                                 span.btns1 播放
                                 span.btns2 +
-                                span.btns3
-                                    | (476102)
+                                span.btns3 (476102)
                                 span.btns4 (1922)
                                 span.btns5 下载
                                 span.btns6 (69128)
+                                br
+                                br
+                                br
+
+
                     .content-bsb-bottom
                         .bottom-txt
                             span.txt1 歌曲列表
                             span.txt2 100首歌
                             span.txt3
                                 | 播放：
-                                span.txt4 408083200
+                                span.txt4 408
                                 |                         次
                     .content-bsb-center
                         .center-head
@@ -285,9 +291,9 @@ html
                                         li
                                             i
                                             b
-                                            |                                     Cola
-                                        li 06:55
-                                        li CamelPha...
+                                            |                                     骑上我心爱的小摩托(2019)
+                                        li 02:02
+                                        li 静sir
                                 li.list-song2
                                     ul.tr01
                                         li
@@ -296,9 +302,9 @@ html
                                         li
                                             i
                                             b
-                                            |                                     LaLaLand(Prok&Fitch Sixteen Remix)
+                                            |                                     那女孩对我说 (完整版)
                                         li 06:46
-                                        li PROK & Fl...
+                                        li Uu
                                 li.list-song3
                                     ul.tr01
                                         li
@@ -307,9 +313,9 @@ html
                                         li
                                             i
                                             b
-                                            |                                     House & Pressure (Original Mix)
+                                            |                                     下雨的杭州
                                         li 05:09
-                                        li Route 94
+                                        li 解忧邵帅
                                 li.list-song01
                                     ul.tr02
                                         li
@@ -826,7 +832,7 @@ html
                                 span.txt2 共69235条评论
                             .comment-center
                                 span.login
-                                    img(src='rankingimages/content_05.jpg', alt='')
+                                    img(src='rankinglistimages/content_05.jpg', alt='')
                                 .text
                                     span.sanjiao ◇
                                     textarea.textarea(name='', id='', cols='30', rows='10')
@@ -935,20 +941,7 @@ html
                 .m-ft
                     .wrap.f-cb
                         .copy
-                            p
-                                a.s-fc4(href='#') 关于网易
-                                span.line
-                                a.s-fc4(href='#') 客户服务
-                                span.line
-                                a.s-fc4(href='#') 服务条款
-                                span.line
-                                a.s-fc4(href='#') 网站导航
-                                span.line
-                                a.s-fc4(href='#') 意见反馈
-                            p.s-fc3
-                                span.sep 网易公司版权所有©1997-2017
-                                |                     杭州乐读科技有限公司运营 :
-                                a.s-fc3(href='#') 浙网文[2015] 0415-135号
+
                         ul.enter.f-fr
                             li
                                 a.logo.logo-musician.f-tid(href='#')
@@ -958,55 +951,55 @@ html
                                 a.logo.logo-midea.f-tid(href='#')
                             li
                                 a.logo.logo-reward.f-tid(href='#')
-                        .class='wrap.cfb::after'
-// <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>
-#g-btmbar.g-btmbar
-    .g-btmbar-p(id='.g-btmbar-p')
-        #auto-id-fpboJHu88h3Feay2.m-playbar.m-playbar-lock(style='top:-53px; visibility: visible;')
-            .updn
-                .left.f-f1
-                    a#fixBtn1.btn1(href='javascript:void(0);')
-                    a#fixBtn2.btn2(href='javascript:void(0);')
-                .right.f-f1
-            .bg
-            #g_player.wrap
-                .btns
-                    a.prv(href='#')
-                    a#ply01.ply.j-fkag(href='#')
-                    a#ply02.plys.j-fkag(href='#')
-                    a.nxt(href='#')
-                .head.j-flag
-                    a.mask(href='#')
-                        img(src='rankingimages/default_album.jpg', alt='')
-                .play
-                    .j-flag.words
-                    .m-pbar
-                        #auto-id-ODscgwD3lbnJdK0A.barbg.j-flag
-                            .rdy(style='width: 0%;')
-                            .cur(style='width: 0%;')
-                                span#auto-id-bxCC3M0eRZD76VpR.btn.f-tdn.f-alpha
-                                    i
-                        span.j-flag.time
-                            em 00:00
-                            |  / 00:00
-                .oper.f-fl
-                    a.icn.icn-add.j-flag(href='#', title='收藏')
-                    a.icn.icn-share(href='#', title='分享')
-                .ctrl.f-fl.f-pr.j-flag
-                    #auto-id-epndKXTBrRZxUtTX.m-vol(style='visibility:hidden;')
-                        .barbg
-                        #auto-id-Ps01blhP4eMKXBgn.vbg.j-t
-                            .curr.j-t(style='height: 74.4px;')
-                            span.btn.f-alpha.j-t(style='top: 16.2px;')
-                    a.icn.icn-vol(href='#')
-                    a.icn.icn-loop(href='#')
-                    span.add.f-pr
-                        span.tip(style='display: none;')
-                        a.icn.icn-list.s-fc3(href='#', title='播放列表') 0
-                    .tip.tip-1(style='display: none;') 循环
-// 底部结束
-script(src='rankinglistjs/jquery-1.12.4.min.js')
-script(src='rankinglistjs/ranking%20list.js')
-script(src='rankinglistjs/common.js')
-script(src='rankinglistjs/footer-js.js')
-script(src='../rankingjs/login-block.js')
+
+        // <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>
+        #g-btmbar.g-btmbar
+            .g-btmbar-p(id='.g-btmbar-p')
+                #auto-id-fpboJHu88h3Feay2.m-playbar.m-playbar-lock(style='top:-53px; visibility: visible;')
+                    .updn
+                        .left.f-f1
+                            a#fixBtn1.btn1(href='javascript:void(0);')
+                            a#fixBtn2.btn2(href='javascript:void(0);')
+                        .right.f-f1
+                    .bg
+                    #g_player.wrap
+                        .btns
+                            a.prv(href='#')
+                            a#ply01.ply.j-fkag(href='#')
+                            a#ply02.plys.j-fkag(href='#')
+                            a.nxt(href='#')
+                        .head.j-flag
+                            a.mask(href='#')
+                                img(src='rankinglistimages/default_album.jpg', alt='')
+                        .play
+                            .j-flag.words
+                            .m-pbar
+                                #auto-id-ODscgwD3lbnJdK0A.barbg.j-flag
+                                    .rdy(style='width: 0%;')
+                                    .cur(style='width: 0%;')
+                                        span#auto-id-bxCC3M0eRZD76VpR.btn.f-tdn.f-alpha
+                                            i
+                                span.j-flag.time
+                                    em 00:00
+                                    |  / 00:00
+                        .oper.f-fl
+                            a.icn.icn-add.j-flag(href='#', title='收藏')
+                            a.icn.icn-share(href='#', title='分享')
+                        .ctrl.f-fl.f-pr.j-flag
+                            #auto-id-epndKXTBrRZxUtTX.m-vol(style='visibility:hidden;')
+                                .barbg
+                                #auto-id-Ps01blhP4eMKXBgn.vbg.j-t
+                                    .curr.j-t(style='height: 74.4px;')
+                                    span.btn.f-alpha.j-t(style='top: 16.2px;')
+                            a.icn.icn-vol(href='#')
+                            a.icn.icn-loop(href='#')
+                            span.add.f-pr
+                                span.tip(style='display: none;')
+                                a.icn.icn-list.s-fc3(href='#', title='播放列表') 0
+                            .tip.tip-1(style='display: none;') 循环
+        // 底部结束
+        script(src='rankinglistjs/jquery-1.12.4.min.js')
+        script(src='rankinglistjs/rankinglist.js')
+        script(src='rankinglistjs/common.js')
+        script(src='rankinglistjs/footer-js.js')
+        script(src='../rankinglistjs/login-block.js')

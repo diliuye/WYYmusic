@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mymusiccss/base.css">
+    <link rel="stylesheet" href="mymusiccss/login.css">
+    <link class="ico" rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <script src="../mymusicjs/animate.js"></script>
+    <title>音乐播放</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="top">
+      <div class="w">
+        <div class="logo"></div>
+        <div class="neirong" id="nr">
+          <ul>
+            <li><a href="wyy">发现音乐</a></li>
+            <li class="line"></li>
+            <li><a href="javascript:location.reload()">我的音乐</a></li>
+            <li class="line"></li>
+            <li><a href="friends">朋友</a></li>
+            <li class="line"></li>
+            <li><a href="demo" target="_blank">商城</a></li>
+            <li class="line"></li>
+            <li><a href="musicman">音乐人</a></li>
+            <li class="line"></li>
+            <li><a href="download">下载客户端</a></li>
+          </ul>
+        </div>
+        <div class="login-block" id="loginBlock">
+          <ul>
+            <li><a href="#"><i class="icon-phone"></i><em>手机号登陆</em></a></li>
+            <li><a href="#"><i class="icon-wechart"></i><em>微信登陆</em></a></li>
+            <li><a href="#"><i class="icon-qq"></i><em>QQ登陆</em></a></li>
+            <li><a href="#"><i class="icon-weibo"></i><em>微博登陆</em></a></li>
+            <li><a href="#"><i class="icon-nest"></i><em>网易邮箱账号登陆</em></a></li>
+          </ul>
+          <div class="sanjiaojian"></div>
+        </div>
+      </div>
+      <!--.seekinput#text(type='text', value='单曲/歌手/专辑/歌单/MV/用户')
+      -->
+      <div class="hot"></div>
+      <div class="deng" id="deng"><a href="#">登录</a></div>
+      <div class="daosan" id="daosan"></div>
+    </div>
+    <script src="mymusicjs/topBar.js"></script>
+    <div class="redBar">
+      <div class="w">
+        <div class="redsanjiao"></div>
+      </div>
+    </div>
+    <div class="search">
+      <input id="search" placeholder="搜索歌曲" type="text">
+      <ul class="list"></ul>
+    </div>
+    <div class="music">
+      <div class="music-lyric">
+        <div class="lyric-content"></div>
+      </div>
+      <audio id="audio" controls=""></audio>
+    </div>
+    <script type="text/javascript">document.write('<script type="text/javascript" src="index.js?timer='+new Date().getTime()+'"><\/script>');</script><br><br><br><br><br><br><br><br><br><br>
+    <div class="g-ft">
+      <div class="m-ft">
+        <div class="w f-cb">
+          <div class="copy">
+            <p><a class="s-fc4" href="#">关于网易</a><span class="line"></span><a class="s-fc4" href="#">客户服务</a><span class="line"></span><a class="s-fc4" href="#">服务条款</a><span class="line"></span><a class="s-fc4" href="#">网站导航</a><span class="line"></span><a class="s-fc4" href="#">意见反馈</a></p>
+            <p class="s-fc3"><span class="sep">网易公司版权所有©1997-2017</span>                    杭州乐读科技有限公司运营 :<a class="s-fc3" href="#">浙网文[2015] 0415-135号</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="mymusicjs/tools.js"></script>
+    <script src="mymusicjs/login.js"></script>
+    <script src="../mymusicjs/footer-js.js"></script>
+  </body>
+</html>

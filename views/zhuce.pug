@@ -1,0 +1,814 @@
+doctype html
+html
+    head(lang='en')
+        meta(charset='UTF-8')
+        title 网易云音乐
+        link(rel='stylesheet', href='css/base.css')
+        link(rel='stylesheet', href='css/index.css')
+        link.ico(rel='shortcut icon', type='image/x-icon', href='favicon.ico')
+        script(src='js/tools.js')
+        script(src='js/common.js')
+        script(src='js/demo06.js')
+        script(src='js/animate.js')
+    body
+        // <div class="topBar"></div>
+        // <div class="header-nav"></div>
+        .top
+            .w
+                div
+                    img.logo(src='img/logo.png')
+                #nr.neirong
+                    ul
+                        li
+                            a(href='javascript:location.reload()') 发现音乐
+                        li.line
+                        li
+                            a(href='myMusic') 我的音乐
+                        li.line
+                        li
+                            a(href='friends') 朋友
+                        li.line
+                        li
+                            a(href='demo',target='_blank') 商城
+                        li.line
+                        li
+                            a(href='musicman') 音乐人
+                        li.line
+                        li
+                            a(href='download') 下载客户端
+                #loginBlock.login-block
+                    ul
+                        li
+                            a(href='#')
+                                i.icon-phone
+                                em 手机号登陆
+                        li
+                            a(href='#')
+                                i.icon-wechart
+                                em 微信登陆
+                        li
+                            a(href='#')
+                                i.icon-qq
+                                em QQ登陆
+                        li
+                            a(href='#')
+                                i.icon-weibo
+                                em 微博登陆
+                        li
+                            a(href='#')
+                                i.icon-nest
+                                em 网易邮箱账号登陆
+                    .sanjiaojian
+            .seek
+                input#text(type='text', value='音乐/视频电台/用户')
+            .hot
+            #deng.deng
+                a(href='mymusic') 登录
+            #daosan.daosan
+        // //红色栏部分
+        .nav
+            .w
+                .xunze
+                    ul
+                        li
+                            a(href='#') 推荐
+                        li
+                            a(href='rankinglistindex') 排行榜
+                        li
+                            a(href='musiclist') 歌单
+                        li
+                            a(href='discover') 主播电台
+                        li
+                            a(href='singer') 歌手
+                        li
+                            a(href='#') 新碟上架
+                .sanjiao
+        script(src='js/01.js')
+        #bg.bg
+            #top-w.top-w
+                .dlpic
+                    a(href='#')
+                    p PC 安卓 iPhone WP iPad Mac 六大客户端
+                #top-imgs.top-imgs
+                    a(href='#')
+                        img#images(src='img/00.png', alt='')
+                    ol#spans.spans
+                        li
+                            span#s1
+                        li
+                            span#s2
+                        li
+                            span#s3
+                        li
+                            span#s4
+                        li
+                            span#s5
+                        li
+                            span#s6
+                        li
+                            span#s7
+                #arrTop.arrTop
+                    span#arrLeft <
+                    span#arrRight >
+        script(src='js/02demo.js')
+        .content.w
+            .left
+                // 热门开始
+                .hot
+                    .hotIndro
+                        .hotIndro-nav
+                            #smallnav.small-nav
+                                span.sCircle
+                                span.head 热门推荐
+                                a(href='#') 华语
+                                span.line
+                                a(href='#') 流行
+                                span.line
+                                a(href='#') 摇滚
+                                span.line
+                                a(href='#') 民谣
+                                span.line
+                                a(href='#') 电子
+                                span.arrRight
+                                a.more(href='#') 更多
+                        #hotContent.hotIndro-contont
+                            ul#imgShow
+                                li.first
+                                    a(href='#')
+                                        img(src='img/热门推荐01.jpg', alt='')
+                                    a.showDes(href='#') 一个偏执的家人和他的平凡之痛
+                                    span.transparent
+                                        i.headset
+                                        i 33万
+                                        a(href='#')
+                                            i.player
+                                li
+                                    a(href='#')
+                                        img(src='img/热门推荐02.jpg', alt='')
+                                    a.showDes(href='#') 活泼的调子，不如跳支舞吧
+                                    span.transparent
+                                        i.headset
+                                        i 103万
+                                        a(href='#')
+                                            i.player
+                                li
+                                    a(href='#')
+                                        img(src='img/热门推荐03.jpg', alt='')
+                                    a.showDes(href='#') 安静又不失节奏
+                                    span.transparent
+                                        i.headset
+                                        i 99万
+                                        a(href='#')
+                                            i.player
+                                li
+                                    a(href='#')
+                                        img(src='img/热门推荐04.jpg', alt='')
+                                    a.showDes(href='#')
+                                        i.column
+                                        span.top2 最最最浪漫的
+                                        span.botm 情调
+                                    span.transparent
+                                        i.headset
+                                        i 13万
+                                        a(href='#')
+                                            i.player
+                                li.five
+                                    a(href='#')
+                                        img(src='img/热门推荐05.jpg', alt='')
+                                    a.showDes(href='#') 最重要的事情说
+                                    span.transparent
+                                        i.headset
+                                        i 3万
+                                        a(href='#')
+                                            i.player
+                                li
+                                    a(href='#')
+                                        img(src='img/热门推荐06.jpg', alt='')
+                                    a.showDes(href='#')
+                                        i.column
+                                        span.top2 别管那些嘴巴
+                                        span.botm 先成为清爽温厚的人
+                                    span.transparent
+                                        i.headset
+                                        i 2万
+                                        a(href='#')
+                                            i.player
+                                li
+                                    a(href='#')
+                                        img(src='img/热门推荐07.jpg', alt='')
+                                    a.showDes(href='#') 浪漫复古小调 陷入微醺时光
+                                    span.transparent
+                                        i.headset
+                                        i 55万
+                                        a(href='#')
+                                            i.player
+                                li
+                                    a(href='#')
+                                        img(src='img/热门推荐08.jpg', alt='')
+                                    a.showDes(href='#')
+                                        i.column
+                                        span.top2 不如我们分手
+                                        span.botm 吧!
+                                    span.transparent
+                                        i.headset
+                                        i 3369
+                                        a(href='#')
+                                            i.player
+                // 热门结束
+                // <div class="ad">广告</div>
+                // <div class="newCD">新碟</div>
+                .zmx.w
+                    #centre.centre-zmx
+                        #titles.title-zmx
+                            i.jll1-zmx
+                            a(href='#') 新碟上架
+                            span.character-zmx
+                                a(href='#') 更多
+                                i.jll2-zmx  
+                        #newCd1.newCd1-zmx
+                            #newCd2.newCd2-zmx
+                                #newCd3.newCd3-zmx
+                                    ul
+                                        li
+                                            span
+                                                div
+                                                    a(href='#', title='我的前半生 电视原声带')
+                                                        img(src='img/18887410742170941.jpg')
+                                                    a.play0(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='我的前半生 电视原声带') 我的前半生 电视原声带
+                                                p.wz1
+                                                    a(href='#', title='群星') 群星
+                                            span
+                                                div
+                                                    a(href='#', title='ONE DAY')
+                                                        img(src='img/19111711114264139.jpg')
+                                                    a.play1(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='ONE DAY') ONE DAY
+                                                p.wz1
+                                                    a(href='#', title='ONE') ONE
+                                            span
+                                                div
+                                                    a(href='#', title='燕返')
+                                                        img(src='img/18736777650906621.jpg')
+                                                    a.play2(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='燕返') 燕返
+                                                p.wz1
+                                                    a(href='#', title='燕池') 燕池
+                                            span
+                                                div
+                                                    a(href='#', title='Funk Wav Bounces Vol. 1')
+                                                        img(src='img/18980869230504690.jpg')
+                                                    a.play3(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='Funk Wav Bounces Vol. 1') Funk Wav Bounces Vol. 1
+                                                p.wz1
+                                                    a(href='#', title='Calvin Harris') Calvin Harris
+                                            span
+                                                div
+                                                    a(href='#', title='군주 - 가면의 주인 OST')
+                                                        img(src='img/18902803904961604.jpg')
+                                                    a.play4(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='군주 - 가면의 주인 OST') 군주 - 가면의 주인 OST
+                                                p.wz1
+                                                    a(href='#', title='V.A.') V.A.
+                                        li
+                                            span
+                                                div
+                                                    a(href='#', title='Kaleidoscope')
+                                                        img(src='img/18977570695642597.jpg')
+                                                    a.play5(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='Kaleidoscope') Kaleidoscope
+                                                p.wz1
+                                                    a(href='#', title='Coldplay') Coldplay
+                                            span
+                                                div
+                                                    a(href='#', title='2017跨界歌王 第十三期')
+                                                        img(src='img/19113910137488600.jpg')
+                                                    a.play6(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='2017跨界歌王 第十三期') 2017跨界歌王 第十三期
+                                                p.wz1
+                                                    a(href='#', title='群星') 群星
+                                            span
+                                                div
+                                                    a(href='#', title='涙を流せないピエロは太陽も月もない空を見上げた')
+                                                        img(src='img/18743374720672509.jpg')
+                                                    a.play7(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='涙を流せないピエロは太陽も月もない空を見上げた') 涙を流せないピエロは太陽も月もない空を見上げた
+                                                p.wz1
+                                                    a(href='#', title='GENERATIONS from EXILE TRIBE') GENERATIONS from EXILE TRIBE
+                                            span
+                                                div
+                                                    a(href='#', title='TELEVISION')
+                                                        img(src='img/19111711114264181.jpg')
+                                                    a.play8(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='TELEVISION') TELEVISION
+                                                p.wz1
+                                                    a(href='#', title='Zico') Zico
+                                            span
+                                                div
+                                                    a(href='#', title='我想和你唱 第二季 第11期')
+                                                        img(src='img/19043541393299282.jpg')
+                                                    a.play9(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='我想和你唱 第二季 第11期') 我想和你唱 第二季 第11期
+                                                p.wz1
+                                                    a(href='#', title='群星') 群星
+                                        li
+                                            span
+                                                div
+                                                    a(href='#', title='我的前半生 电视原声带')
+                                                        img(src='img/18887410742170941.jpg')
+                                                    a.play10(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='我的前半生 电视原声带') 我的前半生 电视原声带
+                                                p.wz1
+                                                    a(href='#', title='群星') 群星
+                                            span
+                                                div
+                                                    a(href='#', title='ONE DAY')
+                                                        img(src='img/19111711114264139.jpg')
+                                                    a.play11(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='ONE DAY') ONE DAY
+                                                p.wz1
+                                                    a(href='#', title='ONE') ONE
+                                            span
+                                                div
+                                                    a(href='#', title='燕返')
+                                                        img(src='img/18736777650906621.jpg')
+                                                    a.play12(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='燕返') 燕返
+                                                p.wz1
+                                                    a(href='#', title='燕池') 燕池
+                                            span
+                                                div
+                                                    a(href='#', title='Funk Wav Bounces Vol. 1')
+                                                        img(src='img/18980869230504690.jpg')
+                                                    a.play13(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='Funk Wav Bounces Vol. 1') Funk Wav Bounces Vol. 1
+                                                p.wz1
+                                                    a(href='#', title='Calvin Harris') Calvin Harris
+                                            span
+                                                div
+                                                    a(href='#', title='군주 - 가면의 주인 OST')
+                                                        img(src='img/18902803904961604.jpg')
+                                                    a.play14(href='javascript:;', title='播放')
+                                                .pic
+                                                p.wz
+                                                    a(href='#', title='군주 - 가면의 주인 OST') 군주 - 가면의 주인 OST
+                                                p.wz1
+                                                    a(href='#', title='V.A.') V.A.
+                                #arr
+                                    span#left  
+                                    span#right  
+                script(src='js/demo7.js')
+                .band
+                    // 榜单top的制作开始
+                    .BD-top
+                        span.spirit-one
+                        span.BD-title 榜单
+                        span.more
+                            a(href='#') 更多
+                            span.spirit-two
+                    // 歌曲目录的制作开始
+                    .catalog-box
+                        // 云音乐飙升榜
+                        #catalog-left.catalog-left
+                            ul
+                                li
+                                    a.pic(href='#')
+                                        img(src='img/飙升榜.jpg')
+                                    a.bsb(href='#') 云音乐飙升榜
+                                    span
+                                        a#bf.bf(href='#')
+                                        a#sc.sc(href='#')
+                                li
+                                    span.f-color 1
+                                    a.gm(href='#') Fetish
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.f-color 2
+                                    a.gm(href='#') 如果我爱你
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.f-color 3
+                                    a.gm(href='#') Summer Bummer
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 4
+                                    a.gm(href='#') 因你
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 5
+                                    a.gm(href='#') 再也没有
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 6
+                                    a.gm(href='#') Coming Home
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 7
+                                    a.gm(href='#') Miracles (Someone Special)
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 8
+                                    a.gm(href='#') 追光者
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 9
+                                    a.gm(href='#') Tired (Kygo Remix)
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 10
+                                    a.gm(href='#') 齐天
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    a(href='#') 查看全部>
+                        // 云音乐新歌榜
+                        #catalog-middle.catalog-middle
+                            ul
+                                li
+                                    a.pic(href='#')
+                                        img(src='img/新歌榜.jpg')
+                                    a.bsb(href='#') 云音乐新歌榜
+                                    span
+                                        a#bf2.bf(href='#')
+                                        a#sc2.sc(href='#')
+                                li
+                                    span.f-color 1
+                                    a.gm(href='#') 清白之年
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.f-color 2
+                                    a.gm(href='#') Fetish
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.f-color 3
+                                    a.gm(href='#') 一百种热爱
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 4
+                                    a.gm(href='#') 마지막처럼
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 5
+                                    a.gm(href='#') 我们
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 6
+                                    a.gm(href='#') 我想念
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 7
+                                    a.gm(href='#') Summer Bummer
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 8
+                                    a.gm(href='#') Hold Me
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 9
+                                    a.gm(href='#') 해야해
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 10
+                                    a.gm(href='#') 桃花诺
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    a(href='#') 查看全部>
+                        // 网易云原创新歌榜
+                        #catalog-right.catalog-right
+                            ul
+                                li
+                                    a.pic(href='#')
+                                        img(src='img/原创榜.jpg')
+                                    a.bsb(href='#') 网易原创歌曲榜
+                                    span
+                                        a#bf3.bf(href='#')
+                                        a#sc3.sc(href='#')
+                                li
+                                    span.f-color 1
+                                    a.gm(href='#') 依然
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.f-color 2
+                                    a.gm(href='#') 装
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.f-color 3
+                                    a.gm(href='#') 我喜欢如此的你
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 4
+                                    a.gm(href='#') 七月
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 5
+                                    a.gm(href='#') 后海
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 6
+                                    a.gm(href='#') 裁梦为魂
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 7
+                                    a.gm(href='#') Lucky
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 8
+                                    a.gm(href='#') 封夜
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 9
+                                    a.gm(href='#') 隐
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    span.num 10
+                                    a.gm(href='#') RiCH
+                                    span.s-function
+                                        a.s-bf(href='#')
+                                        a.s-tj(href='#')
+                                        a.s-sc(href='#')
+                                li
+                                    a(href='#') 查看全部>
+                script(src='js/第八部分-榜单.js')
+            .right
+                // 登陆开始
+                .login
+                    p 登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机
+                    a.login-btn(href='/WYYmusic/views/mymusic') 用户登陆
+                // 登陆结束
+                // 歌手开始
+                .singer
+                    // enter-singer-header的开始
+                    .enter-singer
+                        .enter-singer-header
+                            span.es-singer 入驻歌手
+                            a.es-more(href='#') 查看全部 >
+                        // enter-singer-header的结束
+                        // enter-singer-middle的开始
+                        ul#enterSingerMiddle.enter-singer-middle
+                            li
+                                a(href='#')
+                                    .head
+                                        img(src='img/zhm.jpg', alt='')
+                                    .ifo
+                                        span 张惠妹aMEI
+                                        p 台湾歌手张惠妹
+                            li
+                                a(href='#')
+                                    .head
+                                        img(src='img/swj.jpg', alt='')
+                                    .ifo
+                                        span 尚雯婕
+                                        p 原创电子唱作人
+                            li
+                                a(href='#')
+                                    .head
+                                        img(src='img/yq.jpg', alt='')
+                                    .ifo
+                                        span 羽泉组合
+                                        p 国内知名演唱组合 羽..
+                            li
+                                a(href='#')
+                                    .head
+                                        img(src='img/lz.jpg', alt='')
+                                    .ifo
+                                        span 李志
+                                        p 个体音乐人李志
+                            li
+                                a(href='#')
+                                    .head
+                                        img(src='img/mdmyy.jpg', alt='')
+                                    .ifo
+                                        span 马頔麻油叶
+                                        p 民谣音乐人
+                        // enter-singer-middle的结束
+                        // enter-singer-bottom的开始
+                        .enter-singer-bottom
+                            a.es-join(target='_blank', href='#') 申请成为网易音乐人
+                script(src='js/enter-singer.js')
+                // 歌手结束
+                // Dj开始
+                .dj
+                    h5 热门DJ
+                    ul
+                        li
+                            img(src='img/dj1.jpg', alt='')
+                            .right
+                                a(href='#') 陈立
+                                span.v
+                                p 美食家陈立教授
+                        li
+                            img(src='img/dj2.jpg', alt='')
+                            .right
+                                a(href='#') Dj艳秋
+                                span.v
+                                p 著名音乐节目主持人
+                        li
+                            img(src='img/dj3.jpg', alt='')
+                            .right
+                                a(href='#') 国家大剧院古典音乐频道
+                                span.v
+                                p 国家大剧院古典音乐官网
+                        li
+                            img(src='img/dj4.jpg', alt='')
+                            .right
+                                a(href='#') 谢谢收听
+                                span.v
+                                p 南京电台主持人王馨
+                        li
+                            img(src='img/dj5.jpg', alt='')
+                            .right
+                                a(href='#') DJ晓苏
+                                span.v
+                                p 独立DJ，CRI环球旅游广播...
+                // dj结束
+            #backTop.toTop
+        .g-ft
+            .m-ft
+                .w.f-cb
+                    .copy
+                        p
+                            a.s-fc4(href='#') 关于网易
+                            span.line
+                            a.s-fc4(href='#') 客户服务
+                            span.line
+                            a.s-fc4(href='#') 服务条款
+                            span.line
+                            a.s-fc4(href='#') 网站导航
+                            span.line
+                            a.s-fc4(href='#') 意见反馈
+                        p.s-fc3
+                            span.sep 网易公司版权所有©1997-2017
+                            |                     杭州乐读科技有限公司运营 :
+                            a.s-fc3(href='#') 浙网文[2015] 0415-135号
+                    ul.enter.f-fr
+                        li
+                            a.logo.logo-musician.f-tid(href='#')
+                        li
+                            a.logo.logo-topic.f-tid(href='#')
+                        li
+                            a.logo.logo-midea.f-tid(href='#')
+                        li
+                            a.logo.logo-reward.f-tid(href='#')
+
+        // <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>
+        #g-btmbar.g-btmbar
+            .g-btmbar-p(id='.g-btmbar-p')
+                #auto-id-fpboJHu88h3Feay2.m-playbar.m-playbar-lock(style='top:-53px; visibility: visible;')
+                    .updn
+                        .left.f-f1
+                            a#fixBtn1.btn1(href='javascript:void(0);')
+                            a#fixBtn2.btn2(href='javascript:void(0);')
+                        .right.f-f1
+                    .bg
+                    #g_player.wrap
+                        .btns
+                            a.prv(href='#')
+                            a.ply.j-fkag(href='#')
+                            a.plys.j-fkag(href='#')
+                            a.nxt(href='#')
+                        .head.j-flag
+                            a.mask(href='#')
+                                img(src='img/default_album.jpg', alt='')
+                        .play
+                            .j-flag.words
+                            .m-pbar
+                                #auto-id-ODscgwD3lbnJdK0A.barbg.j-flag
+                                    .rdy(style='width: 0%;')
+                                    .cur(style='width: 0%;')
+                                        span#auto-id-bxCC3M0eRZD76VpR.btn.f-tdn.f-alpha
+                                            i
+                                span.j-flag.time
+                                    em 00:00
+                                    |  / 00:00
+                        .oper.f-fl
+                            a.icn.icn-add.j-flag(href='#', title='收藏')
+                            a.icn.icn-share(href='#', title='分享')
+                        .ctrl.f-fl.f-pr.j-flag
+                            #auto-id-epndKXTBrRZxUtTX.m-vol(style='visibility:hidden;')
+                                .barbg
+                                #auto-id-Ps01blhP4eMKXBgn.vbg.j-t
+                                    .curr.j-t(style='height: 74.4px;')
+                                    span.btn.f-alpha.j-t(style='top: 16.2px;')
+                            a.icn.icn-vol(href='#')
+                            a.icn.icn-loop(href='#')
+                            span.add.f-pr
+                                span.tip(style='display: none;')
+                                a.icn.icn-list.s-fc3(href='#', title='播放列表') 0
+                            .tip.tip-1(style='display: none;') 循环
+        script(src='js/footer-js.js')
+        // <div class="footer"></div>
+        script(src='js/backTop.js')

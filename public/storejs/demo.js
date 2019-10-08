@@ -87,7 +87,7 @@ $(function () {
         //屏幕不断滚动  ， leader 不断最新值
         document.body.scrollTop > 250 ? show() : hide();
         leader = document.body.scrollTop;
-        var target = 670 - leader;
+        var target = 500 - leader;
         target < 320 ? target = 320 : target;
         // console.log(target)
         $('#help').css('top', target);

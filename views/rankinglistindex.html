@@ -3,8 +3,8 @@
   <head lang="en">
     <meta charset="UTF-8">
     <title>网易云音乐</title>
-    <link rel="stylesheet" href="rankinglistcss/ranking%20list.css">
-    <link rel="stylesheet" href="rankinglistcss/footer-css.css">
+    <link rel="stylesheet" href="rankinglistcss/rankinglist.css">
+    <link rel="stylesheet" href="rankinglistcss/footercss.css">
     <link class="ico" rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="../css/login-block.css">
   </head>
@@ -16,15 +16,15 @@
           <div class="m-top-nav-logo"><a href="#"></a></div>
           <div class="m-top-nav-list">
             <ul>
-              <li><a href="index" style="color:#fff">发现音乐</a></li>
+              <li><a href="wyy" style="color:#fff">发现音乐</a></li>
               <li></li>
               <li><a href="myMusic" style="color:#fff">我的音乐</a></li>
               <li></li>
               <li><a href="friends" style="color:#fff">朋友</a></li>
               <li></li>
-              <li><a href="demo" style="color:#fff">商城</a></li>
+              <li><a href="demo" style="color:#fff" target="_blank">商城</a></li>
               <li></li>
-              <li>音乐人</li>
+              <li><a href="musicman" style="color:#fff">音乐人</a></li>
               <li></li>
               <li><a href="下载客户端页面" style="color:#fff">下载客户端</a><span class="hot"></span></li>
             </ul>
@@ -43,7 +43,7 @@
                 <li><a href="#"><i class="icon-nest"></i><em>网易邮箱账号登陆</em></a></li>
               </ul>
               <div class="sanjiaojian"></div>
-            </div>
+            </div><audio src="music/静sir - 骑上我心爱的小摩托(2019).mp3" controls="controls"></audio>
             <!-- <div class="login-over">-->
             <!-- <a href="#">登录</a>-->
             <!-- <span class="trigon2"></span>-->
@@ -91,9 +91,9 @@
           <ul>
             <li><a href="#">推荐</a><span></span><i></i></li>
             <li><a href="javascript:location.reload()">排行榜</a><span></span></li>
-            <li><a href="musiclist">歌单</a><span></span></li>
+            <li><a href="hometwo">歌单</a><span></span></li>
             <li><a href="discover">主播电台</a><span></span></li>
-            <li><a href="歌手">歌手</a><span></span></li>
+            <li><a href="singer">歌手</a><span></span></li>
             <li><a href="#">新碟上架</a><span></span></li>
           </ul>
         </div>
@@ -108,15 +108,15 @@
           <p class="txt-head1">云音乐飙升榜</p>
           <ul>
             <li class="top-bgc" id="top-bgc"><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐飙升榜</span><span class="txt-bottom">每天更新</span></a></li>
-            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐新歌榜</span><span class="txt-bottom">每天更新</span></a></li>
-            <li><a href="#"><span class="bg-img"></span><span class="txt-top">网易原创歌曲榜</span><span class="txt-bottom">每周四更新</span></a></li>
-            <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="rankinglistindex1" style="background-color: rgb(247, 247, 247);"><span class="bg-img"></span><span class="txt-top">云音乐新歌榜</span><span class="txt-bottom">每天更新</span></a></li>
+            <li><a href="rankinglistindex2"><span class="bg-img"></span><span class="txt-top">网易原创歌曲榜</span><span class="txt-bottom">每周四更新</span></a></li>
+            <li><a href="rankinglistindex3"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
           </ul>
         </div>
         <div class="m-main-side-bottom">
           <p class="txt-head2">全球媒体榜</p>
           <ul>
-            <li class="top-bgc" id="bottom-bgc"><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐飙升榜</span><span class="txt-bottom">每天更新</span></a></li>
+            <li class="top-bgc" id="bottom-bgc"><a href="rankinglistindex4"><span class="bg-img"></span><span class="txt-top">云音乐说唱榜</span><span class="txt-bottom">每天更新</span></a></li>
             <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐新歌榜</span><span class="txt-bottom">每天更新</span></a></li>
             <li><a href="#"><span class="bg-img"></span><span class="txt-top">网易原创歌曲榜</span><span class="txt-bottom">每周四更新</span></a></li>
             <li><a href="#"><span class="bg-img"></span><span class="txt-top">云音乐热歌榜</span><span class="txt-bottom">每周四更新</span></a></li>
@@ -142,14 +142,14 @@
         <!-- 飙升榜的开始-->
         <div class="content-bsb">
           <div class="content-bsb-top">
-            <div class="bsb-t-logo"><img src="rankingimages/18696095720518497.jpg" alt=""></div>
+            <div class="bsb-t-logo"><img src="rankinglistimages/18696095720518497.jpg" alt=""></div>
             <div class="bsb-t-content">
               <p>云音乐飙升榜</p><span>⏱最近更新：07月20日<span class="txt">（每天更新）</span></span>
-              <div class="bsb-t-btns"><span class="btns1">播放</span><span class="btns2">+</span><span class="btns3">(476102)</span><span class="btns4">(1922)</span><span class="btns5">下载</span><span class="btns6">(69128)</span></div>
+              <div class="bsb-t-btns"><span class="btns1">播放</span><span class="btns2">+</span><span class="btns3">(476102)</span><span class="btns4">(1922)</span><span class="btns5">下载</span><span class="btns6">(69128)</span><br><br><br></div>
             </div>
           </div>
           <div class="content-bsb-bottom">
-            <div class="bottom-txt"><span class="txt1">歌曲列表</span><span class="txt2">100首歌</span><span class="txt3">播放：<span class="txt4">408083200</span>                        次</span></div>
+            <div class="bottom-txt"><span class="txt1">歌曲列表</span><span class="txt2">100首歌</span><span class="txt3">播放：<span class="txt4">408</span>                        次</span></div>
           </div>
           <div class="content-bsb-center">
             <div class="center-head">
@@ -163,25 +163,25 @@
                 <li class="list-song1">
                   <ul class="tr01">
                     <li>1<span>-0</span></li>
-                    <li><i></i><b></b>                                    Cola</li>
-                    <li>06:55</li>
-                    <li>CamelPha...</li>
+                    <li><i></i><b></b>                                    骑上我心爱的小摩托(2019)</li>
+                    <li>02:02</li>
+                    <li>静sir</li>
                   </ul>
                 </li>
                 <li class="list-song2">
                   <ul class="tr01">
                     <li>2<span>↑3</span></li>
-                    <li><i></i><b></b>                                    LaLaLand(Prok&Fitch Sixteen Remix)</li>
+                    <li><i></i><b></b>                                    那女孩对我说 (完整版)</li>
                     <li>06:46</li>
-                    <li>PROK & Fl...</li>
+                    <li>Uu</li>
                   </ul>
                 </li>
                 <li class="list-song3">
                   <ul class="tr01">
                     <li>3<span>↓1</span></li>
-                    <li><i></i><b></b>                                    House & Pressure (Original Mix)</li>
+                    <li><i></i><b></b>                                    下雨的杭州</li>
                     <li>05:09</li>
-                    <li>Route 94</li>
+                    <li>解忧邵帅</li>
                   </ul>
                 </li>
                 <li class="list-song01">
@@ -596,7 +596,7 @@
             </div>
             <div class="center-comment">
               <div class="comment-top"><span class="txt1">评论</span><span class="txt2">共69235条评论</span></div>
-              <div class="comment-center"><span class="login"><img src="rankingimages/content_05.jpg" alt=""></span>
+              <div class="comment-center"><span class="login"><img src="rankinglistimages/content_05.jpg" alt=""></span>
                 <div class="text"><span class="sanjiao">◇</span>
                   <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
                 </div>
@@ -654,61 +654,57 @@
       <div class="g-ft">
         <div class="m-ft">
           <div class="wrap f-cb">
-            <div class="copy">
-              <p><a class="s-fc4" href="#">关于网易</a><span class="line"></span><a class="s-fc4" href="#">客户服务</a><span class="line"></span><a class="s-fc4" href="#">服务条款</a><span class="line"></span><a class="s-fc4" href="#">网站导航</a><span class="line"></span><a class="s-fc4" href="#">意见反馈</a></p>
-              <p class="s-fc3"><span class="sep">网易公司版权所有©1997-2017</span>                    杭州乐读科技有限公司运营 :<a class="s-fc3" href="#">浙网文[2015] 0415-135号</a></p>
-            </div>
+            <div class="copy"></div>
             <ul class="enter f-fr">
               <li><a class="logo logo-musician f-tid" href="#"></a></li>
               <li><a class="logo logo-topic f-tid" href="#"></a></li>
               <li><a class="logo logo-midea f-tid" href="#"></a></li>
               <li><a class="logo logo-reward f-tid" href="#"></a></li>
             </ul>
-            <div class="class">wrap.cfb::after</div>
           </div>
         </div>
       </div>
     </div>
+    <!-- <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>-->
+    <div class="g-btmbar" id="g-btmbar">
+      <div class="g-btmbar-p" id=".g-btmbar-p">
+        <div class="m-playbar m-playbar-lock" id="auto-id-fpboJHu88h3Feay2" style="top:-53px; visibility: visible;">
+          <div class="updn">
+            <div class="left f-f1"><a class="btn1" id="fixBtn1" href="javascript:void(0);"></a><a class="btn2" id="fixBtn2" href="javascript:void(0);"></a></div>
+            <div class="right f-f1"></div>
+          </div>
+          <div class="bg"></div>
+          <div class="wrap" id="g_player">
+            <div class="btns"><a class="prv" href="#"></a><a class="ply j-fkag" id="ply01" href="#"></a><a class="plys j-fkag" id="ply02" href="#"></a><a class="nxt" href="#"></a></div>
+            <div class="head j-flag"><a class="mask" href="#"><img src="rankinglistimages/default_album.jpg" alt=""></a></div>
+            <div class="play">
+              <div class="j-flag words"></div>
+              <div class="m-pbar">
+                <div class="barbg j-flag" id="auto-id-ODscgwD3lbnJdK0A">
+                  <div class="rdy" style="width: 0%;"></div>
+                  <div class="cur" style="width: 0%;"><span class="btn f-tdn f-alpha" id="auto-id-bxCC3M0eRZD76VpR"><i></i></span></div>
+                </div><span class="j-flag time"><em>00:00</em> / 00:00</span>
+              </div>
+            </div>
+            <div class="oper f-fl"><a class="icn icn-add j-flag" href="#" title="收藏"></a><a class="icn icn-share" href="#" title="分享"></a></div>
+            <div class="ctrl f-fl f-pr j-flag">
+              <div class="m-vol" id="auto-id-epndKXTBrRZxUtTX" style="visibility:hidden;">
+                <div class="barbg"></div>
+                <div class="vbg j-t" id="auto-id-Ps01blhP4eMKXBgn">
+                  <div class="curr j-t" style="height: 74.4px;"></div><span class="btn f-alpha j-t" style="top: 16.2px;"></span>
+                </div>
+              </div><a class="icn icn-vol" href="#"></a><a class="icn icn-loop" href="#"></a><span class="add f-pr"><span class="tip" style="display: none;"></span><a class="icn icn-list s-fc3" href="#" title="播放列表">0</a></span>
+              <div class="tip tip-1" style="display: none;">循环</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部结束-->
+    <script src="rankinglistjs/jquery-1.12.4.min.js"></script>
+    <script src="rankinglistjs/rankinglist.js"></script>
+    <script src="rankinglistjs/common.js"></script>
+    <script src="rankinglistjs/footer-js.js"></script>
+    <script src="../rankinglistjs/login-block.js"></script>
   </body>
 </html>
-<!-- <a href="#" class="m-back" id="g_backtop" title="回到顶部">回到顶部</a>-->
-<div class="g-btmbar" id="g-btmbar">
-  <div class="g-btmbar-p" id=".g-btmbar-p">
-    <div class="m-playbar m-playbar-lock" id="auto-id-fpboJHu88h3Feay2" style="top:-53px; visibility: visible;">
-      <div class="updn">
-        <div class="left f-f1"><a class="btn1" id="fixBtn1" href="javascript:void(0);"></a><a class="btn2" id="fixBtn2" href="javascript:void(0);"></a></div>
-        <div class="right f-f1"></div>
-      </div>
-      <div class="bg"></div>
-      <div class="wrap" id="g_player">
-        <div class="btns"><a class="prv" href="#"></a><a class="ply j-fkag" id="ply01" href="#"></a><a class="plys j-fkag" id="ply02" href="#"></a><a class="nxt" href="#"></a></div>
-        <div class="head j-flag"><a class="mask" href="#"><img src="rankingimages/default_album.jpg" alt=""></a></div>
-        <div class="play">
-          <div class="j-flag words"></div>
-          <div class="m-pbar">
-            <div class="barbg j-flag" id="auto-id-ODscgwD3lbnJdK0A">
-              <div class="rdy" style="width: 0%;"></div>
-              <div class="cur" style="width: 0%;"><span class="btn f-tdn f-alpha" id="auto-id-bxCC3M0eRZD76VpR"><i></i></span></div>
-            </div><span class="j-flag time"><em>00:00</em> / 00:00</span>
-          </div>
-        </div>
-        <div class="oper f-fl"><a class="icn icn-add j-flag" href="#" title="收藏"></a><a class="icn icn-share" href="#" title="分享"></a></div>
-        <div class="ctrl f-fl f-pr j-flag">
-          <div class="m-vol" id="auto-id-epndKXTBrRZxUtTX" style="visibility:hidden;">
-            <div class="barbg"></div>
-            <div class="vbg j-t" id="auto-id-Ps01blhP4eMKXBgn">
-              <div class="curr j-t" style="height: 74.4px;"></div><span class="btn f-alpha j-t" style="top: 16.2px;"></span>
-            </div>
-          </div><a class="icn icn-vol" href="#"></a><a class="icn icn-loop" href="#"></a><span class="add f-pr"><span class="tip" style="display: none;"></span><a class="icn icn-list s-fc3" href="#" title="播放列表">0</a></span>
-          <div class="tip tip-1" style="display: none;">循环</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- 底部结束-->
-<script src="rankinglistjs/jquery-1.12.4.min.js"></script>
-<script src="rankinglistjs/ranking%20list.js"></script>
-<script src="rankinglistjs/common.js"></script>
-<script src="rankinglistjs/footer-js.js"></script>
-<script src="../rankingjs/login-block.js"></script>

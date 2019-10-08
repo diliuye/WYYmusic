@@ -1,6 +1,3 @@
-/**
- * Created by 徐黎 on 2017/7/11.
- */
 
 //animate函数封装（属性中有透明度和层级）：
 function animate(obj,json,fn){

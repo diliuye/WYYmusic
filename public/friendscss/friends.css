@@ -1,6 +1,6 @@
 .top {
     height: 68px;
-    background: url(../img/topbar.png) 0 -80px;
+    background: url(../friendsimg/topbar.png) 0 -80px;
     position: relative;
 }
 .top .w {
@@ -185,7 +185,7 @@
     width: 857px;
     height: 413px;
     margin: 0 auto ;
-    background: url("../img/notlogin.jpg");
+    background: url("../friendsimg/notlogin.jpg");
     position: relative;
 }
 .content .w .notlogin a {
@@ -198,7 +198,7 @@
     /*border: 1px solid #000;*/
 }
 .content .w .notlogin a:hover {
-    background: url("../img/notlogin.jpg") no-repeat 0 -430px;
+    background: url("../friendsimg/notlogin.jpg") no-repeat 0 -430px;
 }
 
 .content .w .login-block {
@@ -245,7 +245,7 @@
 }
 .content .w .login-block .login-block-content .u-main .u-pic {
     height: 107px;
-    background: url("../img/platform.png") no-repeat;
+    background: url("../friendsimg/platform.png") no-repeat;
 }
 .content .w .login-block .login-block-content .u-main .phone-login {
     display: block;
